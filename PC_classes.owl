@@ -4,9 +4,9 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3> .
+@base <http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology> .
 
-<http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3> rdf:type owl:Ontology .
+<http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
@@ -38,6 +38,88 @@
 :has_component rdf:type owl:ObjectProperty ;
                rdfs:domain :PC ;
                rdfs:range :PC_Element .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU_cache
+:CPU_cache rdf:type owl:DatatypeProperty ;
+           rdfs:domain :CPU ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU_core
+:CPU_core rdf:type owl:DatatypeProperty ;
+          rdfs:domain :CPU ;
+          rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU_family
+:CPU_family rdf:type owl:DatatypeProperty ;
+            rdfs:domain :CPU ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU_frequency
+:CPU_frequency rdf:type owl:DatatypeProperty ;
+               rdfs:domain :CPU ;
+               rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU_model
+:CPU_model rdf:type owl:DatatypeProperty ;
+           rdfs:domain :CPU ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU_operating_mode
+:CPU_operating_mode rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :CPU ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU_register_type
+:CPU_register_type rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :CPU ;
+                   rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#GPU_DirectX_version
+:GPU_DirectX_version rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Graphics_card ;
+                     rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#GPU_Memory_clock
+:GPU_Memory_clock rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Graphics_card ;
+                  rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#GPU_OpenGL_version
+:GPU_OpenGL_version rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Graphics_card ;
+                    rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#GPU_base_frequency
+:GPU_base_frequency rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Integrated_graphics_card ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#GPU_maximum_memory
+:GPU_maximum_memory rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Graphics_card ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#GPU_number_of_displays
+:GPU_number_of_displays rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Integrated_graphics_card ;
+                        rdfs:range xsd:integer .
 
 
 #################################################################
