@@ -138,7 +138,8 @@
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#DRAM
 :DRAM rdf:type owl:Class ;
-      rdfs:subClassOf :RAM .
+      rdfs:subClassOf :RAM ;
+      owl:disjointWith :SRAM .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#DVI
@@ -154,7 +155,8 @@
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Discrete_graphics_card
 :Discrete_graphics_card rdf:type owl:Class ;
-                        rdfs:subClassOf :Graphics_card .
+                        rdfs:subClassOf :Graphics_card ;
+                        owl:disjointWith :Integrated_graphics_card .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#External_element
@@ -169,7 +171,8 @@
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#HDD
 :HDD rdf:type owl:Class ;
-     rdfs:subClassOf :Storage_device .
+     rdfs:subClassOf :Storage_device ;
+     owl:disjointWith :SSD .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#HDMI
