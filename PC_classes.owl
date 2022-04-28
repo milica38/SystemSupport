@@ -9,6 +9,38 @@
 <http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3> rdf:type owl:Ontology .
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#contains_GPU
+:contains_GPU rdf:type owl:ObjectProperty ;
+              rdfs:domain :Motherboard ;
+              rdfs:range :Graphics_card .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#contains_sound_card
+:contains_sound_card rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Motherboard ;
+                     rdfs:range :Sound_card .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#has_brand
+:has_brand rdf:type owl:ObjectProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :PC
+                                       :PC_Element
+                                     )
+                       ] ;
+           rdfs:range :PC_Brand .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#has_component
+:has_component rdf:type owl:ObjectProperty ;
+               rdfs:domain :PC ;
+               rdfs:range :PC_Element .
+
+
+#################################################################
 #    Classes
 #################################################################
 
