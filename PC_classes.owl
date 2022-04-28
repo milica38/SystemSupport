@@ -9,76 +9,78 @@
 <http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3> rdf:type owl:Ontology .
 
 #################################################################
-#    Object Properties
-#################################################################
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#cpuContains
-:cpuContains rdf:type owl:ObjectProperty ;
-             rdfs:domain :CPU ;
-             rdfs:range :ALU ,
-                        :Bus ,
-                        :Cache ,
-                        :Clock ,
-                        :ControlUnit ,
-                        :Register .
-
-
-#################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#ALU
-:ALU rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#AddressBus
-:AddressBus rdf:type owl:Class ;
-            rdfs:subClassOf :Bus .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Bus
-:Bus rdf:type owl:Class ;
-     owl:equivalentClass [ rdf:type owl:Class ;
-                           owl:unionOf ( :AddressBus
-                                         :ControlBus
-                                         :DataBus
-                                       )
-                         ] .
-
-
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU
-:CPU rdf:type owl:Class .
+:CPU rdf:type owl:Class ;
+     rdfs:subClassOf :Internal_element .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Cache
-:Cache rdf:type owl:Class .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Case
+:Case rdf:type owl:Class ;
+      rdfs:subClassOf :External_element .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Clock
-:Clock rdf:type owl:Class .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#DRAM
+:DRAM rdf:type owl:Class ;
+      rdfs:subClassOf :RAM .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#ControlBus
-:ControlBus rdf:type owl:Class ;
-            rdfs:subClassOf :Bus .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#ControlUnit
-:ControlUnit rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#DataBus
-:DataBus rdf:type owl:Class ;
-         rdfs:subClassOf :Bus .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#DVI
+:DVI rdf:type owl:Class ;
+     rdfs:subClassOf :Port .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Desktop
 :Desktop rdf:type owl:Class ;
-         rdfs:subClassOf :PC .
+         rdfs:subClassOf :PC ;
+         owl:disjointWith :Laptop .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#GPU
-:GPU rdf:type owl:Class .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Discrete_graphics_card
+:Discrete_graphics_card rdf:type owl:Class ;
+                        rdfs:subClassOf :Graphics_card .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#External_element
+:External_element rdf:type owl:Class ;
+                  rdfs:subClassOf :PC_Element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Graphics_card
+:Graphics_card rdf:type owl:Class ;
+               rdfs:subClassOf :Internal_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#HDD
+:HDD rdf:type owl:Class ;
+     rdfs:subClassOf :Storage_device .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#HDMI
+:HDMI rdf:type owl:Class ;
+      rdfs:subClassOf :Port .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Headphone_port
+:Headphone_port rdf:type owl:Class ;
+                rdfs:subClassOf :Port .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Integrated_graphics_card
+:Integrated_graphics_card rdf:type owl:Class ;
+                          rdfs:subClassOf :Graphics_card .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Internal_element
+:Internal_element rdf:type owl:Class ;
+                  rdfs:subClassOf :PC_Element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#LAN
+:LAN rdf:type owl:Class ;
+     rdfs:subClassOf :Port .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Laptop
@@ -86,37 +88,76 @@
         rdfs:subClassOf :PC .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Memory
-:Memory rdf:type owl:Class .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Michrophone_port
+:Michrophone_port rdf:type owl:Class ;
+                  rdfs:subClassOf :Port .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Motherboard
-:Motherboard rdf:type owl:Class .
+:Motherboard rdf:type owl:Class ;
+             rdfs:subClassOf :Internal_element .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#NetworkCard
-:NetworkCard rdf:type owl:Class .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Network_interface_card
+:Network_interface_card rdf:type owl:Class ;
+                        rdfs:subClassOf :Internal_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Optical_drive
+:Optical_drive rdf:type owl:Class ;
+               rdfs:subClassOf :Internal_element .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#PC
-:PC rdf:type owl:Class ;
-    owl:equivalentClass [ rdf:type owl:Class ;
-                          owl:unionOf ( :Desktop
-                                        :Laptop
-                                      )
-                        ] .
+:PC rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Register
-:Register rdf:type owl:Class .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#PC_Brand
+:PC_Brand rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#SoundCard
-:SoundCard rdf:type owl:Class .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#PC_Element
+:PC_Element rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#VideoCard
-:VideoCard rdf:type owl:Class .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Port
+:Port rdf:type owl:Class ;
+      rdfs:subClassOf :External_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Power_supply
+:Power_supply rdf:type owl:Class ;
+              rdfs:subClassOf :Internal_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#RAM
+:RAM rdf:type owl:Class ;
+     rdfs:subClassOf :Internal_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#SRAM
+:SRAM rdf:type owl:Class ;
+      rdfs:subClassOf :RAM .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#SSD
+:SSD rdf:type owl:Class ;
+     rdfs:subClassOf :Storage_device .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Sound_card
+:Sound_card rdf:type owl:Class ;
+            rdfs:subClassOf :Internal_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Storage_device
+:Storage_device rdf:type owl:Class ;
+                rdfs:subClassOf :Internal_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#USB
+:USB rdf:type owl:Class ;
+     rdfs:subClassOf :Port .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
