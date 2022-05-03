@@ -44,6 +44,20 @@
 #    Data properties
 #################################################################
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#type
+:type rdf:type owl:DatatypeProperty ;
+      rdfs:domain :PC ;
+      rdfs:range [ rdf:type rdfs:Datatype ;
+                   owl:oneOf [ rdf:type rdf:List ;
+                               rdf:first "Desktop" ;
+                               rdf:rest [ rdf:type rdf:List ;
+                                          rdf:first "Laptop" ;
+                                          rdf:rest rdf:nil
+                                        ]
+                             ]
+                 ] .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU_cache
 :CPU_cache rdf:type owl:DatatypeProperty ;
            rdfs:domain :CPU ;
@@ -126,6 +140,61 @@
 #    Classes
 #################################################################
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Camera
+:Camera rdf:type owl:Class ;
+        rdfs:subClassOf :External_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Headphones
+:Headphones rdf:type owl:Class ;
+            rdfs:subClassOf :External_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Keyboard
+:Keyboard rdf:type owl:Class ;
+          rdfs:subClassOf :External_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Microphone
+:Microphone rdf:type owl:Class ;
+            rdfs:subClassOf :External_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Monitor
+:Monitor rdf:type owl:Class ;
+         rdfs:subClassOf :External_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Mouse
+:Mouse rdf:type owl:Class ;
+       rdfs:subClassOf :External_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Operating_system
+:Operating_system rdf:type owl:Class ;
+                  rdfs:subClassOf :Software .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Printer
+:Printer rdf:type owl:Class ;
+         rdfs:subClassOf :External_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Scanner
+:Scanner rdf:type owl:Class ;
+         rdfs:subClassOf :External_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Software
+:Software rdf:type owl:Class ;
+          rdfs:subClassOf :Internal_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Speakers
+:Speakers rdf:type owl:Class ;
+          rdfs:subClassOf :External_element .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU
 :CPU rdf:type owl:Class ;
      rdfs:subClassOf :Internal_element .
@@ -149,6 +218,10 @@
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Desktop
 :Desktop rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty :type ;
+                               owl:hasValue "Desktop"
+                             ] ;
          rdfs:subClassOf :PC ;
          owl:disjointWith :Laptop .
 
@@ -202,6 +275,10 @@
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Laptop
 :Laptop rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty :type ;
+                              owl:hasValue "Laptop"
+                            ] ;
         rdfs:subClassOf :PC .
 
 
