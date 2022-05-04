@@ -44,6 +44,53 @@
 #    Data properties
 #################################################################
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Display_aspect_ratio
+:Display_aspect_ratio rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Display ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Display_panel_type
+:Display_panel_type rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Display ;
+                    rdfs:range [ rdf:type rdfs:Datatype ;
+                                 owl:oneOf [ rdf:type rdf:List ;
+                                             rdf:first "IPS" ;
+                                             rdf:rest [ rdf:type rdf:List ;
+                                                        rdf:first "TN" ;
+                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                   rdf:first "VA" ;
+                                                                   rdf:rest rdf:nil
+                                                                 ]
+                                                      ]
+                                           ]
+                               ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Display_refresh_rate
+:Display_refresh_rate rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Display ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Display_resolution
+:Display_resolution rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Display ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Display_size
+:Display_size rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Display ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Display_view_angle
+:Display_view_angle rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Display ;
+                    rdfs:range xsd:string .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU_cache
 :CPU_cache rdf:type owl:DatatypeProperty ;
            rdfs:domain :CPU ;
@@ -140,72 +187,19 @@
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#ATX_motherboard
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#ATX_motherboard
 :ATX_motherboard rdf:type owl:Class ;
                  rdfs:subClassOf :Motherboard .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#AT_motherboard
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#AT_motherboard
 :AT_motherboard rdf:type owl:Class ;
                 rdfs:subClassOf :Motherboard .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#BTX_motherboard
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#BTX_motherboard
 :BTX_motherboard rdf:type owl:Class ;
                  rdfs:subClassOf :Motherboard .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Cooling_system
-:Cooling_system rdf:type owl:Class ;
-                rdfs:subClassOf :Internal_element .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#LED_monitor
-:LED_monitor rdf:type owl:Class ;
-             rdfs:subClassOf :Display ;
-             owl:disjointWith :OLED_monitor .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#LPX_motherboard
-:LPX_motherboard rdf:type owl:Class ;
-                 rdfs:subClassOf :Motherboard .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Laser_mouse
-:Laser_mouse rdf:type owl:Class ;
-             rdfs:subClassOf :Mouse ;
-             owl:disjointWith :Optical_mouse .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Mechanical_keyboard
-:Mechanical_keyboard rdf:type owl:Class ;
-                     rdfs:subClassOf :Keyboard ;
-                     owl:disjointWith :Membrane_keyboard .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Membrane_keyboard
-:Membrane_keyboard rdf:type owl:Class ;
-                   rdfs:subClassOf :Keyboard .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Mini_ITX_motherboard
-:Mini_ITX_motherboard rdf:type owl:Class ;
-                      rdfs:subClassOf :Motherboard .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#OLED_monitor
-:OLED_monitor rdf:type owl:Class ;
-              rdfs:subClassOf :Display .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Optical_mouse
-:Optical_mouse rdf:type owl:Class ;
-               rdfs:subClassOf :Mouse .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Wireless_component
-:Wireless_component rdf:type owl:Class ;
-                    rdfs:subClassOf :External_element .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU
@@ -221,6 +215,11 @@
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Case
 :Case rdf:type owl:Class ;
       rdfs:subClassOf :External_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Cooling_system
+:Cooling_system rdf:type owl:Class ;
+                rdfs:subClassOf :Internal_element .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#DRAM
@@ -306,6 +305,17 @@
      rdfs:subClassOf :Port .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#LED_monitor
+:LED_monitor rdf:type owl:Class ;
+             rdfs:subClassOf :Display ;
+             owl:disjointWith :OLED_monitor .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#LPX_motherboard
+:LPX_motherboard rdf:type owl:Class ;
+                 rdfs:subClassOf :Motherboard .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Laptop
 :Laptop rdf:type owl:Class ;
         owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -313,6 +323,23 @@
                               owl:hasValue "Laptop"
                             ] ;
         rdfs:subClassOf :PC .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Laser_mouse
+:Laser_mouse rdf:type owl:Class ;
+             rdfs:subClassOf :Mouse ;
+             owl:disjointWith :Optical_mouse .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Mechanical_keyboard
+:Mechanical_keyboard rdf:type owl:Class ;
+                     rdfs:subClassOf :Keyboard ;
+                     owl:disjointWith :Membrane_keyboard .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Membrane_keyboard
+:Membrane_keyboard rdf:type owl:Class ;
+                   rdfs:subClassOf :Keyboard .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Michrophone_port
@@ -323,6 +350,11 @@
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Microphone
 :Microphone rdf:type owl:Class ;
             rdfs:subClassOf :External_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Mini_ITX_motherboard
+:Mini_ITX_motherboard rdf:type owl:Class ;
+                      rdfs:subClassOf :Motherboard .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Motherboard
@@ -340,6 +372,11 @@
                         rdfs:subClassOf :Internal_element .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#OLED_monitor
+:OLED_monitor rdf:type owl:Class ;
+              rdfs:subClassOf :Display .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Operating_system
 :Operating_system rdf:type owl:Class ;
                   rdfs:subClassOf :Software .
@@ -348,6 +385,11 @@
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Optical_drive
 :Optical_drive rdf:type owl:Class ;
                rdfs:subClassOf :Internal_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Optical_mouse
+:Optical_mouse rdf:type owl:Class ;
+               rdfs:subClassOf :Mouse .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#PC
@@ -420,6 +462,11 @@
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#USB
 :USB rdf:type owl:Class ;
      rdfs:subClassOf :Port .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Wireless_component
+:Wireless_component rdf:type owl:Class ;
+                    rdfs:subClassOf :External_element .
 
 
 #################################################################
