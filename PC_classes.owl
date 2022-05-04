@@ -44,20 +44,6 @@
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#type
-:type rdf:type owl:DatatypeProperty ;
-      rdfs:domain :PC ;
-      rdfs:range [ rdf:type rdfs:Datatype ;
-                   owl:oneOf [ rdf:type rdf:List ;
-                               rdf:first "Desktop" ;
-                               rdf:rest [ rdf:type rdf:List ;
-                                          rdf:first "Laptop" ;
-                                          rdf:rest rdf:nil
-                                        ]
-                             ]
-                 ] .
-
-
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU_cache
 :CPU_cache rdf:type owl:DatatypeProperty ;
            rdfs:domain :CPU ;
@@ -136,68 +122,100 @@
                         rdfs:range xsd:integer .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#type
+:type rdf:type owl:DatatypeProperty ;
+      rdfs:domain :PC ;
+      rdfs:range [ rdf:type rdfs:Datatype ;
+                   owl:oneOf [ rdf:type rdf:List ;
+                               rdf:first "Desktop" ;
+                               rdf:rest [ rdf:type rdf:List ;
+                                          rdf:first "Laptop" ;
+                                          rdf:rest rdf:nil
+                                        ]
+                             ]
+                 ] .
+
+
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Camera
-:Camera rdf:type owl:Class ;
-        rdfs:subClassOf :External_element .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#ATX_motherboard
+:ATX_motherboard rdf:type owl:Class ;
+                 rdfs:subClassOf :Motherboard .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Headphones
-:Headphones rdf:type owl:Class ;
-            rdfs:subClassOf :External_element .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#AT_motherboard
+:AT_motherboard rdf:type owl:Class ;
+                rdfs:subClassOf :Motherboard .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Keyboard
-:Keyboard rdf:type owl:Class ;
-          rdfs:subClassOf :External_element .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#BTX_motherboard
+:BTX_motherboard rdf:type owl:Class ;
+                 rdfs:subClassOf :Motherboard .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Microphone
-:Microphone rdf:type owl:Class ;
-            rdfs:subClassOf :External_element .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Cooling_system
+:Cooling_system rdf:type owl:Class ;
+                rdfs:subClassOf :Internal_element .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Monitor
-:Monitor rdf:type owl:Class ;
-         rdfs:subClassOf :External_element .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#LED_monitor
+:LED_monitor rdf:type owl:Class ;
+             rdfs:subClassOf :Display ;
+             owl:disjointWith :OLED_monitor .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Mouse
-:Mouse rdf:type owl:Class ;
-       rdfs:subClassOf :External_element .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#LPX_motherboard
+:LPX_motherboard rdf:type owl:Class ;
+                 rdfs:subClassOf :Motherboard .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Operating_system
-:Operating_system rdf:type owl:Class ;
-                  rdfs:subClassOf :Software .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Laser_mouse
+:Laser_mouse rdf:type owl:Class ;
+             rdfs:subClassOf :Mouse ;
+             owl:disjointWith :Optical_mouse .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Printer
-:Printer rdf:type owl:Class ;
-         rdfs:subClassOf :External_element .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Mechanical_keyboard
+:Mechanical_keyboard rdf:type owl:Class ;
+                     rdfs:subClassOf :Keyboard ;
+                     owl:disjointWith :Membrane_keyboard .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Scanner
-:Scanner rdf:type owl:Class ;
-         rdfs:subClassOf :External_element .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Membrane_keyboard
+:Membrane_keyboard rdf:type owl:Class ;
+                   rdfs:subClassOf :Keyboard .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Software
-:Software rdf:type owl:Class ;
-          rdfs:subClassOf :Internal_element .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Mini_ITX_motherboard
+:Mini_ITX_motherboard rdf:type owl:Class ;
+                      rdfs:subClassOf :Motherboard .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Speakers
-:Speakers rdf:type owl:Class ;
-          rdfs:subClassOf :External_element .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#OLED_monitor
+:OLED_monitor rdf:type owl:Class ;
+              rdfs:subClassOf :Display .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Optical_mouse
+:Optical_mouse rdf:type owl:Class ;
+               rdfs:subClassOf :Mouse .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Wireless_component
+:Wireless_component rdf:type owl:Class ;
+                    rdfs:subClassOf :External_element .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU
 :CPU rdf:type owl:Class ;
      rdfs:subClassOf :Internal_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Camera
+:Camera rdf:type owl:Class ;
+        rdfs:subClassOf :External_element .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Case
@@ -232,6 +250,11 @@
                         owl:disjointWith :Integrated_graphics_card .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Display
+:Display rdf:type owl:Class ;
+         rdfs:subClassOf :External_element .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#External_element
 :External_element rdf:type owl:Class ;
                   rdfs:subClassOf :PC_Element .
@@ -258,6 +281,11 @@
                 rdfs:subClassOf :Port .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Headphones
+:Headphones rdf:type owl:Class ;
+            rdfs:subClassOf :External_element .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Integrated_graphics_card
 :Integrated_graphics_card rdf:type owl:Class ;
                           rdfs:subClassOf :Graphics_card .
@@ -266,6 +294,11 @@
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Internal_element
 :Internal_element rdf:type owl:Class ;
                   rdfs:subClassOf :PC_Element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Keyboard
+:Keyboard rdf:type owl:Class ;
+          rdfs:subClassOf :External_element .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#LAN
@@ -287,14 +320,29 @@
                   rdfs:subClassOf :Port .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Microphone
+:Microphone rdf:type owl:Class ;
+            rdfs:subClassOf :External_element .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Motherboard
 :Motherboard rdf:type owl:Class ;
              rdfs:subClassOf :Internal_element .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Mouse
+:Mouse rdf:type owl:Class ;
+       rdfs:subClassOf :External_element .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Network_interface_card
 :Network_interface_card rdf:type owl:Class ;
                         rdfs:subClassOf :Internal_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Operating_system
+:Operating_system rdf:type owl:Class ;
+                  rdfs:subClassOf :Software .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Optical_drive
@@ -324,6 +372,11 @@
               rdfs:subClassOf :Internal_element .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Printer
+:Printer rdf:type owl:Class ;
+         rdfs:subClassOf :External_element .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#RAM
 :RAM rdf:type owl:Class ;
      rdfs:subClassOf :Internal_element .
@@ -339,9 +392,24 @@
      rdfs:subClassOf :Storage_device .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Scanner
+:Scanner rdf:type owl:Class ;
+         rdfs:subClassOf :External_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Software
+:Software rdf:type owl:Class ;
+          rdfs:subClassOf :Internal_element .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Sound_card
 :Sound_card rdf:type owl:Class ;
             rdfs:subClassOf :Internal_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Speakers
+:Speakers rdf:type owl:Class ;
+          rdfs:subClassOf :External_element .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Storage_device
@@ -352,6 +420,20 @@
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#USB
 :USB rdf:type owl:Class ;
      rdfs:subClassOf :Port .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ATX_motherboard
+                :AT_motherboard
+                :BTX_motherboard
+                :LPX_motherboard
+                :Mini_ITX_motherboard
+              )
+] .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
