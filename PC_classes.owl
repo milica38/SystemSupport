@@ -12,7 +12,7 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#compatibile_with_os
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#compatibile_with_os
 :compatibile_with_os rdf:type owl:ObjectProperty ;
                      rdfs:domain :External_element ;
                      rdfs:range :Operating_system .
@@ -50,369 +50,132 @@
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#CS_max_rotation
-:CS_max_rotation rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :Cooling_system ;
-                 rdfs:range xsd:integer .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Camera_frame_rate
+:Camera_frame_rate rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Camera ;
+                   rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#CS_type
-:CS_type rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Cooling_system ;
-         rdfs:range [ rdf:type rdfs:Datatype ;
-                      owl:oneOf [ rdf:type rdf:List ;
-                                  rdf:first "Air_cooling_system" ;
-                                  rdf:rest [ rdf:type rdf:List ;
-                                             rdf:first "Water_cooling_system" ;
-                                             rdf:rest rdf:nil
-                                           ]
-                                ]
-                    ] .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Camera_has_microphone
+:Camera_has_microphone rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Camera ;
+                       rdfs:range xsd:boolean .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#DDrate_type
-:DDrate_type rdf:type owl:DatatypeProperty ;
-             rdfs:domain :DRAM ;
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Camera_resolution
+:Camera_resolution rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Camera ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Camera_type
+:Camera_type rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Camera ;
              rdfs:range [ rdf:type rdfs:Datatype ;
                           owl:oneOf [ rdf:type rdf:List ;
-                                      rdf:first "DDR" ;
+                                      rdf:first "Built-in" ;
                                       rdf:rest [ rdf:type rdf:List ;
-                                                 rdf:first "DDR2" ;
-                                                 rdf:rest [ rdf:type rdf:List ;
-                                                            rdf:first "DDR3" ;
-                                                            rdf:rest [ rdf:type rdf:List ;
-                                                                       rdf:first "DDR4" ;
-                                                                       rdf:rest [ rdf:type rdf:List ;
-                                                                                  rdf:first "DDR5" ;
-                                                                                  rdf:rest rdf:nil
-                                                                                ]
-                                                                     ]
-                                                          ]
+                                                 rdf:first "Standalone" ;
+                                                 rdf:rest rdf:nil
                                                ]
                                     ]
                         ] .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Display_type
-:Display_type rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Display ;
-              rdfs:range [ rdf:type rdfs:Datatype ;
-                           owl:oneOf [ rdf:type rdf:List ;
-                                       rdf:first "LED" ;
-                                       rdf:rest [ rdf:type rdf:List ;
-                                                  rdf:first "OLED" ;
-                                                  rdf:rest rdf:nil
-                                                ]
-                                     ]
-                         ] .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Keyboard_is_water_resistant
+:Keyboard_is_water_resistant rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :Keyboard ;
+                             rdfs:range xsd:boolean .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Graphics_card_type
-:Graphics_card_type rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :Graphics_card ;
-                    rdfs:range [ rdf:type rdfs:Datatype ;
-                                 owl:oneOf [ rdf:type rdf:List ;
-                                             rdf:first "Discrete" ;
-                                             rdf:rest [ rdf:type rdf:List ;
-                                                        rdf:first "Integrated" ;
-                                                        rdf:rest rdf:nil
-                                                      ]
-                                           ]
-                               ] .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Keyboard_is_wired
+:Keyboard_is_wired rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Keyboard ;
+                   rdfs:range xsd:boolean .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#HDD_buffer_size
-:HDD_buffer_size rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :HDD ;
-                 rdfs:range xsd:string .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Mouse_DPI
+:Mouse_DPI rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Mouse ;
+           rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#HDD_interface
-:HDD_interface rdf:type owl:DatatypeProperty ;
-               rdfs:domain :HDD ;
-               rdfs:range [ rdf:type rdfs:Datatype ;
-                            owl:oneOf [ rdf:type rdf:List ;
-                                        rdf:first "ATA" ;
-                                        rdf:rest [ rdf:type rdf:List ;
-                                                   rdf:first "SAS" ;
-                                                   rdf:rest [ rdf:type rdf:List ;
-                                                              rdf:first "SATA" ;
-                                                              rdf:rest rdf:nil
-                                                            ]
-                                                 ]
-                                      ]
-                          ] .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Mouse_number_of_buttons
+:Mouse_number_of_buttons rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :Mouse ;
+                         rdfs:range xsd:integer .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#HDD_physical_size
-:HDD_physical_size rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :HDD ;
-                   rdfs:range [ rdf:type rdfs:Datatype ;
-                                owl:oneOf [ rdf:type rdf:List ;
-                                            rdf:first "2.5inch" ;
-                                            rdf:rest [ rdf:type rdf:List ;
-                                                       rdf:first "3.5inch" ;
-                                                       rdf:rest rdf:nil
-                                                     ]
-                                          ]
-                              ] .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#HDD_rotation_speed
-:HDD_rotation_speed rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :HDD ;
-                    rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Keyboard_type
-:Keyboard_type rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Keyboard ;
-               rdfs:range [ rdf:type rdfs:Datatype ;
-                            owl:oneOf [ rdf:type rdf:List ;
-                                        rdf:first "Mechanical" ;
-                                        rdf:rest [ rdf:type rdf:List ;
-                                                   rdf:first "Membrane" ;
-                                                   rdf:rest rdf:nil
-                                                 ]
-                                      ]
-                          ] .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Motherboard_DIMM
-:Motherboard_DIMM rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Motherboard ;
-                  rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Motherboard_PCI_slots
-:Motherboard_PCI_slots rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :Motherboard ;
-                       rdfs:range [ rdf:type rdfs:Datatype ;
-                                    owl:oneOf [ rdf:type rdf:List ;
-                                                rdf:first "32bit" ;
-                                                rdf:rest [ rdf:type rdf:List ;
-                                                           rdf:first "64bit" ;
-                                                           rdf:rest [ rdf:type rdf:List ;
-                                                                      rdf:first "PCI-Express" ;
-                                                                      rdf:rest rdf:nil
-                                                                    ]
-                                                         ]
-                                              ]
-                                  ] .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Motherboard_SATA_connections
-:Motherboard_SATA_connections rdf:type owl:DatatypeProperty ;
-                              rdfs:domain :Motherboard ;
-                              rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Motherboard_USB_slots
-:Motherboard_USB_slots rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :Motherboard ;
-                       rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Motherboard_chipset
-:Motherboard_chipset rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :Motherboard ;
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Sound_card_channels
+:Sound_card_channels rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Sound_card ;
                      rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Motherboard_form_factor
-:Motherboard_form_factor rdf:type owl:DatatypeProperty ;
-                         rdfs:domain :Motherboard ;
-                         rdfs:range [ rdf:type rdfs:Datatype ;
-                                      owl:oneOf [ rdf:type rdf:List ;
-                                                  rdf:first "ATX" ;
-                                                  rdf:rest [ rdf:type rdf:List ;
-                                                             rdf:first "Micro-ATX" ;
-                                                             rdf:rest [ rdf:type rdf:List ;
-                                                                        rdf:first "Mini-ITX" ;
-                                                                        rdf:rest [ rdf:type rdf:List ;
-                                                                                   rdf:first "Mostly-ATX" ;
-                                                                                   rdf:rest [ rdf:type rdf:List ;
-                                                                                              rdf:first "Nano-ITX" ;
-                                                                                              rdf:rest [ rdf:type rdf:List ;
-                                                                                                         rdf:first "Pico-ITX" ;
-                                                                                                         rdf:rest rdf:nil
-                                                                                                       ]
-                                                                                            ]
-                                                                                 ]
-                                                                      ]
-                                                           ]
-                                                ]
-                                    ] .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Sound_card_chipset
+:Sound_card_chipset rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Sound_card ;
+                    rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Motherboard_processor_socket
-:Motherboard_processor_socket rdf:type owl:DatatypeProperty ;
-                              rdfs:domain :Motherboard ;
-                              rdfs:range [ rdf:type rdfs:Datatype ;
-                                           owl:oneOf [ rdf:type rdf:List ;
-                                                       rdf:first "BGA" ;
-                                                       rdf:rest [ rdf:type rdf:List ;
-                                                                  rdf:first "LGA" ;
-                                                                  rdf:rest [ rdf:type rdf:List ;
-                                                                             rdf:first "PGA" ;
-                                                                             rdf:rest rdf:nil
-                                                                           ]
-                                                                ]
-                                                     ]
-                                         ] .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Sound_card_sampling_frequency
+:Sound_card_sampling_frequency rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :Sound_card ;
+                               rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Mouse_type
-:Mouse_type rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Mouse ;
-            rdfs:range [ rdf:type rdfs:Datatype ;
-                         owl:oneOf [ rdf:type rdf:List ;
-                                     rdf:first "Laser" ;
-                                     rdf:rest [ rdf:type rdf:List ;
-                                                rdf:first "Optical" ;
-                                                rdf:rest rdf:nil
-                                              ]
-                                   ]
-                       ] .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Sound_card_signal_to_noise_ratio
+:Sound_card_signal_to_noise_ratio rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain :Sound_card ;
+                                  rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Operating_system_type
-:Operating_system_type rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :Operating_system ;
-                       rdfs:range [ rdf:type rdfs:Datatype ;
-                                    owl:oneOf [ rdf:type rdf:List ;
-                                                rdf:first "32bit" ;
-                                                rdf:rest [ rdf:type rdf:List ;
-                                                           rdf:first "64bit" ;
-                                                           rdf:rest rdf:nil
-                                                         ]
-                                              ]
-                                  ] .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#PC_model
-:PC_model rdf:type owl:DatatypeProperty ;
-          rdfs:domain [ rdf:type owl:Class ;
-                        owl:unionOf ( :Desktop
-                                      :Laptop
-                                    )
-                      ] ;
-          rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#PC_type
-:PC_type rdf:type owl:DatatypeProperty ;
-         rdfs:domain :PC ;
-         rdfs:range [ rdf:type rdfs:Datatype ;
-                      owl:oneOf [ rdf:type rdf:List ;
-                                  rdf:first "Desktop" ;
-                                  rdf:rest [ rdf:type rdf:List ;
-                                             rdf:first "Laptop" ;
-                                             rdf:rest rdf:nil
-                                           ]
-                                ]
-                    ] .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Port_type
-:Port_type rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Port ;
-           rdfs:range [ rdf:type rdfs:Datatype ;
-                        owl:oneOf [ rdf:type rdf:List ;
-                                    rdf:first "DVI" ;
-                                    rdf:rest [ rdf:type rdf:List ;
-                                               rdf:first "HDMI" ;
-                                               rdf:rest [ rdf:type rdf:List ;
-                                                          rdf:first "Headphone" ;
-                                                          rdf:rest [ rdf:type rdf:List ;
-                                                                     rdf:first "LAN" ;
-                                                                     rdf:rest [ rdf:type rdf:List ;
-                                                                                rdf:first "Microphone" ;
-                                                                                rdf:rest [ rdf:type rdf:List ;
-                                                                                           rdf:first "USB" ;
-                                                                                           rdf:rest rdf:nil
-                                                                                         ]
-                                                                              ]
-                                                                   ]
-                                                        ]
-                                             ]
-                                  ]
-                      ] .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#RAM_cas_latency
-:RAM_cas_latency rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :RAM ;
-                 rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#RAM_clock_speed
-:RAM_clock_speed rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :RAM ;
-                 rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#RAM_size
-:RAM_size rdf:type owl:DatatypeProperty ;
-          rdfs:domain :RAM ;
-          rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#RAM_type
-:RAM_type rdf:type owl:DatatypeProperty ;
-          rdfs:domain :RAM ;
-          rdfs:range [ rdf:type rdfs:Datatype ;
-                       owl:oneOf [ rdf:type rdf:List ;
-                                   rdf:first "DRAM" ;
-                                   rdf:rest [ rdf:type rdf:List ;
-                                              rdf:first "SRAM" ;
-                                              rdf:rest rdf:nil
-                                            ]
-                                 ]
-                     ] .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#SSD_read_speed
-:SSD_read_speed rdf:type owl:DatatypeProperty ;
-                rdfs:domain :SSD ;
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#is_produced_by
+:is_produced_by rdf:type owl:DatatypeProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :PC
+                                            :PC_Element
+                                          )
+                            ] ;
                 rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#SSD_write_speed
-:SSD_write_speed rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :SSD ;
-                 rdfs:range xsd:string .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#lenght
+:lenght rdf:type owl:DatatypeProperty ;
+        rdfs:domain [ rdf:type owl:Class ;
+                      owl:unionOf ( :Keyboard
+                                    :Mouse
+                                  )
+                    ] ;
+        rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Storage_capacity
-:Storage_capacity rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Storage_device ;
-                  rdfs:range xsd:string .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#price
+:price rdf:type owl:DatatypeProperty ;
+       rdfs:domain :PC_Element ;
+       rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Storage_device_type
-:Storage_device_type rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :Storage_device ;
-                     rdfs:range [ rdf:type rdfs:Datatype ;
-                                  owl:oneOf [ rdf:type rdf:List ;
-                                              rdf:first "HDD" ;
-                                              rdf:rest [ rdf:type rdf:List ;
-                                                         rdf:first "SDD" ;
-                                                         rdf:rest rdf:nil
-                                                       ]
-                                            ]
-                                ] .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#weight
+:weight rdf:type owl:DatatypeProperty ;
+        rdfs:domain [ rdf:type owl:Class ;
+                      owl:unionOf ( :Case
+                                    :Keyboard
+                                    :Laptop
+                                    :Mouse
+                                  )
+                    ] ;
+        rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_a_name
-:has_a_name rdf:type owl:DatatypeProperty ;
-            rdfs:domain [ rdf:type owl:Class ;
-                          owl:unionOf ( :Brand
-                                        :PC
-                                        :PC_Element
-                                      )
-                        ] ;
-            rdfs:range xsd:string .
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#width
+:width rdf:type owl:DatatypeProperty ;
+       rdfs:domain [ rdf:type owl:Class ;
+                     owl:unionOf ( :External_element
+                                   :Laptop
+                                 )
+                   ] ;
+       rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU_cache
@@ -457,6 +220,49 @@
                    rdfs:range xsd:integer .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CS_max_rotation
+:CS_max_rotation rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Cooling_system ;
+                 rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CS_type
+:CS_type rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Cooling_system ;
+         rdfs:range [ rdf:type rdfs:Datatype ;
+                      owl:oneOf [ rdf:type rdf:List ;
+                                  rdf:first "Air_cooling_system" ;
+                                  rdf:rest [ rdf:type rdf:List ;
+                                             rdf:first "Water_cooling_system" ;
+                                             rdf:rest rdf:nil
+                                           ]
+                                ]
+                    ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#DDrate_type
+:DDrate_type rdf:type owl:DatatypeProperty ;
+             rdfs:domain :DRAM ;
+             rdfs:range [ rdf:type rdfs:Datatype ;
+                          owl:oneOf [ rdf:type rdf:List ;
+                                      rdf:first "DDR" ;
+                                      rdf:rest [ rdf:type rdf:List ;
+                                                 rdf:first "DDR2" ;
+                                                 rdf:rest [ rdf:type rdf:List ;
+                                                            rdf:first "DDR3" ;
+                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                       rdf:first "DDR4" ;
+                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                  rdf:first "DDR5" ;
+                                                                                  rdf:rest rdf:nil
+                                                                                ]
+                                                                     ]
+                                                          ]
+                                               ]
+                                    ]
+                        ] .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Display_aspect_ratio
 :Display_aspect_ratio rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Display ;
@@ -496,6 +302,20 @@
 :Display_size rdf:type owl:DatatypeProperty ;
               rdfs:domain :Display ;
               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Display_type
+:Display_type rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Display ;
+              rdfs:range [ rdf:type rdfs:Datatype ;
+                           owl:oneOf [ rdf:type rdf:List ;
+                                       rdf:first "LED" ;
+                                       rdf:rest [ rdf:type rdf:List ;
+                                                  rdf:first "OLED" ;
+                                                  rdf:rest rdf:nil
+                                                ]
+                                     ]
+                         ] .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Display_view_angle
@@ -540,92 +360,317 @@
                         rdfs:range xsd:integer .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Graphics_card_type
+:Graphics_card_type rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Graphics_card ;
+                    rdfs:range [ rdf:type rdfs:Datatype ;
+                                 owl:oneOf [ rdf:type rdf:List ;
+                                             rdf:first "Discrete" ;
+                                             rdf:rest [ rdf:type rdf:List ;
+                                                        rdf:first "Integrated" ;
+                                                        rdf:rest rdf:nil
+                                                      ]
+                                           ]
+                               ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#HDD_buffer_size
+:HDD_buffer_size rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :HDD ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#HDD_interface
+:HDD_interface rdf:type owl:DatatypeProperty ;
+               rdfs:domain :HDD ;
+               rdfs:range [ rdf:type rdfs:Datatype ;
+                            owl:oneOf [ rdf:type rdf:List ;
+                                        rdf:first "ATA" ;
+                                        rdf:rest [ rdf:type rdf:List ;
+                                                   rdf:first "SAS" ;
+                                                   rdf:rest [ rdf:type rdf:List ;
+                                                              rdf:first "SATA" ;
+                                                              rdf:rest rdf:nil
+                                                            ]
+                                                 ]
+                                      ]
+                          ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#HDD_physical_size
+:HDD_physical_size rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :HDD ;
+                   rdfs:range [ rdf:type rdfs:Datatype ;
+                                owl:oneOf [ rdf:type rdf:List ;
+                                            rdf:first "2.5inch" ;
+                                            rdf:rest [ rdf:type rdf:List ;
+                                                       rdf:first "3.5inch" ;
+                                                       rdf:rest rdf:nil
+                                                     ]
+                                          ]
+                              ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#HDD_rotation_speed
+:HDD_rotation_speed rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :HDD ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Keyboard_type
+:Keyboard_type rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Keyboard ;
+               rdfs:range [ rdf:type rdfs:Datatype ;
+                            owl:oneOf [ rdf:type rdf:List ;
+                                        rdf:first "Mechanical" ;
+                                        rdf:rest [ rdf:type rdf:List ;
+                                                   rdf:first "Membrane" ;
+                                                   rdf:rest rdf:nil
+                                                 ]
+                                      ]
+                          ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Motherboard_DIMM
+:Motherboard_DIMM rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Motherboard ;
+                  rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Motherboard_PCI_slots
+:Motherboard_PCI_slots rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Motherboard ;
+                       rdfs:range [ rdf:type rdfs:Datatype ;
+                                    owl:oneOf [ rdf:type rdf:List ;
+                                                rdf:first "32bit" ;
+                                                rdf:rest [ rdf:type rdf:List ;
+                                                           rdf:first "64bit" ;
+                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                      rdf:first "PCI-Express" ;
+                                                                      rdf:rest rdf:nil
+                                                                    ]
+                                                         ]
+                                              ]
+                                  ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Motherboard_SATA_connections
+:Motherboard_SATA_connections rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :Motherboard ;
+                              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Motherboard_USB_slots
+:Motherboard_USB_slots rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Motherboard ;
+                       rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Motherboard_chipset
+:Motherboard_chipset rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Motherboard ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Motherboard_form_factor
+:Motherboard_form_factor rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :Motherboard ;
+                         rdfs:range [ rdf:type rdfs:Datatype ;
+                                      owl:oneOf [ rdf:type rdf:List ;
+                                                  rdf:first "ATX" ;
+                                                  rdf:rest [ rdf:type rdf:List ;
+                                                             rdf:first "Micro-ATX" ;
+                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                        rdf:first "Mini-ITX" ;
+                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                   rdf:first "Mostly-ATX" ;
+                                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                                              rdf:first "Nano-ITX" ;
+                                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                                         rdf:first "Pico-ITX" ;
+                                                                                                         rdf:rest rdf:nil
+                                                                                                       ]
+                                                                                            ]
+                                                                                 ]
+                                                                      ]
+                                                           ]
+                                                ]
+                                    ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Motherboard_processor_socket
+:Motherboard_processor_socket rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :Motherboard ;
+                              rdfs:range [ rdf:type rdfs:Datatype ;
+                                           owl:oneOf [ rdf:type rdf:List ;
+                                                       rdf:first "BGA" ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first "LGA" ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first "PGA" ;
+                                                                             rdf:rest rdf:nil
+                                                                           ]
+                                                                ]
+                                                     ]
+                                         ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Mouse_type
+:Mouse_type rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Mouse ;
+            rdfs:range [ rdf:type rdfs:Datatype ;
+                         owl:oneOf [ rdf:type rdf:List ;
+                                     rdf:first "Laser" ;
+                                     rdf:rest [ rdf:type rdf:List ;
+                                                rdf:first "Optical" ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                       ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Operating_system_type
+:Operating_system_type rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Operating_system ;
+                       rdfs:range [ rdf:type rdfs:Datatype ;
+                                    owl:oneOf [ rdf:type rdf:List ;
+                                                rdf:first "32bit" ;
+                                                rdf:rest [ rdf:type rdf:List ;
+                                                           rdf:first "64bit" ;
+                                                           rdf:rest rdf:nil
+                                                         ]
+                                              ]
+                                  ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#PC_model
+:PC_model rdf:type owl:DatatypeProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Desktop
+                                      :Laptop
+                                    )
+                      ] ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#PC_type
+:PC_type rdf:type owl:DatatypeProperty ;
+         rdfs:domain :PC ;
+         rdfs:range [ rdf:type rdfs:Datatype ;
+                      owl:oneOf [ rdf:type rdf:List ;
+                                  rdf:first "Desktop" ;
+                                  rdf:rest [ rdf:type rdf:List ;
+                                             rdf:first "Laptop" ;
+                                             rdf:rest rdf:nil
+                                           ]
+                                ]
+                    ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Port_type
+:Port_type rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Port ;
+           rdfs:range [ rdf:type rdfs:Datatype ;
+                        owl:oneOf [ rdf:type rdf:List ;
+                                    rdf:first "DVI" ;
+                                    rdf:rest [ rdf:type rdf:List ;
+                                               rdf:first "HDMI" ;
+                                               rdf:rest [ rdf:type rdf:List ;
+                                                          rdf:first "Headphone" ;
+                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                     rdf:first "LAN" ;
+                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                rdf:first "Microphone" ;
+                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                           rdf:first "USB" ;
+                                                                                           rdf:rest rdf:nil
+                                                                                         ]
+                                                                              ]
+                                                                   ]
+                                                        ]
+                                             ]
+                                  ]
+                      ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#RAM_cas_latency
+:RAM_cas_latency rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :RAM ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#RAM_clock_speed
+:RAM_clock_speed rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :RAM ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#RAM_size
+:RAM_size rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RAM ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#RAM_type
+:RAM_type rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RAM ;
+          rdfs:range [ rdf:type rdfs:Datatype ;
+                       owl:oneOf [ rdf:type rdf:List ;
+                                   rdf:first "DRAM" ;
+                                   rdf:rest [ rdf:type rdf:List ;
+                                              rdf:first "SRAM" ;
+                                              rdf:rest rdf:nil
+                                            ]
+                                 ]
+                     ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#SSD_read_speed
+:SSD_read_speed rdf:type owl:DatatypeProperty ;
+                rdfs:domain :SSD ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#SSD_write_speed
+:SSD_write_speed rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :SSD ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Storage_capacity
+:Storage_capacity rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Storage_device ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Storage_device_type
+:Storage_device_type rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Storage_device ;
+                     rdfs:range [ rdf:type rdfs:Datatype ;
+                                  owl:oneOf [ rdf:type rdf:List ;
+                                              rdf:first "HDD" ;
+                                              rdf:rest [ rdf:type rdf:List ;
+                                                         rdf:first "SDD" ;
+                                                         rdf:rest rdf:nil
+                                                       ]
+                                            ]
+                                ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#has_a_name
+:has_a_name rdf:type owl:DatatypeProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Brand
+                                        :PC
+                                        :PC_Element
+                                      )
+                        ] ;
+            rdfs:range xsd:string .
+
+
 #################################################################
 #    Classes
 #################################################################
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Air_cooling_system
-:Air_cooling_system rdf:type owl:Class ;
-                    owl:equivalentClass [ rdf:type owl:Restriction ;
-                                          owl:onProperty :CS_type ;
-                                          owl:hasValue "Air_cooling_system"
-                                        ] ;
-                    rdfs:subClassOf :Cooling_system ;
-                    owl:disjointWith :Water_cooling_system .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#DDR
-:DDR rdf:type owl:Class ;
-     owl:equivalentClass [ rdf:type owl:Restriction ;
-                           owl:onProperty :DDrate_type ;
-                           owl:hasValue "DDR"
-                         ] ;
-     rdfs:subClassOf :DRAM .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#DDR2
-:DDR2 rdf:type owl:Class ;
-      owl:equivalentClass [ rdf:type owl:Restriction ;
-                            owl:onProperty :DDrate_type ;
-                            owl:hasValue "DDR2"
-                          ] ;
-      rdfs:subClassOf :DRAM .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#DDR3
-:DDR3 rdf:type owl:Class ;
-      owl:equivalentClass [ rdf:type owl:Restriction ;
-                            owl:onProperty :DDrate_type ;
-                            owl:hasValue "DDR3"
-                          ] ;
-      rdfs:subClassOf :DRAM .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#DDR4
-:DDR4 rdf:type owl:Class ;
-      owl:equivalentClass [ rdf:type owl:Restriction ;
-                            owl:onProperty :DDrate_type ;
-                            owl:hasValue "DDR4"
-                          ] ;
-      rdfs:subClassOf :DRAM .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#DDR5
-:DDR5 rdf:type owl:Class ;
-      owl:equivalentClass [ rdf:type owl:Restriction ;
-                            owl:onProperty :DDrate_type ;
-                            owl:hasValue "DDR5"
-                          ] ;
-      rdfs:subClassOf :DRAM .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#OS_32bit
-:OS_32bit rdf:type owl:Class ;
-          owl:equivalentClass [ rdf:type owl:Restriction ;
-                                owl:onProperty :Operating_system_type ;
-                                owl:hasValue "32bit"
-                              ] ;
-          rdfs:subClassOf :Operating_system ;
-          owl:disjointWith :OS_64bit .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#OS_64bit
-:OS_64bit rdf:type owl:Class ;
-          owl:equivalentClass [ rdf:type owl:Restriction ;
-                                owl:onProperty :Operating_system_type ;
-                                owl:hasValue "64bit"
-                              ] ;
-          rdfs:subClassOf :Operating_system .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Water_cooling_system
-:Water_cooling_system rdf:type owl:Class ;
-                      owl:equivalentClass [ rdf:type owl:Restriction ;
-                                            owl:onProperty :CS_type ;
-                                            owl:hasValue "Water_cooling_system"
-                                          ] ;
-                      rdfs:subClassOf :Cooling_system .
-
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#ATX_motherboard
 :ATX_motherboard rdf:type owl:Class ;
@@ -643,6 +688,16 @@
                                       owl:hasValue "AT_motherboard"
                                     ] ;
                 rdfs:subClassOf :Motherboard .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Air_cooling_system
+:Air_cooling_system rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty :CS_type ;
+                                          owl:hasValue "Air_cooling_system"
+                                        ] ;
+                    rdfs:subClassOf :Cooling_system ;
+                    owl:disjointWith :Water_cooling_system .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#BTX_motherboard
@@ -681,6 +736,51 @@
                                                   )
                                     ] ;
                 rdfs:subClassOf :Internal_element .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#DDR
+:DDR rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :DDrate_type ;
+                           owl:hasValue "DDR"
+                         ] ;
+     rdfs:subClassOf :DRAM .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#DDR2
+:DDR2 rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :DDrate_type ;
+                            owl:hasValue "DDR2"
+                          ] ;
+      rdfs:subClassOf :DRAM .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#DDR3
+:DDR3 rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :DDrate_type ;
+                            owl:hasValue "DDR3"
+                          ] ;
+      rdfs:subClassOf :DRAM .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#DDR4
+:DDR4 rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :DDrate_type ;
+                            owl:hasValue "DDR4"
+                          ] ;
+      rdfs:subClassOf :DRAM .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#DDR5
+:DDR5 rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :DDrate_type ;
+                            owl:hasValue "DDR5"
+                          ] ;
+      rdfs:subClassOf :DRAM .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#DRAM
@@ -930,6 +1030,25 @@
               rdfs:subClassOf :Display .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#OS_32bit
+:OS_32bit rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty :Operating_system_type ;
+                                owl:hasValue "32bit"
+                              ] ;
+          rdfs:subClassOf :Operating_system ;
+          owl:disjointWith :OS_64bit .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#OS_64bit
+:OS_64bit rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty :Operating_system_type ;
+                                owl:hasValue "64bit"
+                              ] ;
+          rdfs:subClassOf :Operating_system .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Operating_system
 :Operating_system rdf:type owl:Class ;
                   owl:equivalentClass [ rdf:type owl:Class ;
@@ -1053,6 +1172,15 @@
      rdfs:subClassOf :Port .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Water_cooling_system
+:Water_cooling_system rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                            owl:onProperty :CS_type ;
+                                            owl:hasValue "Water_cooling_system"
+                                          ] ;
+                      rdfs:subClassOf :Cooling_system .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Wireless_component
 :Wireless_component rdf:type owl:Class ;
                     rdfs:subClassOf :External_element .
@@ -1061,16 +1189,6 @@
 #################################################################
 #    General axioms
 #################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :DDR
-                :DDR2
-                :DDR3
-                :DDR4
-                :DDR5
-              )
-] .
-
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( :ATX_motherboard
@@ -1111,6 +1229,16 @@
                 :Scanner
                 :Speakers
                 :Wireless_component
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DDR
+                :DDR2
+                :DDR3
+                :DDR4
+                :DDR5
               )
 ] .
 
