@@ -12,6 +12,153 @@
 #    Object Properties
 #################################################################
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_RAM
+:has_RAM rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :has_component ;
+         rdfs:domain :PC ;
+         rdfs:range :RAM .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_camera
+:has_camera rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :has_component ;
+            rdfs:domain :PC ;
+            rdfs:range :Camera .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_case
+:has_case rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :has_component ;
+          rdfs:domain :Desktop ;
+          rdfs:range :Case .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_cooling_system
+:has_cooling_system rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :has_component ;
+                    rdfs:domain :PC ;
+                    rdfs:range :Cooling_system .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_cpu
+:has_cpu rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :has_component ;
+         rdfs:domain :PC ;
+         rdfs:range :CPU .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_display
+:has_display rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :has_component ;
+             rdfs:domain :PC ;
+             rdfs:range :Display .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_graphics_card
+:has_graphics_card rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :has_component ;
+                   rdfs:domain :PC ;
+                   rdfs:range :Graphics_card .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_headphones
+:has_headphones rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :has_component ;
+                rdfs:domain :PC ;
+                rdfs:range :Headphones .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_keyboard
+:has_keyboard rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :has_component ;
+              rdfs:domain :PC ;
+              rdfs:range :Keyboard .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_microphone
+:has_microphone rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :has_component ;
+                rdfs:domain :PC ;
+                rdfs:range :Microphone .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_motherboard
+:has_motherboard rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :has_component ;
+                 rdfs:domain :PC ;
+                 rdfs:range :Motherboard .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_mouse
+:has_mouse rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :has_component ;
+           rdfs:domain :PC ;
+           rdfs:range :Mouse .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_network_interface
+:has_network_interface rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :has_component ;
+                       rdfs:domain :PC ;
+                       rdfs:range :Network_interface_card .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_port
+:has_port rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :has_component ;
+          rdfs:domain :PC ;
+          rdfs:range :Port .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_power_supply
+:has_power_supply rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :has_component ;
+                  rdfs:domain :PC ;
+                  rdfs:range :Power_supply .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_printer
+:has_printer rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :has_component ;
+             rdfs:domain :PC ;
+             rdfs:range :Printer .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_scanner
+:has_scanner rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :has_component ;
+             rdfs:domain :PC ;
+             rdfs:range :Scanner .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_software
+:has_software rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :has_component ;
+              rdfs:domain :PC ;
+              rdfs:range :Software .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_sound_card
+:has_sound_card rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :has_component ;
+                rdfs:domain :PC ;
+                rdfs:range :Sound_card .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_speakers
+:has_speakers rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :has_component ;
+              rdfs:domain :PC ;
+              rdfs:range :Speakers .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#has_storage_device
+:has_storage_device rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :has_component ;
+                    rdfs:domain :PC ;
+                    rdfs:range :Storage_device .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#compatibile_with_os
 :compatibile_with_os rdf:type owl:ObjectProperty ;
                      rdfs:domain :External_element ;
@@ -104,6 +251,12 @@
 :Mouse_number_of_buttons rdf:type owl:DatatypeProperty ;
                          rdfs:domain :Mouse ;
                          rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Mouse_polling_rate
+:Mouse_polling_rate rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Mouse ;
+                    rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Sound_card_channels
