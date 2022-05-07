@@ -70,6 +70,29 @@
                     ] .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#DDrate_type
+:DDrate_type rdf:type owl:DatatypeProperty ;
+             rdfs:domain :DRAM ;
+             rdfs:range [ rdf:type rdfs:Datatype ;
+                          owl:oneOf [ rdf:type rdf:List ;
+                                      rdf:first "DDR" ;
+                                      rdf:rest [ rdf:type rdf:List ;
+                                                 rdf:first "DDR2" ;
+                                                 rdf:rest [ rdf:type rdf:List ;
+                                                            rdf:first "DDR3" ;
+                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                       rdf:first "DDR4" ;
+                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                  rdf:first "DDR5" ;
+                                                                                  rdf:rest rdf:nil
+                                                                                ]
+                                                                     ]
+                                                          ]
+                                               ]
+                                    ]
+                        ] .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Display_type
 :Display_type rdf:type owl:DatatypeProperty ;
               rdfs:domain :Display ;
@@ -96,6 +119,49 @@
                                                       ]
                                            ]
                                ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#HDD_buffer_size
+:HDD_buffer_size rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :HDD ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#HDD_interface
+:HDD_interface rdf:type owl:DatatypeProperty ;
+               rdfs:domain :HDD ;
+               rdfs:range [ rdf:type rdfs:Datatype ;
+                            owl:oneOf [ rdf:type rdf:List ;
+                                        rdf:first "ATA" ;
+                                        rdf:rest [ rdf:type rdf:List ;
+                                                   rdf:first "SAS" ;
+                                                   rdf:rest [ rdf:type rdf:List ;
+                                                              rdf:first "SATA" ;
+                                                              rdf:rest rdf:nil
+                                                            ]
+                                                 ]
+                                      ]
+                          ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#HDD_physical_size
+:HDD_physical_size rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :HDD ;
+                   rdfs:range [ rdf:type rdfs:Datatype ;
+                                owl:oneOf [ rdf:type rdf:List ;
+                                            rdf:first "2.5inch" ;
+                                            rdf:rest [ rdf:type rdf:List ;
+                                                       rdf:first "3.5inch" ;
+                                                       rdf:rest rdf:nil
+                                                     ]
+                                          ]
+                              ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#HDD_rotation_speed
+:HDD_rotation_speed rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :HDD ;
+                    rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Keyboard_type
@@ -274,6 +340,24 @@
                       ] .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#RAM_cas_latency
+:RAM_cas_latency rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :RAM ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#RAM_clock_speed
+:RAM_clock_speed rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :RAM ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#RAM_size
+:RAM_size rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RAM ;
+          rdfs:range xsd:string .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#RAM_type
 :RAM_type rdf:type owl:DatatypeProperty ;
           rdfs:domain :RAM ;
@@ -286,6 +370,24 @@
                                             ]
                                  ]
                      ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#SSD_read_speed
+:SSD_read_speed rdf:type owl:DatatypeProperty ;
+                rdfs:domain :SSD ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#SSD_write_speed
+:SSD_write_speed rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :SSD ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Storage_capacity
+:Storage_capacity rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Storage_device ;
+                  rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Storage_device_type
@@ -450,6 +552,51 @@
                                         ] ;
                     rdfs:subClassOf :Cooling_system ;
                     owl:disjointWith :Water_cooling_system .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#DDR
+:DDR rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :DDrate_type ;
+                           owl:hasValue "DDR"
+                         ] ;
+     rdfs:subClassOf :DRAM .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#DDR2
+:DDR2 rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :DDrate_type ;
+                            owl:hasValue "DDR2"
+                          ] ;
+      rdfs:subClassOf :DRAM .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#DDR3
+:DDR3 rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :DDrate_type ;
+                            owl:hasValue "DDR3"
+                          ] ;
+      rdfs:subClassOf :DRAM .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#DDR4
+:DDR4 rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :DDrate_type ;
+                            owl:hasValue "DDR4"
+                          ] ;
+      rdfs:subClassOf :DRAM .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#DDR5
+:DDR5 rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :DDrate_type ;
+                            owl:hasValue "DDR5"
+                          ] ;
+      rdfs:subClassOf :DRAM .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#OS_32bit
@@ -817,12 +964,7 @@
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#PC_Element
-:PC_Element rdf:type owl:Class ;
-            owl:equivalentClass [ rdf:type owl:Class ;
-                                  owl:unionOf ( :External_element
-                                                :Internal_element
-                                              )
-                                ] .
+:PC_Element rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Port
@@ -851,11 +993,6 @@
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#RAM
 :RAM rdf:type owl:Class ;
-     owl:equivalentClass [ rdf:type owl:Class ;
-                           owl:unionOf ( :DRAM
-                                         :SRAM
-                                       )
-                         ] ;
      rdfs:subClassOf :Internal_element .
 
 
@@ -924,6 +1061,16 @@
 #################################################################
 #    General axioms
 #################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DDR
+                :DDR2
+                :DDR3
+                :DDR4
+                :DDR5
+              )
+] .
+
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( :ATX_motherboard
