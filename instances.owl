@@ -256,6 +256,14 @@
 :RAM_TRANSCEND_JM2666HLH-4G_DDR4_4GB_2666MHz rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7LN256HMJP-000H1_Samsung_PM871a_Series_256GB_TLC_SATA_6Gbps_2.5-inch
+:SSD_MZ7LN256HMJP-000H1_Samsung_PM871a_Series_256GB_TLC_SATA_6Gbps_2.5-inch rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZVLB1T0HBLR-00007_Samsung_PM981a_1TB_PCI_Express_Gen3_x4_M.2
+:SSD_MZVLB1T0HBLR-00007_Samsung_PM981a_1TB_PCI_Express_Gen3_x4_M.2 rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_FAST_ASIA_FAST_ASIA_USB_virtual_7.1_zvučna_karta
 :Sound_card_FAST_ASIA_FAST_ASIA_USB_virtual_7.1_zvučna_karta rdf:type owl:NamedIndividual .
 
@@ -266,6 +274,30 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_INTEX_ZVUCNA_KARTICA_SB_CMI_8738_5.1
 :Sound_card_INTEX_ZVUCNA_KARTICA_SB_CMI_8738_5.1 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_2TB_Internal_Hard_Drive_HDD_–_3.5_Inch_SATA_6Gb/s_7200_RPM_256MB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_2TB_Internal_Hard_Drive_HDD_–_3.5_Inch_SATA_6Gb/s_7200_RPM_256MB> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_4TB_Internal_Hard_Drive_HDD_–_3.5_Inch_Sata_6_Gb/s_5400_RPM_256MB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_4TB_Internal_Hard_Drive_HDD_–_3.5_Inch_Sata_6_Gb/s_5400_RPM_256MB> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_8TB_Internal_Hard_Drive_HDD_–_3.5_Inch_Sata_6_Gb/s_5400_RPM_256MB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_8TB_Internal_Hard_Drive_HDD_–_3.5_Inch_Sata_6_Gb/s_5400_RPM_256MB> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_1TB_WD_Blue_PC_Hard_Drive_HDD_-_7200_RPM,_SATA_6_Gb/s,_64_MB_Cache
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_1TB_WD_Blue_PC_Hard_Drive_HDD_-_7200_RPM,_SATA_6_Gb/s,_64_MB_Cache> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_2TB_WD_Blue_PC_Hard_Drive_HDD_-_5400_RPM,_SATA_6_Gb/s,_256_MB_Cache
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_2TB_WD_Blue_PC_Hard_Drive_HDD_-_5400_RPM,_SATA_6_Gb/s,_256_MB_Cache> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_4TB_WD_Blue_PC_Hard_Drive_HDD_-_5400_RPM,_SATA_6_Gb/s,_256_MB_Cache
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_4TB_WD_Blue_PC_Hard_Drive_HDD_-_5400_RPM,_SATA_6_Gb/s,_256_MB_Cache> rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Network_card_TP-Link_10/100/1000Mbps_Gigabit_Ethernet_PCI_Express_Network_Card_(TG-3468)
@@ -306,6 +338,22 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_8GB_DDR4,_2666MHz,_Signature,_PSD48G266681
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_8GB_DDR4,_2666MHz,_Signature,_PSD48G266681> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-76E4T0B/EU_Samsung_860_EVO_Series_4TB_MLC_SATA_6Gbps_(AES-256_/_TCG_Opal_2.0)_2.5-inch
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-76E4T0B/EU_Samsung_860_EVO_Series_4TB_MLC_SATA_6Gbps_(AES-256_/_TCG_Opal_2.0)_2.5-inch> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-77Q1T0B/AM_Samsung_870_QVO_1TB_QLC_SATA_6Gbps_(AES_256-Bits)_2.5-inch
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-77Q1T0B/AM_Samsung_870_QVO_1TB_QLC_SATA_6Gbps_(AES_256-Bits)_2.5-inch> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-7PA0640/0H1_Samsung_PM810_Series_64GB_MLC_SATA_3Gbps_2.5-inch
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-7PA0640/0H1_Samsung_PM810_Series_64GB_MLC_SATA_3Gbps_2.5-inch> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7PD128HCFV-00000_Samsung_SM841n_Series_128GB_MLC_SATA_6Gbps_(AES-256_FDE)_2.5-inch
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7PD128HCFV-00000_Samsung_SM841n_Series_128GB_MLC_SATA_6Gbps_(AES-256_FDE)_2.5-inch> rdf:type owl:NamedIndividual .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
