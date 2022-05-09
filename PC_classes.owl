@@ -4,9 +4,10 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology> .
+@base <https://raw.githubusercontent.com/milica38/SystemSupport/main/instances.owl> .
 
-<http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology> rdf:type owl:Ontology .
+<https://raw.githubusercontent.com/milica38/SystemSupport/main/instances.owl> rdf:type owl:Ontology ;
+                                                                               owl:imports <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19> .
 
 #################################################################
 #    Object Properties
@@ -196,20 +197,6 @@
 #################################################################
 #    Data properties
 #################################################################
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Wireless_component_type
-:Wireless_component_type rdf:type owl:DatatypeProperty ;
-                         rdfs:domain :Wireless_component ;
-                         rdfs:range [ rdf:type rdfs:Datatype ;
-                                      owl:oneOf [ rdf:type rdf:List ;
-                                                  rdf:first "Bluetooth" ;
-                                                  rdf:rest [ rdf:type rdf:List ;
-                                                             rdf:first "WiFi" ;
-                                                             rdf:rest rdf:nil
-                                                           ]
-                                                ]
-                                    ] .
-
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU_cache
 :CPU_cache rdf:type owl:DatatypeProperty ;
@@ -792,6 +779,20 @@
                                 ] .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Wireless_component_type
+:Wireless_component_type rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :Wireless_component ;
+                         rdfs:range [ rdf:type rdfs:Datatype ;
+                                      owl:oneOf [ rdf:type rdf:List ;
+                                                  rdf:first "Bluetooth" ;
+                                                  rdf:rest [ rdf:type rdf:List ;
+                                                             rdf:first "WiFi" ;
+                                                             rdf:rest rdf:nil
+                                                           ]
+                                                ]
+                                    ] .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#frequency_response
 :frequency_response rdf:type owl:DatatypeProperty ;
                     rdfs:domain [ rdf:type owl:Class ;
@@ -875,17 +876,6 @@
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#Bluetooth_card
-:Bluetooth_card rdf:type owl:Class ;
-                rdfs:subClassOf :Wireless_component ;
-                owl:disjointWith :WiFi_card .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/PC-ontology#WiFi_card
-:WiFi_card rdf:type owl:Class ;
-           rdfs:subClassOf :Wireless_component .
-
-
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#ATX_motherboard
 :ATX_motherboard rdf:type owl:Class ;
                  owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -921,6 +911,12 @@
                                        owl:hasValue "BTX_motherboard"
                                      ] ;
                  rdfs:subClassOf :Motherboard .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Bluetooth_card
+:Bluetooth_card rdf:type owl:Class ;
+                rdfs:subClassOf :Wireless_component ;
+                owl:disjointWith :WiFi_card .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Brand
@@ -1393,6 +1389,11 @@
                                             owl:hasValue "Water_cooling_system"
                                           ] ;
                       rdfs:subClassOf :Cooling_system .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#WiFi_card
+:WiFi_card rdf:type owl:Class ;
+           rdfs:subClassOf :Wireless_component .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Wireless_component
