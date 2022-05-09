@@ -268,6 +268,7 @@
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Camera_has_microphone
 :Camera_has_microphone rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
                        rdfs:domain :Camera ;
                        rdfs:range xsd:boolean .
 
@@ -1404,6 +1405,82 @@
                                                       )
                                         ] ;
                     rdfs:subClassOf :External_element .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_ASUS_C3
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_ASUS_C3> rdf:type :Camera ;
+                                                                                          :Camera_frame_rate "30fps" ;
+                                                                                          :Camera_has_microphone "true"^^xsd:boolean ;
+                                                                                          :Camera_resolution "1920x1080" ;
+                                                                                          :Camera_type "Standalone" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Canyon_CNE_CWC1
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Canyon_CNE_CWC1> rdf:type :Camera ;
+                                                                                                  :Camera_frame_rate "30fps" ;
+                                                                                                  :Camera_has_microphone "true"^^xsd:boolean ;
+                                                                                                  :Camera_resolution "1600x1200" ;
+                                                                                                  :Camera_type "Standalone" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Canyon_CNE_CWC3N
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Canyon_CNE_CWC3N> rdf:type :Camera ;
+                                                                                                   :Camera_frame_rate "30fps" ;
+                                                                                                   :Camera_has_microphone "true"^^xsd:boolean ;
+                                                                                                   :Camera_resolution "1280x720" ;
+                                                                                                   :Camera_type "Standalone" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Genius_FC1000XV2
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Genius_FC1000XV2> rdf:type :Camera ;
+                                                                                                   :Camera_frame_rate "30fps" ;
+                                                                                                   :Camera_has_microphone "true"^^xsd:boolean ;
+                                                                                                   :Camera_resolution "1280x720" ;
+                                                                                                   :Camera_type "Standalone" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Hama_C-600_Pro
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Hama_C-600_Pro> rdf:type :Camera ;
+                                                                                                 :Camera_frame_rate "30fps" ;
+                                                                                                 :Camera_has_microphone "true"^^xsd:boolean ;
+                                                                                                 :Camera_resolution "1920x1080" ;
+                                                                                                 :Camera_type "standalone" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Hama_Spy_Protect_53950
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Hama_Spy_Protect_53950> rdf:type :Camera ;
+                                                                                                         :Camera_frame_rate "30fps" ;
+                                                                                                         :Camera_has_microphone "true"^^xsd:boolean ;
+                                                                                                         :Camera_resolution "1280x720" ;
+                                                                                                         :Camera_type "Standalone" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Logitech_C310_HD
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Logitech_C310_HD> rdf:type :Camera ;
+                                                                                                   :Camera_frame_rate "30fps" ;
+                                                                                                   :Camera_has_microphone "false"^^xsd:boolean ;
+                                                                                                   :Camera_resolution "1280x720" ;
+                                                                                                   :Camera_type "Standalone" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Logitech_C505_HD
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Logitech_C505_HD> rdf:type :Camera ;
+                                                                                                   :Camera_frame_rate "30fps" ;
+                                                                                                   :Camera_has_microphone "true"^^xsd:boolean ;
+                                                                                                   :Camera_resolution "1280x720" ;
+                                                                                                   :Camera_type "Standalone" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Logitech_C920s_PRO_HD
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Logitech_C920s_PRO_HD> rdf:type :Camera ;
+                                                                                                        :Camera_frame_rate "30fps" ;
+                                                                                                        :Camera_has_microphone "true"^^xsd:boolean ;
+                                                                                                        :Camera_resolution "1920x1080" ;
+                                                                                                        :Camera_type "Standalone" .
 
 
 #################################################################
