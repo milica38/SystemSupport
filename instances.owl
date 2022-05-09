@@ -20,6 +20,7 @@
 :BluetoothCard_Asus_N13 rdf:type owl:NamedIndividual .
 
 
+
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Ampage
 :Brand_Ampage rdf:type owl:NamedIndividual .
 
@@ -170,6 +171,7 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_WesternDigital
 :Brand_WesternDigital rdf:type owl:NamedIndividual .
+
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_5_5600_3.5GHz
@@ -370,6 +372,31 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_SAPPHIRE_PULSE_AMD_Radeon_RX_6600_8GB_GDDR6_128-bit
 :GPU_SAPPHIRE_PULSE_AMD_Radeon_RX_6600_8GB_GDDR6_128-bit rdf:type owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_2TB
+:HDD_Seagate_BarraCuda_2TB rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_4TB
+:HDD_Seagate_BarraCuda_4TB rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_8TB
+:HDD_Seagate_BarraCuda_8TB rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_1TB_WD_Blue
+:HDD_Western_Digital_1TB_WD_Blue rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_2TB_WD_Blue
+:HDD_Western_Digital_2TB_WD_Blue rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_4TB_WD_Blue
+:HDD_Western_Digital_4TB_WD_Blue rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_CoolerMaster_CH321
@@ -644,16 +671,17 @@
 :Printer_Canon_Pixma_G3411 rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_Canon_Pixma_TS3451
-:Printer_Canon_Pixma_TS3451 rdf:type owl:NamedIndividual .
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_ASUS_PRIME_Z690M-PLUS_D4
+:Motherboard_ASUS_PRIME_Z690M-PLUS_D4 rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_HP_Neverstop_1000w-4RY23A
-:Printer_HP_Neverstop_1000w-4RY23A rdf:type owl:NamedIndividual .
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_ASUS_TUF_B550-PLUS_GAMING
+:Motherboard_ASUS_TUF_B550-PLUS_GAMING rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_HP_SmartTank_515_1TJ09A
-:Printer_HP_SmartTank_515_1TJ09A rdf:type owl:NamedIndividual .
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_ASUS_TUF_GAMING_B560M-PLUS
+:Motherboard_ASUS_TUF_GAMING_B560M-PLUS rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_HP_HYNIX_DIMM_DDR3_8GB_1333MHz_ECC_Registered_Dual_Rank_500662-B21
@@ -687,6 +715,220 @@
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_Brother_ADS-2400N
 :Scanner_Brother_ADS-2400N rdf:type owl:NamedIndividual .
 
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_ASUS_TUF_GAMING_Z690-PLUS
+:Motherboard_ASUS_TUF_GAMING_Z690-PLUS rdf:type owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_GIGABYTE_B660_AORUS_MASTER_DDR4
+:Motherboard_GIGABYTE_B660_AORUS_MASTER_DDR4 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_GIGABYTE_X570S_AORUS_MASTER
+:Motherboard_GIGABYTE_X570S_AORUS_MASTER rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_MSI_B550-A_PRO
+:Motherboard_MSI_B550-A_PRO rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_MSI_MPG_X570_GAMING_PLUS
+:Motherboard_MSI_MPG_X570_GAMING_PLUS rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_FAST_ASIA_FAST_ASIA_USB_virtual_7.1_zvučna_karta
+:Sound_card_FAST_ASIA_FAST_ASIA_USB_virtual_7.1_zvučna_karta rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_FAST_ASIA_Zvucna_karta_USB_2.0_metalna
+:Sound_card_FAST_ASIA_Zvucna_karta_USB_2.0_metalna rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_INTEX_ZVUCNA_KARTICA_SB_CMI_8738_5.1
+:Sound_card_INTEX_ZVUCNA_KARTICA_SB_CMI_8738_5.1 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_EDIFIER_R1280T
+:Speakers_EDIFIER_R1280T rdf:type owl:NamedIndividual .
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_MSI_MPG_Z490_GAMING_PLUS
+:Motherboard_MSI_MPG_Z490_GAMING_PLUS rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Asus_ROG_Gladius_III
+:Mouse_Asus_ROG_Gladius_III rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Genius_31040064102
+:Mouse_Genius_31040064102 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Genius_M8-610_Scorpion
+:Mouse_Genius_M8-610_Scorpion rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Hama_MW800
+:Mouse_Hama_MW800 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Lenovo_Wireless_Laser_X30H56886
+:Mouse_Lenovo_Wireless_Laser_X30H56886 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_B100
+:Mouse_Logitech_B100 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_G502_LIGHTSPEED
+:Mouse_Logitech_G502_LIGHTSPEED rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_Lift_Ggraphite
+:Mouse_Logitech_Lift_Ggraphite rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_MX_MASTER3
+:Mouse_Logitech_MX_MASTER3 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Razer_NAGA_PRO_RZ01
+:Mouse_Razer_NAGA_PRO_RZ01 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Network_card_Realtek_Chipset_Gigabit_PCI_Express
+:Network_card_Realtek_Chipset_Gigabit_PCI_Express rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#OS_Microsoft_Windows_10_Home_32_Bit
+:OS_Microsoft_Windows_10_Home_32_Bit rdf:type owl:NamedIndividual .
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_2TB_Internal_Hard_Drive_HDD_–_3.5_Inch_SATA_6Gb/s_7200_RPM_256MB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_2TB_Internal_Hard_Drive_HDD_–_3.5_Inch_SATA_6Gb/s_7200_RPM_256MB> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_ANTEC_VP700P_PLUS
+:Power_Supply_ANTEC_VP700P_PLUS rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER_600W_ELITE_V3
+:Power_Supply_COOLER_MASTER_600W_ELITE_V3 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER_MWE_BRONZE_550W
+:Power_Supply_COOLER_MASTER_MWE_BRONZE_550W rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER_XG750_Platinum_Plus_750W
+:Power_Supply_COOLER_MASTER_XG750_Platinum_Plus_750W rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MWE_750_BRONZE_V2
+:Power_Supply_COOLER_MASTER__MWE_750_BRONZE_V2 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MWE_GOLD_750
+:Power_Supply_COOLER_MASTER__MWE_GOLD_750 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MWE_GOLD_850W_V2
+:Power_Supply_COOLER_MASTER__MWE_GOLD_850W_V2 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MasterWatt_750
+:Power_Supply_COOLER_MASTER__MasterWatt_750 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_MS_CORE_M700_80_Plus_PLATINUM
+:Power_Supply_MS_CORE_M700_80_Plus_PLATINUM rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_MS__CORE_M600_80_Plus_PLATINUM
+:Power_Supply_MS__CORE_M600_80_Plus_PLATINUM rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_BROTHER_DCP-T425W
+:Printer_BROTHER_DCP-T425W rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_BROTHER_HL-L2372DN
+:Printer_BROTHER_HL-L2372DN rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_Canon_Pixma_G3411
+:Printer_Canon_Pixma_G3411 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_Canon_Pixma_TS3451
+:Printer_Canon_Pixma_TS3451 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_HP_Neverstop_1000w-4RY23A
+:Printer_HP_Neverstop_1000w-4RY23A rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_HP_SmartTank_515_1TJ09A
+:Printer_HP_SmartTank_515_1TJ09A rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_CORSAIR_CMV4GX4M1A2400C16
+:RAM_CORSAIR_CMV4GX4M1A2400C16 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_CORSAIR_Vengeance_LPX_CMK16GX4M2Z3600C18
+:RAM_CORSAIR_Vengeance_LPX_CMK16GX4M2Z3600C18 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_HP_HYNIX_DIMM_DDR3_8GB_1333MHz
+:RAM_HP_HYNIX_DIMM_DDR3_8GB_1333MHz rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_DIMM_DDR4_8GB
+:RAM_KINGSTON_DIMM_DDR4_8GB rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_DIMM_DDR4_8GB_3200MHz
+:RAM_KINGSTON_DIMM_DDR4_8GB_3200MHz rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_FURY_Beast_4GB_DDR4
+:RAM_KINGSTON_FURY_Beast_4GB_DDR4 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_HyperX_Fury_DDR4_4GB
+:RAM_KINGSTON_HyperX_Fury_DDR4_4GB rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_DDR2_2GB_800MHz
+:RAM_PATRIOT_DDR2_2GB_800MHz rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_DDR4_4GB_2666MHz
+:RAM_PATRIOT_DDR4_4GB_2666MHz rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_SILICON_POWER_4GB_2666MHz_RAM_DDR4
+:RAM_SILICON_POWER_4GB_2666MHz_RAM_DDR4 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_TRANSCEND_JM2666HLH-4G_DDR4_4GB_2666MHz
+:RAM_TRANSCEND_JM2666HLH-4G_DDR4_4GB_2666MHz rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7LN256HMJP-000H1_Samsung_PM871a_Series_256GB
+:SSD_MZ7LN256HMJP-000H1_Samsung_PM871a_Series_256GB rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7PD128HCFV-00000_Samsung_SM841n_Series_128GB
+:SSD_MZ7PD128HCFV-00000_Samsung_SM841n_Series_128GB rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZVLB1T0HBLR-00007_Samsung_PM981a_1TB
+:SSD_MZVLB1T0HBLR-00007_Samsung_PM981a_1TB rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_Brother_ADS-2400N
+:Scanner_Brother_ADS-2400N rdf:type owl:NamedIndividual .
+
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_Brother_DS-720D
 :Scanner_Brother_DS-720D rdf:type owl:NamedIndividual .
@@ -704,16 +946,16 @@
 :Scanner_HP_ScanJet_Pro2500 rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_FAST_ASIA_FAST_ASIA_USB_virtual_7.1_zvučna_karta
-:Sound_card_FAST_ASIA_FAST_ASIA_USB_virtual_7.1_zvučna_karta rdf:type owl:NamedIndividual .
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_FAST_ASIA_FAST_ASIA_USB_virtual_7.1
+:Sound_card_FAST_ASIA_FAST_ASIA_USB_virtual_7.1 rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_FAST_ASIA_Zvucna_karta_USB_2.0_metalna
-:Sound_card_FAST_ASIA_Zvucna_karta_USB_2.0_metalna rdf:type owl:NamedIndividual .
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_FAST_ASIA_USB_2.0
+:Sound_card_FAST_ASIA_USB_2.0 rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_INTEX_ZVUCNA_KARTICA_SB_CMI_8738_5.1
-:Sound_card_INTEX_ZVUCNA_KARTICA_SB_CMI_8738_5.1 rdf:type owl:NamedIndividual .
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_SB_CMI_8738_5.1
+:Sound_card_SB_CMI_8738_5.1 rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_EDIFIER_R1280T
@@ -768,28 +1010,13 @@
 :WiFiCard_TP-LINK_ARCHER_T2U rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_2TB_Internal_Hard_Drive_HDD_–_3.5_Inch_SATA_6Gb/s_7200_RPM_256MB
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_2TB_Internal_Hard_Drive_HDD_–_3.5_Inch_SATA_6Gb/s_7200_RPM_256MB> rdf:type owl:NamedIndividual .
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_Philips_243V7QSB/00
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_Philips_243V7QSB/00> rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_4TB_Internal_Hard_Drive_HDD_–_3.5_Inch_Sata_6_Gb/s_5400_RPM_256MB
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_4TB_Internal_Hard_Drive_HDD_–_3.5_Inch_Sata_6_Gb/s_5400_RPM_256MB> rdf:type owl:NamedIndividual .
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_Philips_SuperWide_499P9H/00
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_Philips_SuperWide_499P9H/00> rdf:type owl:NamedIndividual .
 
-
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_8TB_Internal_Hard_Drive_HDD_–_3.5_Inch_Sata_6_Gb/s_5400_RPM_256MB
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_8TB_Internal_Hard_Drive_HDD_–_3.5_Inch_Sata_6_Gb/s_5400_RPM_256MB> rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_1TB_WD_Blue_PC_Hard_Drive_HDD_-_7200_RPM,_SATA_6_Gb/s,_64_MB_Cache
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_1TB_WD_Blue_PC_Hard_Drive_HDD_-_7200_RPM,_SATA_6_Gb/s,_64_MB_Cache> rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_2TB_WD_Blue_PC_Hard_Drive_HDD_-_5400_RPM,_SATA_6_Gb/s,_256_MB_Cache
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_2TB_WD_Blue_PC_Hard_Drive_HDD_-_5400_RPM,_SATA_6_Gb/s,_256_MB_Cache> rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_4TB_WD_Blue_PC_Hard_Drive_HDD_-_5400_RPM,_SATA_6_Gb/s,_256_MB_Cache
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_4TB_WD_Blue_PC_Hard_Drive_HDD_-_5400_RPM,_SATA_6_Gb/s,_256_MB_Cache> rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_Philips_243V7QSB/00
@@ -803,57 +1030,32 @@
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Network_card_TP-Link_10/100/1000Mbps_Gigabit_Ethernet_PCI_Express_Network_Card_(TG-3468)
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Network_card_TP-Link_10/100/1000Mbps_Gigabit_Ethernet_PCI_Express_Network_Card_(TG-3468)> rdf:type owl:NamedIndividual .
 
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Network_card_TP-Link_10/100/1000Mbps(TG-3468)
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Network_card_TP-Link_10/100/1000Mbps(TG-3468)> rdf:type owl:NamedIndividual .
+
+
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#OS_Microsoft_OEM_Windows_10_Home,_64-Bit
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#OS_Microsoft_OEM_Windows_10_Home,_64-Bit> rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_CORSAIR_Memorija_CMV4GX4M1A2400C16_4GB(1x4GB)/DIMM/DDR4/2400MHz/crn
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_CORSAIR_Memorija_CMV4GX4M1A2400C16_4GB(1x4GB)/DIMM/DDR4/2400MHz/crn> rdf:type owl:NamedIndividual .
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_4GB_DDR4,_3200MHz
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_4GB_DDR4,_3200MHz> rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_CORSAIR_Memorija_Vengeance_LPX_CMK16GX4M2Z3600C18_DDR4_16GB_(2x8GB)_3600MHz/black
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_CORSAIR_Memorija_Vengeance_LPX_CMK16GX4M2Z3600C18_DDR4_16GB_(2x8GB)_3600MHz/black> rdf:type owl:NamedIndividual .
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_8GB_DDR4,_2666MHz
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_8GB_DDR4,_2666MHz> rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_4GB_DDR4,_3200MHz,_KVR32N22S6/4
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_4GB_DDR4,_3200MHz,_KVR32N22S6/4> rdf:type owl:NamedIndividual .
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-76E4T0B/EU_Samsung_860_EVO_Series_4TB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-76E4T0B/EU_Samsung_860_EVO_Series_4TB> rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_DIMM_DDR4_8GB_(2x4GB_kit)_3200MHz_HX432C16PB3K2/8_HyperX_XMP_Predator_OUTLET
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_DIMM_DDR4_8GB_(2x4GB_kit)_3200MHz_HX432C16PB3K2/8_HyperX_XMP_Predator_OUTLET> rdf:type owl:NamedIndividual .
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-77Q1T0B/AM_Samsung_870_QVO_1TB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-77Q1T0B/AM_Samsung_870_QVO_1TB> rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_DIMM_DDR4_8GB_3200MHz_KF432C16BBA/8_Fury_Beast_RGB
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_DIMM_DDR4_8GB_3200MHz_KF432C16BBA/8_Fury_Beast_RGB> rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_FURY_Beast_4GB_DDR4,_2666MHz,_CL16,_KF426C16BB/4
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_FURY_Beast_4GB_DDR4,_2666MHz,_CL16,_KF426C16BB/4> rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_HyperX_Fury_DDR4_4GB_2666MHz_HX426C16FB3/4
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_HyperX_Fury_DDR4_4GB_2666MHz_HX426C16FB3/4> rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_8GB_DDR4,_2666MHz,_Signature,_PSD48G266681
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_8GB_DDR4,_2666MHz,_Signature,_PSD48G266681> rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-76E4T0B/EU_Samsung_860_EVO_Series_4TB_MLC_SATA_6Gbps_(AES-256_/_TCG_Opal_2.0)_2.5-inch
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-76E4T0B/EU_Samsung_860_EVO_Series_4TB_MLC_SATA_6Gbps_(AES-256_/_TCG_Opal_2.0)_2.5-inch> rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-77Q1T0B/AM_Samsung_870_QVO_1TB_QLC_SATA_6Gbps_(AES_256-Bits)_2.5-inch
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-77Q1T0B/AM_Samsung_870_QVO_1TB_QLC_SATA_6Gbps_(AES_256-Bits)_2.5-inch> rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-7PA0640/0H1_Samsung_PM810_Series_64GB_MLC_SATA_3Gbps_2.5-inch
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-7PA0640/0H1_Samsung_PM810_Series_64GB_MLC_SATA_3Gbps_2.5-inch> rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7PD128HCFV-00000_Samsung_SM841n_Series_128GB_MLC_SATA_6Gbps_(AES-256_FDE)_2.5-inch
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7PD128HCFV-00000_Samsung_SM841n_Series_128GB_MLC_SATA_6Gbps_(AES-256_FDE)_2.5-inch> rdf:type owl:NamedIndividual .
-
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-7PA0640/0H1_Samsung_PM810_Series_64GB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-7PA0640/0H1_Samsung_PM810_Series_64GB> rdf:type owl:NamedIndividual .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
