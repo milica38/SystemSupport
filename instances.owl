@@ -12,6 +12,14 @@
 #    Individuals
 #################################################################
 
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#BluetoothCard_ASUS_BT400
+:BluetoothCard_ASUS_BT400 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#BluetoothCard_Asus_N13
+:BluetoothCard_Asus_N13 rdf:type owl:NamedIndividual .
+
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_5_5600_3.5GHz
 :CPU_AMD_Ryzen_5_5600_3.5GHz rdf:type owl:NamedIndividual .
 
@@ -56,6 +64,7 @@
 :CPU_INTEL_Core_i9-12900KF_3.2GHz rdf:type owl:NamedIndividual .
 
 
+
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_ASUS_C3
 :Camera_ASUS_C3 rdf:type owl:NamedIndividual .
 
@@ -64,8 +73,73 @@
 :Camera_Canyon_CNE_CWC1 rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Genius_1000x_v2
-:Camera_Genius_1000x_v2 rdf:type owl:NamedIndividual .
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Canyon_CNE_CWC3N
+:Camera_Canyon_CNE_CWC3N rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Genius_FC1000XV2
+:Camera_Genius_FC1000XV2 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Hama_C-600_Pro
+:Camera_Hama_C-600_Pro rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Hama_Spy_Protect_53950
+:Camera_Hama_Spy_Protect_53950 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Logitech_C310_HD
+:Camera_Logitech_C310_HD rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Logitech_C505_HD
+:Camera_Logitech_C505_HD rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Logitech_C920s_PRO_HD
+:Camera_Logitech_C920s_PRO_HD rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_STRIX_HELIOS_GX601
+:Case_ASUS_ROG_STRIX_HELIOS_GX601 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_Z11
+:Case_ASUS_ROG_Z11 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CORSAIR_CC-9011116-WW
+:Case_CORSAIR_CC-9011116-WW rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ColerMaster_MB540-KGNN-S00
+:Case_ColerMaster_MB540-KGNN-S00 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_H500-KGNN-S00
+:Case_CoolerMaster_H500-KGNN-S00 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_MASTERBOX_K501L
+:Case_CoolerMaster_MASTERBOX_K501L rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_973W
+:Case_LC-POWER_973W rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_998B_Rambot
+:Case_LC-POWER_998B_Rambot rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_ARMOR_V710
+:Case_MS_ARMOR_V710 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_RAIDER_M325
+:Case_MS_RAIDER_M325 rdf:type owl:NamedIndividual .
+
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_CORSAIR_iCUE_H150i_RGB_PRO_XT
@@ -91,6 +165,282 @@
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MasterLiquid_ML120L
 :Cooler_Master_MasterLiquid_ML120L rdf:type owl:NamedIndividual .
 
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_CoolerMaster_CH321
+:Headphones_CoolerMaster_CH321 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_CoolerMaster_MH650
+:Headphones_CoolerMaster_MH650 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_JBL_QUANTUM_300
+:Headphones_JBL_QUANTUM_300 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_JBL_Tune_570BT
+:Headphones_JBL_Tune_570BT rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Logitech_G435
+:Headphones_Logitech_G435 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Logitech_G533
+:Headphones_Logitech_G533 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Logitech_G635_Lightsync
+:Headphones_Logitech_G635_Lightsync rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Philips_TAH4205WT00
+:Headphones_Philips_TAH4205WT00 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Redragon_H350_Pandora
+:Headphones_Redragon_H350_Pandora rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Sony_WH1000XM3S.CE7
+:Headphones_Sony_WH1000XM3S.CE7 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_CoolerMaster_TAS01007
+:Keyboard_CoolerMaster_TAS01007 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Genius_Scorpion_K220
+:Keyboard_Genius_Scorpion_K220 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_HP_QY776AA
+:Keyboard_HP_QY776AA rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Hama_KC-600
+:Keyboard_Hama_KC-600 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_G512
+:Keyboard_Logitech_G512 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_G915_LIGHTSPEED
+:Keyboard_Logitech_G915_LIGHTSPEED rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_K12
+:Keyboard_Logitech_K12 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Razer_CYNOSA_CHROMA_V2
+:Keyboard_Razer_CYNOSA_CHROMA_V2 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Redragon_K535-KR
+:Keyboard_Redragon_K535-KR rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Redragon_Kala_K557_RGB
+:Keyboard_Redragon_Kala_K557_RGB rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Micriphone_Hama_CS-461
+:Micriphone_Hama_CS-461 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Microphone_Ampage_SNRMX2
+:Microphone_Ampage_SNRMX2 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Microphone_Marvo_MIC01
+:Microphone_Marvo_MIC01 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Microphone_Marvo_MIC05
+:Microphone_Marvo_MIC05 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Microphone_Trust_GXT210
+:Microphone_Trust_GXT210 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_ASUS_LED_VG248QE
+:Monitor_ASUS_LED_VG248QE rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_ASUS__VS197DE
+:Monitor_ASUS__VS197DE rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_DELL_UltraSharp_U3023E
+:Monitor_DELL_UltraSharp_U3023E rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_GIGABYTE_48_AORUS_FO48U-EK
+:Monitor_GIGABYTE_48_AORUS_FO48U-EK rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_LG_31.5_4K_LED-_32UL750-W
+:Monitor_LG_31.5_4K_LED-_32UL750-W rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_LG_LED_22MK400H-B
+:Monitor_LG_LED_22MK400H-B rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_LG_LED_IPS_24MP60G-B.AEU
+:Monitor_LG_LED_IPS_24MP60G-B.AEU rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_LcPower_LC-M16-4K-UHD-P-O
+:Monitor_LcPower_LC-M16-4K-UHD-P-O rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Asus_ROG_Gladius_III
+:Mouse_Asus_ROG_Gladius_III rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Genius_31040064102
+:Mouse_Genius_31040064102 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Genius_M8-610_Scorpion
+:Mouse_Genius_M8-610_Scorpion rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Hama_MW800
+:Mouse_Hama_MW800 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Lenovo_Wireless_Laser_X30H56886
+:Mouse_Lenovo_Wireless_Laser_X30H56886 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_B100
+:Mouse_Logitech_B100 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_G502_LIGHTSPEED
+:Mouse_Logitech_G502_LIGHTSPEED rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_Lift_Ggraphite
+:Mouse_Logitech_Lift_Ggraphite rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_MX_MASTER3
+:Mouse_Logitech_MX_MASTER3 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Razer_NAGA_PRO_RZ01
+:Mouse_Razer_NAGA_PRO_RZ01 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_BROTHER_DCP-T425W
+:Printer_BROTHER_DCP-T425W rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_BROTHER_HL-L2372DN
+:Printer_BROTHER_HL-L2372DN rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_Canon_Pixma_G3411
+:Printer_Canon_Pixma_G3411 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_Canon_Pixma_TS3451
+:Printer_Canon_Pixma_TS3451 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_HP_Neverstop_1000w-4RY23A
+:Printer_HP_Neverstop_1000w-4RY23A rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_HP_SmartTank_515_1TJ09A
+:Printer_HP_SmartTank_515_1TJ09A rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_Brother_ADS-2400N
+:Scanner_Brother_ADS-2400N rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_Brother_DS-720D
+:Scanner_Brother_DS-720D rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_Brother_DS-820W
+:Scanner_Brother_DS-820W rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_EPSON_WorkForce_DS-360W
+:Scanner_EPSON_WorkForce_DS-360W rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_HP_ScanJet_Pro2500
+:Scanner_HP_ScanJet_Pro2500 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_EDIFIER_R1280T
+:Speakers_EDIFIER_R1280T rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SP-HF280
+:Speakers_Genius_SP-HF280 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SP-HF500A_II
+:Speakers_Genius_SP-HF500A_II rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SP-Q180
+:Speakers_Genius_SP-Q180 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SW-HF_2.1
+:Speakers_Genius_SW-HF_2.1 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_HP_X1000
+:Speakers_HP_X1000 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_JBL_QUANTUM_DUO
+:Speakers_JBL_QUANTUM_DUO rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Logitech_Z213
+:Speakers_Logitech_Z213 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_MARVO_Scorpion_SG-118
+:Speakers_MARVO_Scorpion_SG-118 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Redragon_ADIEMUS_GS560
+:Speakers_Redragon_ADIEMUS_GS560 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#WiFiCard_Asus_USB-AC51_AC600
+:WiFiCard_Asus_USB-AC51_AC600 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#WiFiCard_TP-LINK_AC600
+:WiFiCard_TP-LINK_AC600 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#WiFiCard_TP-LINK_ARCHER_T2U
+:WiFiCard_TP-LINK_ARCHER_T2U rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_Philips_243V7QSB/00
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_Philips_243V7QSB/00> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_Philips_SuperWide_499P9H/00
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_Philips_SuperWide_499P9H/00> rdf:type owl:NamedIndividual .
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MasterLiquid_ML360R
 :Cooler_Master_MasterLiquid_ML360R rdf:type owl:NamedIndividual .
@@ -354,6 +704,7 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7PD128HCFV-00000_Samsung_SM841n_Series_128GB_MLC_SATA_6Gbps_(AES-256_FDE)_2.5-inch
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7PD128HCFV-00000_Samsung_SM841n_Series_128GB_MLC_SATA_6Gbps_(AES-256_FDE)_2.5-inch> rdf:type owl:NamedIndividual .
+
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
