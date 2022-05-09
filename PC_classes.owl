@@ -1491,6 +1491,7 @@
                                                                                                         :Camera_type "Standalone" .
 
 
+
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_STRIX_HELIOS_GX601
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_STRIX_HELIOS_GX601> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> .
 
@@ -2059,6 +2060,60 @@
                                                                                                                :Display_size 48.8 ;
                                                                                                                :Display_type "LED" ;
                                                                                                                :Display_view_angle "178/178" .
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_CORSAIR_iCUE_H150i_RGB_PRO_XT
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_CORSAIR_iCUE_H150i_RGB_PRO_XT> rdf:type :Cooling_system ;
+                                                                                                                :CS_max_rotation 2400 ;
+                                                                                                                :CS_type "Air_cooling_system" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_Hyper_212_Black_Edition
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_Hyper_212_Black_Edition> rdf:type :Cooling_system ;
+                                                                                                                 :CS_max_rotation 2000 ;
+                                                                                                                 :CS_type "Air_cooling_system" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_Hyper_TX3_EVO
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_Hyper_TX3_EVO> rdf:type :Cooling_system ;
+                                                                                                       :CS_max_rotation 2200 ;
+                                                                                                       :CS_type "Air_cooling_system" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MASTERAIR_MA612_STEALTH
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MASTERAIR_MA612_STEALTH> rdf:type :Cooling_system ;
+                                                                                                                 :CS_max_rotation 1800 ;
+                                                                                                                 :CS_type "Air_cooling_system" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MASTERFAN_MF120_PRISMATIC
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MASTERFAN_MF120_PRISMATIC> rdf:type :Cooling_system ;
+                                                                                                                   :CS_max_rotation 1800 ;
+                                                                                                                   :CS_type "Air_cooling_system" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MasterLiquid_ML120L
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MasterLiquid_ML120L> rdf:type :Cooling_system ;
+                                                                                                             :CS_max_rotation 1800 ;
+                                                                                                             :CS_type "Water_cooling_system" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MasterLiquid_ML360R
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MasterLiquid_ML360R> rdf:type :Cooling_system ;
+                                                                                                             :CS_max_rotation 2000 ;
+                                                                                                             :CS_type "Water_cooling_system" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_Sickleflow_140_ARGB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_Sickleflow_140_ARGB> rdf:type :Cooling_system ;
+                                                                                                             :CS_max_rotation 1400 ;
+                                                                                                             :CS_type "Air_cooling_system" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_NZXT_Kraken_Z73_360mm
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_NZXT_Kraken_Z73_360mm> rdf:type :Cooling_system ;
+                                                                                                        :CS_max_rotation 2000 ;
+                                                                                                        :CS_type "Water_cooling_system" .
+
 
 
 #################################################################
