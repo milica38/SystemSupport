@@ -730,12 +730,6 @@
                  rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Scanner_output_resolution
-:Scanner_output_resolution rdf:type owl:DatatypeProperty ;
-                           rdfs:domain :Scanner ;
-                           rdfs:range xsd:string .
-
-
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Sound_card_channels
 :Sound_card_channels rdf:type owl:DatatypeProperty ;
                      rdfs:domain :Sound_card ;
@@ -799,6 +793,7 @@
                     rdfs:domain [ rdf:type owl:Class ;
                                   owl:unionOf ( :Headphones
                                                 :Microphone
+                                                :Speakers
                                               )
                                 ] ;
                     rdfs:range xsd:string .
@@ -813,16 +808,6 @@
                                       )
                         ] ;
             rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#is_produced_by
-:is_produced_by rdf:type owl:DatatypeProperty ;
-                rdfs:domain [ rdf:type owl:Class ;
-                              owl:unionOf ( :PC
-                                            :PC_Element
-                                          )
-                            ] ;
-                rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#lenght
@@ -1411,8 +1396,23 @@
 #    Individuals
 #################################################################
 
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#BluetoothCard_ASUS_BT400
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#BluetoothCard_ASUS_BT400> rdf:type :Bluetooth_card ;
+                                                                                                    :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
+                                                                                                    :Wireless_component_type "Bluetooth" ;
+                                                                                                    :price "2399din" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#BluetoothCard_Asus_N13
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#BluetoothCard_Asus_N13> rdf:type :Bluetooth_card ;
+                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
+                                                                                                  :Wireless_component_type "Bluetooth" ;
+                                                                                                  :price "2554din" .
+
+
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_ASUS_C3
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_ASUS_C3> rdf:type :Camera ;
+                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
                                                                                           :Camera_frame_rate "30fps" ;
                                                                                           :Camera_has_microphone "true"^^xsd:boolean ;
                                                                                           :Camera_resolution "1920x1080" ;
@@ -1421,6 +1421,7 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Canyon_CNE_CWC1
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Canyon_CNE_CWC1> rdf:type :Camera ;
+                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Canyon> ;
                                                                                                   :Camera_frame_rate "30fps" ;
                                                                                                   :Camera_has_microphone "true"^^xsd:boolean ;
                                                                                                   :Camera_resolution "1600x1200" ;
@@ -1429,6 +1430,7 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Canyon_CNE_CWC3N
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Canyon_CNE_CWC3N> rdf:type :Camera ;
+                                                                                                   :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Canyon> ;
                                                                                                    :Camera_frame_rate "30fps" ;
                                                                                                    :Camera_has_microphone "true"^^xsd:boolean ;
                                                                                                    :Camera_resolution "1280x720" ;
@@ -1437,6 +1439,7 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Genius_FC1000XV2
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Genius_FC1000XV2> rdf:type :Camera ;
+                                                                                                   :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> ;
                                                                                                    :Camera_frame_rate "30fps" ;
                                                                                                    :Camera_has_microphone "true"^^xsd:boolean ;
                                                                                                    :Camera_resolution "1280x720" ;
@@ -1445,6 +1448,7 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Hama_C-600_Pro
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Hama_C-600_Pro> rdf:type :Camera ;
+                                                                                                 :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Hama> ;
                                                                                                  :Camera_frame_rate "30fps" ;
                                                                                                  :Camera_has_microphone "true"^^xsd:boolean ;
                                                                                                  :Camera_resolution "1920x1080" ;
@@ -1453,6 +1457,7 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Hama_Spy_Protect_53950
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Hama_Spy_Protect_53950> rdf:type :Camera ;
+                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Hama> ;
                                                                                                          :Camera_frame_rate "30fps" ;
                                                                                                          :Camera_has_microphone "true"^^xsd:boolean ;
                                                                                                          :Camera_resolution "1280x720" ;
@@ -1461,6 +1466,7 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Logitech_C310_HD
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Logitech_C310_HD> rdf:type :Camera ;
+                                                                                                   :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
                                                                                                    :Camera_frame_rate "30fps" ;
                                                                                                    :Camera_has_microphone "false"^^xsd:boolean ;
                                                                                                    :Camera_resolution "1280x720" ;
@@ -1469,6 +1475,7 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Logitech_C505_HD
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Logitech_C505_HD> rdf:type :Camera ;
+                                                                                                   :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
                                                                                                    :Camera_frame_rate "30fps" ;
                                                                                                    :Camera_has_microphone "true"^^xsd:boolean ;
                                                                                                    :Camera_resolution "1280x720" ;
@@ -1477,11 +1484,582 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Logitech_C920s_PRO_HD
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_Logitech_C920s_PRO_HD> rdf:type :Camera ;
+                                                                                                        :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
                                                                                                         :Camera_frame_rate "30fps" ;
                                                                                                         :Camera_has_microphone "true"^^xsd:boolean ;
                                                                                                         :Camera_resolution "1920x1080" ;
                                                                                                         :Camera_type "Standalone" .
 
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_STRIX_HELIOS_GX601
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_STRIX_HELIOS_GX601> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_Z11
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_Z11> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CORSAIR_CC-9011116-WW
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CORSAIR_CC-9011116-WW> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Corsair> .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ColerMaster_MB540-KGNN-S00
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ColerMaster_MB540-KGNN-S00> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_H500-KGNN-S00
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_H500-KGNN-S00> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_MASTERBOX_K501L
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_MASTERBOX_K501L> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_973W
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_973W> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LC_Power> .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_998B_Rambot
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_998B_Rambot> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LC_Power> .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_ARMOR_V710
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_ARMOR_V710> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_RAIDER_M325
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_RAIDER_M325> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_CoolerMaster_CH321
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_CoolerMaster_CH321> rdf:type :Headphones ;
+                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
+                                                                                                         :frequency_response "20Hz-20000Hz" ;
+                                                                                                         :sensitivities "115dB" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_CoolerMaster_MH650
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_CoolerMaster_MH650> rdf:type :Headphones ;
+                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
+                                                                                                         :frequency_response "20Hz-20000Hz" ;
+                                                                                                         :sensitivities "107dB" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_JBL_QUANTUM_300
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_JBL_QUANTUM_300> rdf:type :Headphones ;
+                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_JBL> ;
+                                                                                                      :frequency_response "20Hz-20000Hz" ;
+                                                                                                      :sensitivities "100dB" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_JBL_Tune_570BT
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_JBL_Tune_570BT> rdf:type :Headphones ;
+                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_JBL> ;
+                                                                                                     :frequency_response "20Hz-20000Hz" ;
+                                                                                                     :sensitivities "103.5dB" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Logitech_G435
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Logitech_G435> rdf:type :Headphones ;
+                                                                                                    :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
+                                                                                                    :frequency_response "20Hz-20000Hz" ;
+                                                                                                    :sensitivities "83dB" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Logitech_G533
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Logitech_G533> rdf:type :Headphones ;
+                                                                                                    :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
+                                                                                                    :frequency_response "20Hz-20000Hz" ;
+                                                                                                    :sensitivities "107dB" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Logitech_G635_Lightsync
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Logitech_G635_Lightsync> rdf:type :Headphones ;
+                                                                                                              :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
+                                                                                                              :frequency_response "20Hz-20000Hz" ;
+                                                                                                              :sensitivities "93dB" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Philips_TAH4205WT00
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Philips_TAH4205WT00> rdf:type :Headphones ;
+                                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Philips> ;
+                                                                                                          :frequency_response "20Hz-20000Hz" ;
+                                                                                                          :sensitivities "110dB" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Redragon_H350_Pandora
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Redragon_H350_Pandora> rdf:type :Headphones ;
+                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Redragon> ;
+                                                                                                            :frequency_response "20Hz-20000Hz" ;
+                                                                                                            :sensitivities "93dB" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Sony_WH1000XM3S.CE7
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Sony_WH1000XM3S.CE7> rdf:type :Headphones ;
+                                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Sony> ;
+                                                                                                          :frequency_response "4Hz-40000Hz" ;
+                                                                                                          :sensitivities "104.5dB" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_CoolerMaster_TAS01007
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_CoolerMaster_TAS01007> rdf:type :Mechanical_keyboard ;
+                                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
+                                                                                                          :Keyboard_is_water_resistant "false"^^xsd:boolean ;
+                                                                                                          :Keyboard_is_wired "true"^^xsd:boolean ;
+                                                                                                          :Keyboard_type "Mechanical" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Genius_Scorpion_K220
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Genius_Scorpion_K220> rdf:type :Membrane_keyboard ;
+                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> ;
+                                                                                                         :Keyboard_is_water_resistant "true"^^xsd:boolean ;
+                                                                                                         :Keyboard_is_wired "true"^^xsd:boolean ;
+                                                                                                         :Keyboard_type "Membrane" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_HP_QY776AA
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_HP_QY776AA> rdf:type :Membrane_keyboard ;
+                                                                                               :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_HP> ;
+                                                                                               :Keyboard_is_water_resistant "false"^^xsd:boolean ;
+                                                                                               :Keyboard_is_wired "true"^^xsd:boolean ;
+                                                                                               :Keyboard_type "Membrane" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Hama_KC-600
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Hama_KC-600> rdf:type :Membrane_keyboard ;
+                                                                                                :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Hama> ;
+                                                                                                :Keyboard_is_water_resistant "true"^^xsd:boolean ;
+                                                                                                :Keyboard_is_wired "true"^^xsd:boolean ;
+                                                                                                :Keyboard_type "Membrane" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_G512
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_G512> rdf:type :Mechanical_keyboard ;
+                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
+                                                                                                  :Keyboard_is_water_resistant "false"^^xsd:boolean ;
+                                                                                                  :Keyboard_is_wired "true"^^xsd:boolean ;
+                                                                                                  :Keyboard_type "Mechanical" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_G915_LIGHTSPEED
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_G915_LIGHTSPEED> rdf:type :Mechanical_keyboard ;
+                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
+                                                                                                             :Keyboard_is_water_resistant "false"^^xsd:boolean ;
+                                                                                                             :Keyboard_is_wired "false"^^xsd:boolean ;
+                                                                                                             :Keyboard_type "Mechanical" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_K12
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_K12> rdf:type :Membrane_keyboard ;
+                                                                                                 :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
+                                                                                                 :Keyboard_is_water_resistant "true"^^xsd:boolean ;
+                                                                                                 :Keyboard_is_wired "true"^^xsd:boolean ;
+                                                                                                 :Keyboard_type "Membrane" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Razer_CYNOSA_CHROMA_V2
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Razer_CYNOSA_CHROMA_V2> rdf:type :Membrane_keyboard ;
+                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Razer> ;
+                                                                                                           :Keyboard_is_water_resistant "true"^^xsd:boolean ;
+                                                                                                           :Keyboard_is_wired "true"^^xsd:boolean ;
+                                                                                                           :Keyboard_type "Membrane" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Redragon_K535-KR
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Redragon_K535-KR> rdf:type :Mechanical_keyboard ;
+                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Redragon> ;
+                                                                                                     :Keyboard_is_water_resistant "false"^^xsd:boolean ;
+                                                                                                     :Keyboard_is_wired "false"^^xsd:boolean ;
+                                                                                                     :Keyboard_type "Mechanical" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Redragon_Kala_K557_RGB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Redragon_Kala_K557_RGB> rdf:type :Mechanical_keyboard ;
+                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Redragon> ;
+                                                                                                           :Keyboard_is_water_resistant "true"^^xsd:boolean ;
+                                                                                                           :Keyboard_is_wired "true"^^xsd:boolean ;
+                                                                                                           :Keyboard_type "Mechanical" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Micriphone_Hama_CS-461
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Micriphone_Hama_CS-461> rdf:type :Microphone ;
+                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Hama> ;
+                                                                                                  :frequency_response "30Hz - 13000Hhz" ;
+                                                                                                  :sensitivities "-58db +/- 3db" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Microphone_Ampage_SNRMX2
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Microphone_Ampage_SNRMX2> rdf:type :Microphone ;
+                                                                                                    :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Ampage> ;
+                                                                                                    :frequency_response "100Hz - 16000Hhz" ;
+                                                                                                    :sensitivities "-38db +3db" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Microphone_Marvo_MIC01
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Microphone_Marvo_MIC01> rdf:type :Microphone ;
+                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Marvo> ;
+                                                                                                  :frequency_response "20Hz - 20000Hhz" ;
+                                                                                                  :sensitivities "-34db +/- 3db" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Microphone_Marvo_MIC05
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Microphone_Marvo_MIC05> rdf:type :Microphone ;
+                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Marvo> ;
+                                                                                                  :frequency_response "30Hz - 16000Hhz" ;
+                                                                                                  :sensitivities "-36db +/- 3db" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Microphone_Trust_GXT210
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Microphone_Trust_GXT210> rdf:type :Microphone ;
+                                                                                                   :frequency_response "100Hz - 10000Hhz" ;
+                                                                                                   :sensitivities "-46db" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_ASUS_LED_VG248QE
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_ASUS_LED_VG248QE> rdf:type :LED_monitor ;
+                                                                                                    :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
+                                                                                                    :Display_aspect_ratio "16:9" ;
+                                                                                                    :Display_panel_type "TN" ;
+                                                                                                    :Display_refresh_rate "144Hz" ;
+                                                                                                    :Display_resolution "1920x1080" ;
+                                                                                                    :Display_size 24 ;
+                                                                                                    :Display_type "LED" ;
+                                                                                                    :Display_view_angle "170/160" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_ASUS__VS197DE
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_ASUS__VS197DE> rdf:type :LED_monitor ;
+                                                                                                 :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
+                                                                                                 :Display_aspect_ratio "16:9" ;
+                                                                                                 :Display_panel_type "TN" ;
+                                                                                                 :Display_refresh_rate "60Hz" ;
+                                                                                                 :Display_resolution "1366x768" ;
+                                                                                                 :Display_size 18.5 ;
+                                                                                                 :Display_type "LED" ;
+                                                                                                 :Display_view_angle "90/65" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_DELL_UltraSharp_U3023E
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_DELL_UltraSharp_U3023E> rdf:type :LED_monitor ;
+                                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Dell> ;
+                                                                                                          :Display_aspect_ratio "16:10" ;
+                                                                                                          :Display_panel_type "IPS" ;
+                                                                                                          :Display_refresh_rate "60Hz" ;
+                                                                                                          :Display_resolution "2560x1600" ;
+                                                                                                          :Display_size 30 ;
+                                                                                                          :Display_type "LED" ;
+                                                                                                          :Display_view_angle "178/178" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_GIGABYTE_48_AORUS_FO48U-EK
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_GIGABYTE_48_AORUS_FO48U-EK> rdf:type :OLED_monitor ;
+                                                                                                              :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_GIGABYTE> ;
+                                                                                                              :Display_aspect_ratio "16:9" ;
+                                                                                                              :Display_refresh_rate "120Hz" ;
+                                                                                                              :Display_resolution "3840x2160" ;
+                                                                                                              :Display_size 47 ;
+                                                                                                              :Display_type "OLED" ;
+                                                                                                              :Display_view_angle "178/178" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_LG_31.5_4K_LED-_32UL750-W
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_LG_31.5_4K_LED-_32UL750-W> rdf:type :LED_monitor ;
+                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LG> ;
+                                                                                                             :Display_aspect_ratio "16:9" ;
+                                                                                                             :Display_panel_type "VA" ;
+                                                                                                             :Display_refresh_rate "60Hz" ;
+                                                                                                             :Display_resolution "3840x2160" ;
+                                                                                                             :Display_size 31.5 ;
+                                                                                                             :Display_type "LED" ;
+                                                                                                             :Display_view_angle "178/178" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_LG_LED_22MK400H-B
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_LG_LED_22MK400H-B> rdf:type :LED_monitor ;
+                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LG> ;
+                                                                                                     :Display_aspect_ratio "16:9" ;
+                                                                                                     :Display_panel_type "TN" ;
+                                                                                                     :Display_refresh_rate "60Hz" ;
+                                                                                                     :Display_resolution "1920x1080" ;
+                                                                                                     :Display_size 21.5 ;
+                                                                                                     :Display_type "LED" ;
+                                                                                                     :Display_view_angle "90/65" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_LG_LED_IPS_24MP60G-B.AEU
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_LG_LED_IPS_24MP60G-B.AEU> rdf:type :LED_monitor ;
+                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LG> ;
+                                                                                                            :Display_aspect_ratio "16:9" ;
+                                                                                                            :Display_panel_type "IPS" ;
+                                                                                                            :Display_refresh_rate "75Hz" ;
+                                                                                                            :Display_resolution "1920x1080" ;
+                                                                                                            :Display_size 24 ;
+                                                                                                            :Display_type "LED" ;
+                                                                                                            :Display_view_angle "178/178" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_LcPower_LC-M16-4K-UHD-P-O
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_LcPower_LC-M16-4K-UHD-P-O> rdf:type :OLED_monitor ;
+                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LC_Power> ;
+                                                                                                             :Display_aspect_ratio "16:9" ;
+                                                                                                             :Display_refresh_rate "60Hz" ;
+                                                                                                             :Display_resolution "3840x2160" ;
+                                                                                                             :Display_size 15.6 ;
+                                                                                                             :Display_type "OLED" ;
+                                                                                                             :Display_view_angle "178/178" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Asus_ROG_Gladius_III
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Asus_ROG_Gladius_III> rdf:type :Optical_mouse ;
+                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
+                                                                                                      :Mouse_DPI 19000 ;
+                                                                                                      :Mouse_number_of_buttons 6 ;
+                                                                                                      :Mouse_polling_rate "125Hz" ;
+                                                                                                      :Mouse_type "Optical" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Genius_M8-610_Scorpion
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Genius_M8-610_Scorpion> rdf:type :Laser_mouse ;
+                                                                                                        :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> ;
+                                                                                                        :Mouse_DPI 8200 ;
+                                                                                                        :Mouse_number_of_buttons 6 ;
+                                                                                                        :Mouse_polling_rate "1000Hz" ;
+                                                                                                        :Mouse_type "Laser" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Hama_MW800
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Hama_MW800> rdf:type :Laser_mouse ;
+                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Hama> ;
+                                                                                            :Mouse_DPI 2400 ;
+                                                                                            :Mouse_number_of_buttons 2 ;
+                                                                                            :Mouse_polling_rate "1000Hz" ;
+                                                                                            :Mouse_type "Laser" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Lenovo_Wireless_Laser_X30H56886
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Lenovo_Wireless_Laser_X30H56886> rdf:type :Laser_mouse ;
+                                                                                                                 :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Lenovo> ;
+                                                                                                                 :Mouse_DPI 1600 ;
+                                                                                                                 :Mouse_number_of_buttons 5 ;
+                                                                                                                 :Mouse_polling_rate "1000Hz" ;
+                                                                                                                 :Mouse_type "Laser" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_B100
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_B100> rdf:type :Optical_mouse ;
+                                                                                               :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
+                                                                                               :Mouse_DPI 800 ;
+                                                                                               :Mouse_number_of_buttons 3 ;
+                                                                                               :Mouse_polling_rate "1000Hz" ;
+                                                                                               :Mouse_type "Optical" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_G502_LIGHTSPEED
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_G502_LIGHTSPEED> rdf:type :Optical_mouse ;
+                                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
+                                                                                                          :Mouse_DPI 16000 ;
+                                                                                                          :Mouse_number_of_buttons 7 ;
+                                                                                                          :Mouse_polling_rate "1000Hz" ;
+                                                                                                          :Mouse_type "Optical" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_Lift_Ggraphite
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_Lift_Ggraphite> rdf:type :Optical_mouse ;
+                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
+                                                                                                         :Mouse_DPI 4000 ;
+                                                                                                         :Mouse_number_of_buttons 6 ;
+                                                                                                         :Mouse_polling_rate "800Hz" ;
+                                                                                                         :Mouse_type "Optical" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_MX_MASTER3
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_MX_MASTER3> rdf:type :Laser_mouse ;
+                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
+                                                                                                     :Mouse_DPI 4000 ;
+                                                                                                     :Mouse_number_of_buttons 5 ;
+                                                                                                     :Mouse_polling_rate "125Hz" ;
+                                                                                                     :Mouse_type "Laser" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Razer_NAGA_PRO_RZ01
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Razer_NAGA_PRO_RZ01> rdf:type :Optical_mouse ;
+                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Razer> ;
+                                                                                                     :Mouse_DPI 20000 ;
+                                                                                                     :Mouse_number_of_buttons 12 ;
+                                                                                                     :Mouse_polling_rate "1000Hz" ;
+                                                                                                     :Mouse_type "Optical" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_BROTHER_DCP-T425W
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_BROTHER_DCP-T425W> rdf:type :Printer ;
+                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Brother> ;
+                                                                                                     :PrinterScanner_format "A4" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_BROTHER_HL-L2372DN
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_BROTHER_HL-L2372DN> rdf:type :Printer ;
+                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Brother> ;
+                                                                                                      :PrinterScanner_format "A4" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_Canon_Pixma_G3411
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_Canon_Pixma_G3411> rdf:type :Printer ;
+                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Canon> ;
+                                                                                                     :PrinterScanner_format "A4" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_Canon_Pixma_TS3451
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_Canon_Pixma_TS3451> rdf:type :Printer ;
+                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Canon> ;
+                                                                                                      :PrinterScanner_format "A4" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_HP_Neverstop_1000w-4RY23A
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_HP_Neverstop_1000w-4RY23A> rdf:type :Printer ;
+                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_HP> ;
+                                                                                                             :PrinterScanner_format "A4" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_HP_SmartTank_515_1TJ09A
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_HP_SmartTank_515_1TJ09A> rdf:type :Printer ;
+                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_HP> ;
+                                                                                                           :PrinterScanner_format "A4" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_Brother_ADS-2400N
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_Brother_ADS-2400N> rdf:type :Scanner ;
+                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Brother> ;
+                                                                                                     :PrinterScanner_format "A4" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_Brother_DS-720D
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_Brother_DS-720D> rdf:type :Scanner ;
+                                                                                                   :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Brother> ;
+                                                                                                   :PrinterScanner_format "A4" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_Brother_DS-820W
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_Brother_DS-820W> rdf:type :Scanner ;
+                                                                                                   :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Brother> ;
+                                                                                                   :PrinterScanner_format "A4" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_EPSON_WorkForce_DS-360W
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_EPSON_WorkForce_DS-360W> rdf:type :Scanner ;
+                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Epson> ;
+                                                                                                           :PrinterScanner_format "A4" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_HP_ScanJet_Pro2500
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_HP_ScanJet_Pro2500> rdf:type :Scanner ;
+                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_HP> ;
+                                                                                                      :PrinterScanner_format "A4" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_EDIFIER_R1280T
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_EDIFIER_R1280T> rdf:type :Speakers ;
+                                                                                                   :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Edifer> ;
+                                                                                                   :frequency_response "75Hz - 18000Hz" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SP-HF280
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SP-HF280> rdf:type :Speakers ;
+                                                                                                    :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> ;
+                                                                                                    :frequency_response "100Hz - 20000Hz" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SP-HF500A_II
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SP-HF500A_II> rdf:type :Speakers ;
+                                                                                                        :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> ;
+                                                                                                        :frequency_response "100Hz - 20000Hz" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SP-Q180
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SP-Q180> rdf:type :Speakers ;
+                                                                                                   :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> ;
+                                                                                                   :frequency_response "150Hz - 20000Hz" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SW-HF_2.1
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SW-HF_2.1> rdf:type :Speakers ;
+                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> ;
+                                                                                                     :frequency_response "65Hz - 20000Hz" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_HP_X1000
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_HP_X1000> rdf:type :Speakers ;
+                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_HP> ;
+                                                                                             :frequency_response "20Hz - 20000Hz" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_JBL_QUANTUM_DUO
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_JBL_QUANTUM_DUO> rdf:type :Speakers ;
+                                                                                                    :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_JBL> ;
+                                                                                                    :frequency_response "60Hz - 20000Hz" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Logitech_Z213
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Logitech_Z213> rdf:type :Speakers ;
+                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
+                                                                                                  :frequency_response "65Hz - 20000Hz" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_MARVO_Scorpion_SG-118
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_MARVO_Scorpion_SG-118> rdf:type :Speakers ;
+                                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Marvo> ;
+                                                                                                          :frequency_response "150Hz - 20000Hz" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Redragon_ADIEMUS_GS560
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Redragon_ADIEMUS_GS560> rdf:type :Speakers ;
+                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Redragon> ;
+                                                                                                           :frequency_response "150Hz - 20000Hz" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#WiFiCard_Asus_USB-AC51_AC600
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#WiFiCard_Asus_USB-AC51_AC600> rdf:type :WiFi_card ;
+                                                                                                        :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
+                                                                                                        :Wireless_component_type "WiFi" ;
+                                                                                                        :price "2999din" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#WiFiCard_TP-LINK_AC600
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#WiFiCard_TP-LINK_AC600> rdf:type :WiFi_card ;
+                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_TP_LINK> ;
+                                                                                                  :Wireless_component_type "WiFi" ;
+                                                                                                  :price "2799din" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#WiFiCard_TP-LINK_ARCHER_T2U
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#WiFiCard_TP-LINK_ARCHER_T2U> rdf:type :WiFi_card ;
+                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_TP_LINK> ;
+                                                                                                       :Wireless_component_type "WiFi" ;
+                                                                                                       :price "2799din" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_Philips_243V7QSB/00
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_Philips_243V7QSB/00> rdf:type :LED_monitor ;
+                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Philips> ;
+                                                                                                       :Display_aspect_ratio "16:9" ;
+                                                                                                       :Display_panel_type "IPS" ;
+                                                                                                       :Display_refresh_rate "75Hz" ;
+                                                                                                       :Display_resolution "1920x1080" ;
+                                                                                                       :Display_size 23.8 ;
+                                                                                                       :Display_type "LED" ;
+                                                                                                       :Display_view_angle "178/178" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_Philips_SuperWide_499P9H/00
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_Philips_SuperWide_499P9H/00> rdf:type :LED_monitor ;
+                                                                                                               :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Philips> ;
+                                                                                                               :Display_aspect_ratio "32:9" ;
+                                                                                                               :Display_panel_type "VA" ;
+                                                                                                               :Display_refresh_rate "60Hz" ;
+                                                                                                               :Display_resolution "5120x1440" ;
+                                                                                                               :Display_size 48.8 ;
+                                                                                                               :Display_type "LED" ;
+                                                                                                               :Display_view_angle "178/178" .
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_CORSAIR_iCUE_H150i_RGB_PRO_XT
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_CORSAIR_iCUE_H150i_RGB_PRO_XT> rdf:type :Cooling_system ;
@@ -1535,6 +2113,7 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_NZXT_Kraken_Z73_360mm> rdf:type :Cooling_system ;
                                                                                                         :CS_max_rotation 2000 ;
                                                                                                         :CS_type "Water_cooling_system" .
+
 
 
 #################################################################
