@@ -711,10 +711,6 @@
 
 :RAM_PATRIOT_DDR4_4GB_2666MHz a owl:NamedIndividual .
 # 
-# http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_DDR4_4GB_2666MHz_Patriot_Signature_PSD44G266681
-
-:RAM_PATRIOT_DDR4_4GB_2666MHz_Patriot_Signature_PSD44G266681 a owl:NamedIndividual .
-# 
 # http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_SILICON_POWER_4GB_2666MHz_RAM_DDR4
 
 :RAM_SILICON_POWER_4GB_2666MHz_RAM_DDR4 a owl:NamedIndividual .

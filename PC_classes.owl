@@ -204,6 +204,12 @@
               rdfs:range xsd:string .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU_L3_cache
+:CPU_L3_cache rdf:type owl:DatatypeProperty ;
+              rdfs:domain :CPU ;
+              rdfs:range xsd:string .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU_core
 :CPU_core rdf:type owl:DatatypeProperty ;
           rdfs:domain :CPU ;
@@ -238,6 +244,12 @@
 :CPU_register_type rdf:type owl:DatatypeProperty ;
                    rdfs:domain :CPU ;
                    rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CPU_turbo_frequency
+:CPU_turbo_frequency rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :CPU ;
+                     rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#CS_max_rotation
@@ -448,6 +460,12 @@
                                                  ]
                                       ]
                           ] .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#HDD_memory_size
+:HDD_memory_size rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :HDD ;
+                 rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#HDD_physical_size
@@ -718,6 +736,12 @@
                      ] .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#SSD_memory_size
+:SSD_memory_size rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :SSD ;
+                 rdfs:range xsd:string .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#SSD_read_speed
 :SSD_read_speed rdf:type owl:DatatypeProperty ;
                 rdfs:domain :SSD ;
@@ -858,28 +882,10 @@
        rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/milica38/SystemSupport/main/instances.owl#CPU_L3_cache
-:CPU_L3_cache rdf:type owl:DatatypeProperty ;
-              rdfs:domain :CPU ;
-              rdfs:range xsd:string .
-
-
-###  https://raw.githubusercontent.com/milica38/SystemSupport/main/instances.owl#CPU_turbo_frequency
-:CPU_turbo_frequency rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :CPU ;
-                     rdfs:range xsd:string .
-
-
-###  https://raw.githubusercontent.com/milica38/SystemSupport/main/instances.owl#HDD_memory_size
-:HDD_memory_size rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :HDD ;
-                 rdfs:range xsd:string .
-
-
-###  https://raw.githubusercontent.com/milica38/SystemSupport/main/instances.owl#SSD_memory_size
-:SSD_memory_size rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :SSD ;
-                 rdfs:range xsd:string .
+###  https://raw.githubusercontent.com/milica38/SystemSupport/main/instances.owl#Power_supply_voltage
+:Power_supply_voltage rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Power_supply ;
+                      rdfs:range xsd:string .
 
 
 #################################################################
@@ -1420,6 +1426,11 @@
 #    Individuals
 #################################################################
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Brand_AMD
+:Brand_AMD rdf:type owl:NamedIndividual ,
+                    :Brand .
+
+
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#BluetoothCard_ASUS_BT400
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#BluetoothCard_ASUS_BT400> rdf:type :Bluetooth_card ;
                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
@@ -1590,10 +1601,10 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_5_5600_3.5GHz> rdf:type :CPU ;
                                                                                                        :has_brand :Brand_AMD ;
                                                                                                        :CPU_L2_cache "3 MB" ;
+                                                                                                       :CPU_L3_cache "32 MB" ;
                                                                                                        :CPU_core 6 ;
                                                                                                        :CPU_frequency "3.5 GHz" ;
                                                                                                        :CPU_model "AMD Ryzen5-5600" ;
-                                                                                                       :CPU_L3_cache "32 MB" ;
                                                                                                        :CPU_turbo_frequency "4.4 GHz" .
 
 
@@ -1601,10 +1612,10 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_7_3700X_3.6GHz> rdf:type :CPU ;
                                                                                                         :has_brand :Brand_AMD ;
                                                                                                         :CPU_L2_cache "4 MB" ;
+                                                                                                        :CPU_L3_cache "32 MB" ;
                                                                                                         :CPU_core 8 ;
                                                                                                         :CPU_frequency "3.6 GHz" ;
                                                                                                         :CPU_model "AMD Ryzen7-3700X" ;
-                                                                                                        :CPU_L3_cache "32 MB" ;
                                                                                                         :CPU_turbo_frequency "4.4 GHz" .
 
 
@@ -1612,10 +1623,10 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_7_3800X_3.9GHz> rdf:type :CPU ;
                                                                                                         :has_brand :Brand_AMD ;
                                                                                                         :CPU_L2_cache "4 MB" ;
+                                                                                                        :CPU_L3_cache "32 MB" ;
                                                                                                         :CPU_core 8 ;
                                                                                                         :CPU_frequency "3.9 GHz" ;
                                                                                                         :CPU_model "AMD Ryzen7-3800X" ;
-                                                                                                        :CPU_L3_cache "32 MB" ;
                                                                                                         :CPU_turbo_frequency "4.5 GHz" .
 
 
@@ -1623,10 +1634,10 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_7_5700X_3.4GHz> rdf:type :CPU ;
                                                                                                         :has_brand :Brand_AMD ;
                                                                                                         :CPU_L2_cache "4 MB" ;
+                                                                                                        :CPU_L3_cache "32 MB" ;
                                                                                                         :CPU_core 8 ;
                                                                                                         :CPU_frequency "3.4 GHz" ;
                                                                                                         :CPU_model "AMD Ryzen7-5700X" ;
-                                                                                                        :CPU_L3_cache "32 MB" ;
                                                                                                         :CPU_turbo_frequency "4.6 GHz" .
 
 
@@ -1634,10 +1645,10 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_9_5950X_3.4GHz> rdf:type :CPU ;
                                                                                                         :has_brand :Brand_AMD ;
                                                                                                         :CPU_L2_cache "8 MB" ;
+                                                                                                        :CPU_L3_cache "64 MB" ;
                                                                                                         :CPU_core 16 ;
                                                                                                         :CPU_frequency "3.4 GHz" ;
                                                                                                         :CPU_model "AMD Ryzen9-5950X" ;
-                                                                                                        :CPU_L3_cache "64 MB" ;
                                                                                                         :CPU_turbo_frequency "4.9 GHz" .
 
 
@@ -1655,30 +1666,30 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i3-12100_3.30_GHz> rdf:type :CPU ;
                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> ;
                                                                                                             :CPU_L2_cache "5 MB" ;
+                                                                                                            :CPU_L3_cache "12 MB" ;
                                                                                                             :CPU_core 4 ;
                                                                                                             :CPU_frequency "3.3 GHz" ;
                                                                                                             :CPU_model "Intel Core i3-12100" ;
-                                                                                                            :CPU_L3_cache "12 MB" ;
                                                                                                             :CPU_turbo_frequency "4.3 GHz" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i5-10600_3.30_GHz
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i5-10600_3.30_GHz> rdf:type :CPU ;
                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> ;
+                                                                                                            :CPU_L3_cache "12 MB" ;
                                                                                                             :CPU_core 6 ;
                                                                                                             :CPU_frequency "3.3 GHz" ;
                                                                                                             :CPU_model "Intel Core i5-10600" ;
-                                                                                                            :CPU_L3_cache "12 MB" ;
                                                                                                             :CPU_turbo_frequency "4.8 GHz" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i5-9600K_3.7GHz
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i5-9600K_3.7GHz> rdf:type :CPU ;
                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> ;
+                                                                                                          :CPU_L3_cache "9 MB" ;
                                                                                                           :CPU_core 6 ;
                                                                                                           :CPU_frequency "3.7 GHz" ;
                                                                                                           :CPU_model "Intel Core i5-9600K" ;
-                                                                                                          :CPU_L3_cache "9 MB" ;
                                                                                                           :CPU_turbo_frequency "4.6 GHz" .
 
 
@@ -1696,10 +1707,10 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i9-12900KF_3.2GHz> rdf:type :CPU ;
                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> ;
                                                                                                             :CPU_L2_cache "14 MB" ;
+                                                                                                            :CPU_L3_cache "30 MB" ;
                                                                                                             :CPU_core 16 ;
                                                                                                             :CPU_frequency "3.2 GHz" ;
                                                                                                             :CPU_model "Intel Core i9-12900KF" ;
-                                                                                                            :CPU_L3_cache "30 MB" ;
                                                                                                             :CPU_turbo_frequency "5.2 GHz" .
 
 
@@ -1983,10 +1994,11 @@
                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Seagate> ;
                                                                                                      :HDD_buffer_size "256 MB" ;
                                                                                                      :HDD_interface "SATA 3" ;
+                                                                                                     :HDD_memory_size "" ,
+                                                                                                                      "2 TB" ;
                                                                                                      :HDD_physical_size "3.5 inch" ;
                                                                                                      :HDD_rotation_speed "7200 rpm" ;
-                                                                                                     :HDD_memory_size "" ,
-                                                                                                                      "2 TB" .
+                                                                                                     :Storage_device_type "HDD" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_4TB
@@ -1994,9 +2006,10 @@
                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Seagate> ;
                                                                                                      :HDD_buffer_size "256MB" ;
                                                                                                      :HDD_interface "SATA 3" ;
+                                                                                                     :HDD_memory_size "4 TB" ;
                                                                                                      :HDD_physical_size "3.5 inch" ;
                                                                                                      :HDD_rotation_speed "5900 rpm" ;
-                                                                                                     :HDD_memory_size "4 TB" .
+                                                                                                     :Storage_device_type "HDD" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_8TB
@@ -2004,9 +2017,10 @@
                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Seagate> ;
                                                                                                      :HDD_buffer_size "256 MB" ;
                                                                                                      :HDD_interface "SATA 3" ;
+                                                                                                     :HDD_memory_size "8 TB" ;
                                                                                                      :HDD_physical_size "3.5 inch" ;
                                                                                                      :HDD_rotation_speed "5400 rpm" ;
-                                                                                                     :HDD_memory_size "8 TB" .
+                                                                                                     :Storage_device_type "HDD" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_1TB_WD_Blue
@@ -2014,9 +2028,10 @@
                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_WesternDigital> ;
                                                                                                            :HDD_buffer_size "64 MB" ;
                                                                                                            :HDD_interface "SATA 3" ;
+                                                                                                           :HDD_memory_size "1 TB" ;
                                                                                                            :HDD_physical_size "3.5 inch" ;
                                                                                                            :HDD_rotation_speed "7200 rpm" ;
-                                                                                                           :HDD_memory_size "1 TB" .
+                                                                                                           :Storage_device_type "HDD" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_2TB_WD_Blue
@@ -2024,9 +2039,10 @@
                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_WesternDigital> ;
                                                                                                            :HDD_buffer_size "64 MB" ;
                                                                                                            :HDD_interface "SATA 3" ;
+                                                                                                           :HDD_memory_size "2 TB" ;
                                                                                                            :HDD_physical_size "3.5 inch" ;
                                                                                                            :HDD_rotation_speed "5400 rpm" ;
-                                                                                                           :HDD_memory_size "2 TB" .
+                                                                                                           :Storage_device_type "HDD" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Western_Digital_4TB_WD_Blue
@@ -2034,9 +2050,10 @@
                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_WesternDigital> ;
                                                                                                            :HDD_buffer_size "64 MB" ;
                                                                                                            :HDD_interface "SATA 3" ;
+                                                                                                           :HDD_memory_size "4 TB" ;
                                                                                                            :HDD_physical_size "3.5 inch" ;
                                                                                                            :HDD_rotation_speed "5400 rpm" ;
-                                                                                                           :HDD_memory_size "4 TB" .
+                                                                                                           :Storage_device_type "HDD" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_CoolerMaster_CH321
@@ -2501,6 +2518,75 @@
                                                                                                      :Mouse_type "Optical" .
 
 
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Network_card_Realtek_Chipset_Gigabit_PCI_Express
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Network_card_Realtek_Chipset_Gigabit_PCI_Express> rdf:type :Network_interface_card .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#OS_Microsoft_Windows_10_Home_32_Bit
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#OS_Microsoft_Windows_10_Home_32_Bit> rdf:type :Operating_system ;
+                                                                                                               :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Microsoft> ;
+                                                                                                               :Operating_system_type "32bit" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_ANTEC_VP700P_PLUS
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_ANTEC_VP700P_PLUS> rdf:type :Power_supply ;
+                                                                                                          :Power_supply_voltage "700 W" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER_600W_ELITE_V3
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER_600W_ELITE_V3> rdf:type :Power_supply ;
+                                                                                                                    :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
+                                                                                                                    :Power_supply_voltage "600 W" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER_MWE_BRONZE_550W
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER_MWE_BRONZE_550W> rdf:type :Power_supply ;
+                                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
+                                                                                                                      :Power_supply_voltage "550 W" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER_XG750_Platinum_Plus_750W
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER_XG750_Platinum_Plus_750W> rdf:type :Power_supply ;
+                                                                                                                               :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
+                                                                                                                               :Power_supply_voltage "750 W" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MWE_750_BRONZE_V2
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MWE_750_BRONZE_V2> rdf:type :Power_supply ;
+                                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
+                                                                                                                         :Power_supply_voltage "750 W" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MWE_GOLD_750
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MWE_GOLD_750> rdf:type :Power_supply ;
+                                                                                                                    :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
+                                                                                                                    :Power_supply_voltage "750 W" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MWE_GOLD_850W_V2
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MWE_GOLD_850W_V2> rdf:type :Power_supply ;
+                                                                                                                        :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
+                                                                                                                        :Power_supply_voltage "850 W" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MasterWatt_750
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MasterWatt_750> rdf:type :Power_supply ;
+                                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
+                                                                                                                      :Power_supply_voltage "750  W" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_MS_CORE_M700_80_Plus_PLATINUM
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_MS_CORE_M700_80_Plus_PLATINUM> rdf:type :Power_supply ;
+                                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> ;
+                                                                                                                      :Power_supply_voltage "700 W" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_MS__CORE_M600_80_Plus_PLATINUM
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_MS__CORE_M600_80_Plus_PLATINUM> rdf:type :Power_supply ;
+                                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> ;
+                                                                                                                       :Power_supply_voltage "600 W" .
+
+
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_BROTHER_DCP-T425W
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_BROTHER_DCP-T425W> rdf:type :Printer ;
                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Brother> ;
@@ -2537,6 +2623,121 @@
                                                                                                            :PrinterScanner_format "A4" .
 
 
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_CORSAIR_CMV4GX4M1A2400C16
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_CORSAIR_CMV4GX4M1A2400C16> rdf:type :RAM ;
+                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Corsair> ;
+                                                                                                         :DDrate_type "DDR4" ;
+                                                                                                         :RAM_clock_speed "2400 MHz" ;
+                                                                                                         :RAM_size "4 GB" ;
+                                                                                                         :RAM_type "DRAM" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_CORSAIR_Vengeance_LPX_CMK16GX4M2Z3600C18
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_CORSAIR_Vengeance_LPX_CMK16GX4M2Z3600C18> rdf:type :RAM ;
+                                                                                                                        :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Corsair> ;
+                                                                                                                        :DDrate_type "DDR4" ;
+                                                                                                                        :RAM_clock_speed "3600 MHz" ;
+                                                                                                                        :RAM_size "16 GB" ;
+                                                                                                                        :RAM_type "DRAM" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_HP_HYNIX_DIMM_DDR3_8GB_1333MHz
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_HP_HYNIX_DIMM_DDR3_8GB_1333MHz> rdf:type :RAM ;
+                                                                                                              :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_HP> ;
+                                                                                                              :DDrate_type "DDR3" ;
+                                                                                                              :RAM_clock_speed "1333 MHz" ;
+                                                                                                              :RAM_size "8 GB" ;
+                                                                                                              :RAM_type "DRAM" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_DIMM_DDR4_8GB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_DIMM_DDR4_8GB> rdf:type :RAM ;
+                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Kingston> ;
+                                                                                                      :DDrate_type "DDR4" ;
+                                                                                                      :RAM_clock_speed "3200 MHz" ;
+                                                                                                      :RAM_size "8GB" ;
+                                                                                                      :RAM_type "DRAM" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_FURY_Beast_4GB_DDR4
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_FURY_Beast_4GB_DDR4> rdf:type :RAM ;
+                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Kingston> ;
+                                                                                                            :DDrate_type "DDR4" ;
+                                                                                                            :RAM_clock_speed "2666 MHz" ;
+                                                                                                            :RAM_size "4GB" ;
+                                                                                                            :RAM_type "DRAM" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_HyperX_Fury_DDR4_4GB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_HyperX_Fury_DDR4_4GB> rdf:type :RAM ;
+                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Kingston> ;
+                                                                                                             :DDrate_type "DDR4" ;
+                                                                                                             :RAM_clock_speed "2666 MHz" ;
+                                                                                                             :RAM_size "64 GB" ;
+                                                                                                             :RAM_type "DRAM" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_DDR2_2GB_800MHz
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_DDR2_2GB_800MHz> rdf:type :RAM ;
+                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Patriot> ;
+                                                                                                       :DDrate_type "DDR2" ;
+                                                                                                       :RAM_clock_speed "800 MHz" ;
+                                                                                                       :RAM_size "2GB" ;
+                                                                                                       :RAM_type "DRAM" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_DDR4_4GB_2666MHz
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_DDR4_4GB_2666MHz> rdf:type :RAM ;
+                                                                                                        :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Patriot> ;
+                                                                                                        :DDrate_type "DDR4" ;
+                                                                                                        :RAM_clock_speed "2666 MHz" ;
+                                                                                                        :RAM_size "4GB" ;
+                                                                                                        :RAM_type "DRAM" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_SILICON_POWER_4GB_2666MHz_RAM_DDR4
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_SILICON_POWER_4GB_2666MHz_RAM_DDR4> rdf:type :RAM ;
+                                                                                                                  :DDrate_type "DDR4" ;
+                                                                                                                  :RAM_clock_speed "2666 MHz" ;
+                                                                                                                  :RAM_size "4GB" ;
+                                                                                                                  :RAM_type "DRAM" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_TRANSCEND_JM2666HLH-4G_DDR4_4GB_2666MHz
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_TRANSCEND_JM2666HLH-4G_DDR4_4GB_2666MHz> rdf:type :RAM ;
+                                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Transcend> ;
+                                                                                                                       :DDrate_type "DDR4" ;
+                                                                                                                       :RAM_clock_speed "2666 MHz" ;
+                                                                                                                       :RAM_size "4GB" ;
+                                                                                                                       :RAM_type "DRAM" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7LN256HMJP-000H1_Samsung_PM871a_Series_256GB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7LN256HMJP-000H1_Samsung_PM871a_Series_256GB> rdf:type :Storage_device ;
+                                                                                                                              :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> ;
+                                                                                                                              :SSD_memory_size "256 GB" ;
+                                                                                                                              :SSD_read_speed "540 MBS" ;
+                                                                                                                              :SSD_write_speed "280 MBS" ;
+                                                                                                                              :Storage_device_type "SSD" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7PD128HCFV-00000_Samsung_SM841n_Series_128GB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7PD128HCFV-00000_Samsung_SM841n_Series_128GB> rdf:type :Storage_device ;
+                                                                                                                              :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> ;
+                                                                                                                              :SSD_memory_size "128 GB" ;
+                                                                                                                              :SSD_read_speed "480 MBS" ;
+                                                                                                                              :SSD_write_speed "200 MBS" ;
+                                                                                                                              :Storage_device_type "SSD" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZVLB1T0HBLR-00007_Samsung_PM981a_1TB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZVLB1T0HBLR-00007_Samsung_PM981a_1TB> rdf:type :Storage_device ;
+                                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> ;
+                                                                                                                     :SSD_memory_size "1 TB" ;
+                                                                                                                     :SSD_read_speed "3200 MBS" ;
+                                                                                                                     :Storage_device_type "SSD" .
+
+
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_Brother_ADS-2400N
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_Brother_ADS-2400N> rdf:type :Scanner ;
                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Brother> ;
@@ -2565,6 +2766,23 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_HP_ScanJet_Pro2500> rdf:type :Scanner ;
                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_HP> ;
                                                                                                       :PrinterScanner_format "A4" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_FAST_ASIA_FAST_ASIA_USB_virtual_7.1
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_FAST_ASIA_FAST_ASIA_USB_virtual_7.1> rdf:type :Sound_card ;
+                                                                                                                          :Sound_card_channels 8 .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_FAST_ASIA_USB_2.0
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_FAST_ASIA_USB_2.0> rdf:type :Sound_card ;
+                                                                                                        :Sound_card_channels 2 .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_SB_CMI_8738_5.1
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Sound_card_SB_CMI_8738_5.1> rdf:type :Sound_card ;
+                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intex> ;
+                                                                                                      :Sound_card_channels 6 ;
+                                                                                                      :Sound_card_chipset "CMI 8738" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_EDIFIER_R1280T
@@ -2672,9 +2890,57 @@
                                                                                                                :Display_view_angle "178/178" .
 
 
-###  https://raw.githubusercontent.com/milica38/SystemSupport/main/instances.owl#Brand_AMD
-:Brand_AMD rdf:type owl:NamedIndividual ,
-                    :Brand .
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Network_card_TP-Link_10/100/1000Mbps(TG-3468)
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Network_card_TP-Link_10/100/1000Mbps(TG-3468)> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_TP_LINK> .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#OS_Microsoft_OEM_Windows_10_Home,_64-Bit
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#OS_Microsoft_OEM_Windows_10_Home,_64-Bit> rdf:type :Operating_system ;
+                                                                                                                    :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Microsoft> ;
+                                                                                                                    :Operating_system_type "64bit" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_4GB_DDR4,_3200MHz
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_KINGSTON_4GB_DDR4,_3200MHz> rdf:type :RAM ;
+                                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Kingston> ;
+                                                                                                          :DDrate_type "DDR4" ;
+                                                                                                          :RAM_clock_speed "3200 MHz" ;
+                                                                                                          :RAM_size "4 GB" ;
+                                                                                                          :RAM_type "DRAM" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_8GB_DDR4,_2666MHz
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_8GB_DDR4,_2666MHz> rdf:type :RAM ;
+                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Patriot> ;
+                                                                                                         :DDrate_type "DDR4" ;
+                                                                                                         :RAM_clock_speed "2666 MHz" ;
+                                                                                                         :RAM_size "8 GB" ;
+                                                                                                         :RAM_type "DRAM" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-76E4T0B/EU_Samsung_860_EVO_Series_4TB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-76E4T0B/EU_Samsung_860_EVO_Series_4TB> rdf:type :Storage_device ;
+                                                                                                                        :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> ;
+                                                                                                                        :SSD_memory_size "4 TB" ;
+                                                                                                                        :SSD_read_speed "550 MB" ;
+                                                                                                                        :SSD_write_speed "520 MB" ;
+                                                                                                                        :Storage_device_type "SSD" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-77Q1T0B/AM_Samsung_870_QVO_1TB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-77Q1T0B/AM_Samsung_870_QVO_1TB> rdf:type :Storage_device ;
+                                                                                                                 :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> ;
+                                                                                                                 :SSD_memory_size "1 TB" ;
+                                                                                                                 :SSD_read_speed "560 MB" ;
+                                                                                                                 :SSD_write_speed "530 MB" ;
+                                                                                                                 :Storage_device_type "SSD" .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-7PA0640/0H1_Samsung_PM810_Series_64GB
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-7PA0640/0H1_Samsung_PM810_Series_64GB> rdf:type :Storage_device ;
+                                                                                                                        :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> ;
+                                                                                                                        :SSD_memory_size "64 GB" ;
+                                                                                                                        :Storage_device_type "SSD" .
 
 
 #################################################################
