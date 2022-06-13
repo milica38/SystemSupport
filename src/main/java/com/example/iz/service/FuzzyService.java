@@ -13,32 +13,25 @@ import java.util.List;
 
 @Service
 public class FuzzyService {
-
-    private FIS fis;
-    private List<String> computerUsages;
-    private String blockName;
+    private String path;
 
     public FuzzyService() throws URISyntaxException {
-        var path = TypeReference.class.getResource("/data/template.fcl").toURI().getPath();
-        this.fis = FIS.load(path, true);
-        if (fis != null)
-            System.out.println("Fuzzy rules successfully loaded!");
-
-        computerUsages = Arrays.asList("homeUsage","miningUsage","gamingUsage","programmingUsage");
-        blockName = "sablon";
+        this.path = TypeReference.class.getResource("/data/template.fcl").toURI().getPath();
     }
 
     public List<FuzzyOutputDTO> performQuery(int coreNumber, int ramSize, int storageSize, int gpuSize) {
-        fis.setVariable("coreNumber", coreNumber);
-        fis.setVariable("ramSize", ramSize);
-        fis.setVariable("gpuSize", gpuSize);
-        fis.setVariable("storageSize", storageSize);
-        fis.evaluate();
 
-        var response = new ArrayList<FuzzyOutputDTO>();
-        for(var usage : computerUsages)
+        String args[] = { "-noCharts", "-e", path, ""+coreNumber, ""+ramSize, ""+storageSize, ""+gpuSize};
+        JFuzzyLogic jFuzzyLogic = new JFuzzyLogic(args);
+        jFuzzyLogic.run();
+
+        FIS fis = jFuzzyLogic.getFis();
+
+        List<FuzzyOutputDTO> response = new ArrayList<FuzzyOutputDTO>();
+        List<String> usages = Arrays.asList("homeUsage","gamingUsage","programmingUsage");
+        for(String usage : usages)
         {
-            var percentage = fis.getFunctionBlock(blockName).getVariable(usage);
+            var percentage = fis.getFunctionBlock("sablon").getVariable(usage);
             response.add(new FuzzyOutputDTO(usage,percentage.getValue()));
         }
 
