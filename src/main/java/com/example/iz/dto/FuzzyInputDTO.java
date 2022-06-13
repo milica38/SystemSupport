@@ -15,4 +15,5 @@ public class FuzzyInputDTO {
     private int ramSize;
     private int storageSize;
     private int gpuSize;
+    private int cpuClockSpeed;
 }

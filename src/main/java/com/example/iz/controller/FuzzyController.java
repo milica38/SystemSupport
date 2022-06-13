@@ -25,8 +25,9 @@ public class FuzzyController {
     }
 
     @PostMapping
-    public ResponseEntity<List<FuzzyOutputDTO>> performFuzzyQuery(@RequestBody FuzzyInputDTO fuzzyQueryDTO){
-        var response = service.performQuery(fuzzyQueryDTO.getCoreNumber(),fuzzyQueryDTO.getRamSize(),fuzzyQueryDTO.getStorageSize(),fuzzyQueryDTO.getGpuSize());
+    public ResponseEntity<List<FuzzyOutputDTO>> performFuzzyQuery(@RequestBody FuzzyInputDTO dto){
+        var response = service.performQuery(dto.getCoreNumber(),dto.getRamSize(),
+                                        dto.getStorageSize(),dto.getGpuSize(), dto.getCpuClockSpeed());
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }

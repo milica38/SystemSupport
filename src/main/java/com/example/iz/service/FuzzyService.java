@@ -19,16 +19,16 @@ public class FuzzyService {
         this.path = TypeReference.class.getResource("/data/template.fcl").toURI().getPath();
     }
 
-    public List<FuzzyOutputDTO> performQuery(int coreNumber, int ramSize, int storageSize, int gpuSize) {
+    public List<FuzzyOutputDTO> performQuery(int coreNumber, int ramSize, int storageSize, int gpuSize, int cpuClockSpeed) {
 
-        String args[] = { "-noCharts", "-e", path, ""+coreNumber, ""+ramSize, ""+storageSize, ""+gpuSize};
+        String args[] = { "-noCharts", "-e", path, ""+coreNumber, ""+ramSize, ""+storageSize, ""+gpuSize, ""+cpuClockSpeed};
         JFuzzyLogic jFuzzyLogic = new JFuzzyLogic(args);
         jFuzzyLogic.run();
 
         FIS fis = jFuzzyLogic.getFis();
 
         List<FuzzyOutputDTO> response = new ArrayList<FuzzyOutputDTO>();
-        List<String> usages = Arrays.asList("homeUsage","gamingUsage","programmingUsage");
+        List<String> usages = Arrays.asList("home","gaming","programming", "webHosting");
         for(String usage : usages)
         {
             var percentage = fis.getFunctionBlock("sablon").getVariable(usage);
