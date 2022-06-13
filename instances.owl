@@ -20,10 +20,6 @@
 :BluetoothCard_Asus_N13 rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_AMD
-:Brand_AMD rdf:type owl:NamedIndividual .
-
-
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Ampage
 :Brand_Ampage rdf:type owl:NamedIndividual .
 
@@ -576,6 +572,10 @@
 :Mouse_Asus_ROG_Gladius_III rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Genius_31040064102
+:Mouse_Genius_31040064102 rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Genius_M8-610_Scorpion
 :Mouse_Genius_M8-610_Scorpion rdf:type owl:NamedIndividual .
 
@@ -710,6 +710,10 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_DDR4_4GB_2666MHz
 :RAM_PATRIOT_DDR4_4GB_2666MHz rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_PATRIOT_DDR4_4GB_2666MHz_Patriot_Signature_PSD44G266681
+:RAM_PATRIOT_DDR4_4GB_2666MHz_Patriot_Signature_PSD44G266681 rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_SILICON_POWER_4GB_2666MHz_RAM_DDR4
