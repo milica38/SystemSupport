@@ -1,18 +1,32 @@
 package com.example.iz.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.example.iz.dto.FuzzyInputDTO;
+import com.example.iz.dto.FuzzyOutputDTO;
+import com.example.iz.service.FuzzyService;
+import net.sourceforge.jFuzzyLogic.FIS;
+import net.sourceforge.jFuzzyLogic.JFuzzyLogic;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping("/fuzzyLogic")
 public class FuzzyController {
 
-    @GetMapping
-    public ResponseEntity<String> getCurrentUser() {
+    private final FuzzyService service;
 
-        return new ResponseEntity<>("ok", HttpStatus.OK);
+    @Autowired
+    public FuzzyController(FuzzyService service) {
+        this.service = service;
+    }
+
+    @PostMapping
+    public ResponseEntity<List<FuzzyOutputDTO>> performFuzzyQuery(@RequestBody FuzzyInputDTO fuzzyQueryDTO){
+        var response = service.performQuery(fuzzyQueryDTO.getCoreNumber(),fuzzyQueryDTO.getRamSize(),fuzzyQueryDTO.getStorageSize(),fuzzyQueryDTO.getGpuSize());
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }

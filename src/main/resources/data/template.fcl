@@ -1,0 +1,148 @@
+FUNCTION_BLOCK sablon
+
+
+    VAR_INPUT
+        coreNumber : REAL;
+        ramSize : REAL;
+        gpuSize : REAL;
+        storageSize: REAL;
+    END_VAR
+
+
+    VAR_OUTPUT
+        homeUsage : REAL;
+        miningUsage : REAL;
+        gamingUsage : REAL;
+        programmingUsage : REAL;
+    END_VAR
+
+    FUZZIFY coreNumber
+        TERM low:=(0,1) (6,0);
+        TERM medium:=(3,0) (8,1) (12,0);
+        TERM high:=(8,0) (32,1) (64,0);
+        TERM ultra:=(16,0) (64,1);
+    END_FUZZIFY
+
+
+    FUZZIFY storageSize
+        TERM small:=(0,1) (500,0);
+        TERM medium:=(256,0) (500,1) (1000,0);
+        TERM big:=(1000,0) (2000,1) (3000,0);
+        TERM ultra:=(2000,0) (5000,1);
+    END_FUZZIFY
+
+    FUZZIFY ramSize
+        TERM small:=(0,1) (4,0);
+        TERM medium:=(4,0) (4,1) (8,0);
+        TERM big:=(8,0) (16,1) (32,0);
+        TERM ultra:=(30,0) (64,1);
+    END_FUZZIFY
+
+    FUZZIFY gpuSize
+        TERM small:=(0,1) (2,0);
+        TERM medium:=(1,0) (4,1) (6,0);
+        TERM big:=(4,0) (6,1) (8,0);
+        TERM ultra:=(7,0) (32,1);
+    END_FUZZIFY
+
+    DEFUZZIFY homeUsage
+        TERM low:=(0,1) (50,0);
+        TERM medium:=(30,0) (50,1) (70,0);
+        TERM high:=(60,0) (100,1);
+        METHOD : COG;		// 'Center Of Gravity' odn. centar mase (koristi se i MM odn. mean max)
+	    DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
+    END_DEFUZZIFY
+
+    DEFUZZIFY miningUsage
+        TERM low:=(0,1) (50,0);
+        TERM medium:=(30,0) (50,1) (70,0);
+        TERM high:=(60,0) (80,1) (100,0);
+        TERM ultra:=(80,0) (100,1);
+        METHOD : COG;		// 'Center Of Gravity' odn. centar mase (koristi se i MM odn. mean max)
+	    DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
+    END_DEFUZZIFY
+
+    DEFUZZIFY gamingUsage
+        TERM low:=(0,1) (50,0);
+        TERM medium:=(30,0) (50,1) (70,0);
+        TERM high:=(60,0) (100,1);
+        METHOD : COG;		// 'Center Of Gravity' odn. centar mase (koristi se i MM odn. mean max)
+	    DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
+    END_DEFUZZIFY
+
+    DEFUZZIFY programmingUsage
+        TERM low:=(0,1) (50,0);
+        TERM medium:=(30,0) (50,1) (70,0);
+        TERM high:=(60,0) (100,1);
+        METHOD : COG;		// 'Center Of Gravity' odn. centar mase (koristi se i MM odn. mean max)
+	    DEFAULT := 0;		// podrazumevana vrednost (ukoliko nijedno pravilo nije aktivirano)
+    END_DEFUZZIFY
+
+    RULEBLOCK blok1
+        AND : MIN;			// za konjunkciju se koristi minimum (samim tim sa za disjunkciju koristi maksimum)
+	    ACT : MIN;			// za zaključivanje (implikaciju) je izabran minimum (Mamdani implikacija) (osim MIN koristi se i PROD)
+	    ACCU : MAX;			// za kompoziciju je izabran maksimum (osim MAX koristi se i SUM)
+
+        //mining rules
+        RULE 1: IF gpuSize IS small THEN miningUsage IS low;
+        RULE 2: IF gpuSize IS medium THEN miningUsage IS medium;
+        RULE 3: IF gpuSize IS big THEN miningUsage IS high;
+        RULE 4: IF gpuSize IS ultra THEN miningUsage IS ultra;
+
+
+        //home rules
+        RULE 5: IF coreNumber IS medium THEN homeUsage IS high;
+        RULE 6: IF coreNumber IS high THEN homeUsage IS medium;
+        RULE 7: IF coreNumber IS ultra THEN homeUsage IS low;
+        RULE 8: IF coreNumber IS low THEN homeUsage IS low;
+
+        RULE 9: IF ramSize IS small THEN homeUsage IS low;
+        RULE 10: IF ramSize IS medium THEN homeUsage IS high;
+        RULE 11: IF ramSize IS big THEN homeUsage IS medium;
+        RULE 12: IF ramSize IS ultra THEN homeUsage IS low;
+
+        RULE 13: IF gpuSize IS small THEN homeUsage IS high;
+        RULE 14: IF gpuSize IS medium THEN homeUsage IS high;
+        RULE 15: IF gpuSize IS big THEN homeUsage IS medium;
+        RULE 16: IF gpuSize IS ultra THEN homeUsage IS low;
+
+        RULE 17: IF storageSize IS small THEN homeUsage IS low;
+        RULE 18: IF storageSize IS medium THEN homeUsage IS high;
+        RULE 19: IF storageSize IS big THEN homeUsage IS medium;
+        RULE 20: IF storageSize IS ultra THEN homeUsage IS low;
+
+        //gaming rules
+        RULE 21: IF coreNumber IS medium THEN gamingUsage IS medium;
+        RULE 22: IF coreNumber IS high THEN gamingUsage IS high;
+        RULE 23: IF coreNumber IS ultra THEN gamingUsage IS high;
+        RULE 24: IF coreNumber IS low THEN gamingUsage IS low;
+
+        RULE 25: IF ramSize IS small THEN gamingUsage IS low;
+        RULE 26: IF ramSize IS medium THEN gamingUsage IS medium;
+        RULE 27: IF ramSize IS big THEN gamingUsage IS high;
+        RULE 28: IF ramSize IS ultra THEN gamingUsage IS high;
+
+        RULE 29: IF gpuSize IS small THEN gamingUsage IS low;
+        RULE 30: IF gpuSize IS medium THEN gamingUsage IS medium;
+        RULE 31: IF gpuSize IS big THEN gamingUsage IS high;
+        RULE 32: IF gpuSize IS ultra THEN gamingUsage IS high;
+
+        RULE 33: IF storageSize IS small THEN gamingUsage IS low;
+        RULE 34: IF storageSize IS medium THEN gamingUsage IS medium;
+        RULE 35: IF storageSize IS big THEN gamingUsage IS high;
+        RULE 36: IF storageSize IS ultra THEN gamingUsage IS high;
+
+        //programming rules
+        RULE 37: IF coreNumber IS medium THEN programmingUsage IS medium;
+        RULE 38: IF coreNumber IS high THEN programmingUsage IS high;
+        RULE 39: IF coreNumber IS ultra THEN programmingUsage IS high;
+        RULE 40: IF coreNumber IS low THEN programmingUsage IS low;
+
+        RULE 41: IF ramSize IS small THEN programmingUsage IS low;
+        RULE 42: IF ramSize IS medium THEN programmingUsage IS medium;
+        RULE 43: IF ramSize IS big THEN programmingUsage IS high;
+        RULE 44: IF ramSize IS ultra THEN programmingUsage IS low;
+
+    END_RULEBLOCK
+
+END_FUNCTION_BLOCK
