@@ -694,6 +694,12 @@
                       ] .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Power_supply_voltage
+:Power_supply_voltage rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Power_supply ;
+                      rdfs:range xsd:string .
+
+
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#PrinterScanner_format
 :PrinterScanner_format rdf:type owl:DatatypeProperty ;
                        rdfs:domain [ rdf:type owl:Class ;
@@ -880,12 +886,6 @@
                                  )
                    ] ;
        rdfs:range xsd:string .
-
-
-###  https://raw.githubusercontent.com/milica38/SystemSupport/main/instances.owl#Power_supply_voltage
-:Power_supply_voltage rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :Power_supply ;
-                      rdfs:range xsd:string .
 
 
 #################################################################
@@ -1428,7 +1428,8 @@
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Brand_AMD
 :Brand_AMD rdf:type owl:NamedIndividual ,
-                    :Brand .
+                    :Brand ;
+           :has_a_name "AMD" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#BluetoothCard_ASUS_BT400
@@ -1446,155 +1447,193 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Ampage
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Ampage> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Ampage> rdf:type :Brand ;
+                                                                                        :has_a_name "Ampage" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> rdf:type :Brand ;
+                                                                                      :has_a_name "Asus" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Brother
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Brother> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Brother> rdf:type :Brand ;
+                                                                                         :has_a_name "Brother" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Canon
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Canon> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Canon> rdf:type :Brand ;
+                                                                                       :has_a_name "Canon" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Canyon
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Canyon> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Canyon> rdf:type :Brand ;
+                                                                                        :has_a_name "Canyon" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> rdf:type :Brand ;
+                                                                                              :has_a_name "CoolerMaster" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Corsair
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Corsair> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Corsair> rdf:type :Brand ;
+                                                                                         :has_a_name "Corsair" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Dell
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Dell> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Dell> rdf:type :Brand ;
+                                                                                      :has_a_name "Dell" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Edifer
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Edifer> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Edifer> rdf:type :Brand ;
+                                                                                        :has_a_name "Edifer" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Epson
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Epson> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Epson> rdf:type :Brand ;
+                                                                                       :has_a_name "Epson" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_FastAsia
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_FastAsia> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_FastAsia> rdf:type :Brand ;
+                                                                                          :has_a_name "Fast Asia" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_GIGABYTE
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_GIGABYTE> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_GIGABYTE> rdf:type :Brand ;
+                                                                                          :has_a_name "GIGABYTE" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> rdf:type :Brand ;
+                                                                                        :has_a_name "Genius" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_HP
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_HP> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_HP> rdf:type :Brand ;
+                                                                                    :has_a_name "HP" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Hama
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Hama> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Hama> rdf:type :Brand ;
+                                                                                      :has_a_name "Hama" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> rdf:type :Brand ;
+                                                                                       :has_a_name "Intel" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intex
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intex> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intex> rdf:type :Brand ;
+                                                                                       :has_a_name "Intex" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_JBL
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_JBL> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_JBL> rdf:type :Brand ;
+                                                                                     :has_a_name "JBL" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Kingston
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Kingston> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Kingston> rdf:type :Brand ;
+                                                                                          :has_a_name "Kingston" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LC_Power
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LC_Power> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LC_Power> rdf:type :Brand ;
+                                                                                          :has_a_name "LC Power" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LG
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LG> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LG> rdf:type :Brand ;
+                                                                                    :has_a_name "LG" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Lenovo
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Lenovo> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Lenovo> rdf:type :Brand ;
+                                                                                        :has_a_name "Lenovo" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> rdf:type :Brand ;
+                                                                                          :has_a_name "Logitech" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> rdf:type :Brand ;
+                                                                                    :has_a_name "MS" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MSI
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MSI> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MSI> rdf:type :Brand ;
+                                                                                     :has_a_name "MSI" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Marvo
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Marvo> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Marvo> rdf:type :Brand ;
+                                                                                       :has_a_name "Marvo" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Microsoft
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Microsoft> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Microsoft> rdf:type :Brand ;
+                                                                                           :has_a_name "Microsoft" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Patriot
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Patriot> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Patriot> rdf:type :Brand ;
+                                                                                         :has_a_name "Patriot" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Philips
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Philips> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Philips> rdf:type :Brand ;
+                                                                                         :has_a_name "Philips" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Razer
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Razer> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Razer> rdf:type :Brand ;
+                                                                                       :has_a_name "Razer" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Redragon
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Redragon> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Redragon> rdf:type :Brand ;
+                                                                                          :has_a_name "Redragon" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> rdf:type :Brand ;
+                                                                                         :has_a_name "Samsung" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Sapphire
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Sapphire> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Sapphire> rdf:type :Brand ;
+                                                                                          :has_a_name "Sapphire" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Seagate
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Seagate> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Seagate> rdf:type :Brand ;
+                                                                                         :has_a_name "Seagate" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Sony
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Sony> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Sony> rdf:type :Brand ;
+                                                                                      :has_a_name "Sony" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_TP_LINK
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_TP_LINK> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_TP_LINK> rdf:type :Brand ;
+                                                                                         :has_a_name "TP LINK" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Transcend
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Transcend> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Transcend> rdf:type :Brand ;
+                                                                                           :has_a_name "Transcend" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_WesternDigital
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_WesternDigital> rdf:type :Brand .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_WesternDigital> rdf:type :Brand ;
+                                                                                                :has_a_name "Western Digital" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_5_5600_3.5GHz
