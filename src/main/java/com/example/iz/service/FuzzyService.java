@@ -19,9 +19,9 @@ public class FuzzyService {
         this.path = TypeReference.class.getResource("/data/template.fcl").toURI().getPath();
     }
 
-    public List<FuzzyOutputDTO> performQuery(int coreNumber, int ramSize, int storageSize, int gpuSize, int cpuClockSpeed) {
+    public List<FuzzyOutputDTO> performQuery(int coreNumber, int ramSize, int storageSize, int gpuSize, double cpuClockSpeed) {
 
-        String args[] = { "-noCharts", "-e", path, ""+coreNumber, ""+ramSize, ""+storageSize, ""+gpuSize, ""+cpuClockSpeed};
+        String args[] = { "-noCharts", "-e", path, ""+coreNumber, ""+cpuClockSpeed, ""+gpuSize, ""+ramSize, ""+storageSize};
         JFuzzyLogic jFuzzyLogic = new JFuzzyLogic(args);
         jFuzzyLogic.run();
 

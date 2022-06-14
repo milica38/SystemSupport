@@ -18,34 +18,34 @@ FUNCTION_BLOCK sablon
     END_VAR
 
     FUZZIFY coreNumber
-        TERM small:=(0,1) (6,0);
-        TERM medium:=(3,0) (8,1) (16,0);
-        TERM big:=(16,0) (64,1);
+        TERM small:=(0,1) (2,0);
+        TERM medium:=(1,0) (2,1) (6,0);
+        TERM big:=(2,0) (6,1);
     END_FUZZIFY
 
 
     FUZZIFY storageSize
-        TERM small:=(0,1) (500,0);
-        TERM medium:=(256,0) (500,1) (2000,0);
-        TERM big:=(2000,0) (5000,1);
+        TERM small:=(0,1) (256,0);
+        TERM medium:=(1,0) (256,1) (1000,0);
+        TERM big:=(256,0) (1000,1);
     END_FUZZIFY
 
     FUZZIFY ramSize
         TERM small:=(0,1) (4,0);
         TERM medium:=(4,0) (4,1) (16,0);
-        TERM big:=(16,0) (64,1);
+        TERM big:=(16,0) (16,1);
     END_FUZZIFY
 
     FUZZIFY gpuSize
         TERM small:=(0,1) (2,0);
-        TERM medium:=(1,0) (4,1) (8,0);
-        TERM big:=(8,0) (32,1);
+        TERM medium:=(1,0) (2,1) (8,0);
+        TERM big:=(2,0) (8,1);
     END_FUZZIFY
 
     FUZZIFY cpuClockSpeed
         TERM small:=(0,1) (2,0);
         TERM medium:=(1,0) (2,1) (3.5,0);
-        TERM big:=(3.5,0) (4.5,1);
+        TERM big:=(2,0) (3.5,1);
     END_FUZZIFY
 
     DEFUZZIFY home
@@ -87,8 +87,8 @@ FUNCTION_BLOCK sablon
 
 
         //home rules
-        RULE 1: IF coreNumber IS medium THEN home IS low;
-        RULE 2: IF coreNumber IS big THEN home IS medium;
+        RULE 1: IF coreNumber IS medium THEN home IS high;
+        RULE 2: IF coreNumber IS big THEN home IS low;
         RULE 3: IF coreNumber IS small THEN home IS high;
 
         RULE 4: IF ramSize IS small THEN home IS high;
@@ -108,34 +108,34 @@ FUNCTION_BLOCK sablon
         RULE 15: IF cpuClockSpeed IS big THEN home IS low;
 
         //gaming rules
-        RULE 16: IF coreNumber IS medium THEN gaming IS medium;
+        RULE 16: IF coreNumber IS medium THEN gaming IS low;
         RULE 17: IF coreNumber IS big THEN gaming IS high;
         RULE 18: IF coreNumber IS small THEN gaming IS low;
 
         RULE 19: IF ramSize IS small THEN gaming IS low;
-        RULE 20: IF ramSize IS medium THEN gaming IS medium;
+        RULE 20: IF ramSize IS medium THEN gaming IS low;
         RULE 21: IF ramSize IS big THEN gaming IS high;
 
         RULE 22: IF gpuSize IS small THEN gaming IS low;
-        RULE 23: IF gpuSize IS medium THEN gaming IS medium;
+        RULE 23: IF gpuSize IS medium THEN gaming IS low;
         RULE 24: IF gpuSize IS big THEN gaming IS high;
 
-        RULE 25: IF storageSize IS small THEN gaming IS low;
-        RULE 26: IF storageSize IS medium THEN gaming IS medium;
-        RULE 27: IF storageSize IS big THEN gaming IS high;
-
         RULE 28: IF cpuClockSpeed IS small THEN gaming IS low;
-        RULE 29: IF cpuClockSpeed IS medium THEN gaming IS medium;
+        RULE 29: IF cpuClockSpeed IS medium THEN gaming IS low;
         RULE 30: IF cpuClockSpeed IS big THEN gaming IS high;
+
+        RULE 25: IF storageSize IS medium THEN gaming IS medium;
+        RULE 26: IF storageSize IS big THEN gaming IS high;
+        RULE 27: IF storageSize IS small THEN gaming IS low;
 
         //programming rules
         RULE 31: IF coreNumber IS medium THEN programming IS medium;
-        RULE 32: IF coreNumber IS big THEN programming IS high;
+        RULE 32: IF coreNumber IS big THEN programming IS medium;
         RULE 33: IF coreNumber IS small THEN programming IS low;
 
         RULE 34: IF ramSize IS small THEN programming IS low;
         RULE 35: IF ramSize IS medium THEN programming IS medium;
-        RULE 36: IF ramSize IS big THEN programming IS high;
+        RULE 36: IF ramSize IS big THEN programming IS medium;
 
         RULE 37: IF cpuClockSpeed IS small THEN programming IS low;
         RULE 38: IF cpuClockSpeed IS medium THEN programming IS medium;
