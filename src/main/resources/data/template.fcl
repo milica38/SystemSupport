@@ -20,32 +20,32 @@ FUNCTION_BLOCK sablon
     FUZZIFY coreNumber
         TERM small:=(0,1) (2,0);
         TERM medium:=(1,0) (2,1) (6,0);
-        TERM big:=(2,0) (6,1);
+        TERM big:=(4,0) (6,1);
     END_FUZZIFY
 
 
     FUZZIFY storageSize
         TERM small:=(0,1) (256,0);
-        TERM medium:=(1,0) (256,1) (1000,0);
-        TERM big:=(256,0) (1000,1);
+        TERM medium:=(128,0) (256,1) (1000,0);
+        TERM big:=(512,0) (1000,1);
     END_FUZZIFY
 
     FUZZIFY ramSize
         TERM small:=(0,1) (4,0);
-        TERM medium:=(4,0) (4,1) (16,0);
-        TERM big:=(16,0) (16,1);
+        TERM medium:=(2,0) (4,1) (16,0);
+        TERM big:=(8,0) (16,1);
     END_FUZZIFY
 
     FUZZIFY gpuSize
         TERM small:=(0,1) (2,0);
         TERM medium:=(1,0) (2,1) (8,0);
-        TERM big:=(2,0) (8,1);
+        TERM big:=(6,0) (8,1);
     END_FUZZIFY
 
     FUZZIFY cpuClockSpeed
         TERM small:=(0,1) (2,0);
         TERM medium:=(1,0) (2,1) (3.5,0);
-        TERM big:=(2,0) (3.5,1);
+        TERM big:=(3,0) (3.5,1);
     END_FUZZIFY
 
     DEFUZZIFY home
@@ -151,7 +151,7 @@ FUNCTION_BLOCK sablon
         RULE 45: IF ramSize IS big THEN webHosting IS high;
 
         RULE 46: IF cpuClockSpeed IS small THEN webHosting IS low;
-        RULE 47: IF cpuClockSpeed IS medium THEN webHosting IS medium;
+        RULE 47: IF cpuClockSpeed IS medium THEN webHosting IS low;
         RULE 48: IF cpuClockSpeed IS big THEN webHosting IS medium;
 
     END_RULEBLOCK
