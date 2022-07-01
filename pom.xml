@@ -14,7 +14,9 @@
 	<name>IZ-projekat-app</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>11</java.version>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -63,6 +65,22 @@
 			<version>1.0</version>
 			<scope>system</scope>
 			<systemPath>${basedir}/lib/JFuzzyLogic.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.owlapi</groupId>
+			<artifactId>owlapi-distribution</artifactId>
+			<version>5.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.owlapi</groupId>
+			<artifactId>org.semanticweb.hermit</artifactId>
+			<version>1.3.8.500</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>apache-jena-libs</artifactId>
+			<type>pom</type>
+			<version>4.5.0</version>
 		</dependency>
 
 	</dependencies>
