@@ -1,12 +1,11 @@
 package com.example.iz.controller;
 
+import com.example.iz.service.QueryService;
 import com.example.iz.service.RecommendationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -14,13 +13,25 @@ import java.util.List;
 @RequestMapping("/recommendation")
 public class RecommendationController {
 
-    @Autowired
-    private RecommendationService service;
+    private final RecommendationService recommendationService;
+    private final QueryService queryService;
 
-    @GetMapping(value = "/motherboards")
-    public ResponseEntity<?> motherboards() {
-        List<String> result = service.getMotherboards();
-        System.out.println(result);
-        return new ResponseEntity<>(result, HttpStatus.OK);
+    @Autowired
+    public  RecommendationController(RecommendationService rs, QueryService qs){
+        this.recommendationService = rs;
+        this.queryService = qs;
     }
+
+    @GetMapping()
+    public ResponseEntity<List<String>> performQuery(@RequestBody String query){
+        var response = queryService.executeQuery(query);
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @GetMapping("/{componentName}")
+    public ResponseEntity<List<String>> getComponents(@PathVariable String componentName){
+        var response = recommendationService.getComponents(componentName);
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
 }
