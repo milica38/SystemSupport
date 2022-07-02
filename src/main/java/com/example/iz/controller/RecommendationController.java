@@ -30,7 +30,7 @@ public class RecommendationController {
     }
 
     @GetMapping("/speakers/{searchValue}")
-    public ResponseEntity<List<SpeakersDTO>> findSpeakers(@PathVariable String searchValue){
+    public ResponseEntity<List<SpeakersDTO>> findSpeakers(@RequestBody String searchValue){
         var response = speakersService.findSpeakers(searchValue);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
