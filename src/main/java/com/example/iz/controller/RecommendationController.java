@@ -34,4 +34,10 @@ public class RecommendationController {
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
+    @GetMapping("/speakers/{searchValue}")
+    public ResponseEntity<List<String>> findKeyboards(@PathVariable String searchValue){
+        var response = recommendationService.findSpeakers(searchValue);
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
 }
