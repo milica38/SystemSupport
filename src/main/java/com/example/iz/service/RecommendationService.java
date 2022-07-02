@@ -15,15 +15,12 @@ import java.util.List;
 @Service
 public class RecommendationService {
 
-    private final QueryService queryService;
     public static final String BASE = "http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#";
     public static final String RDF = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
     public static final String OWL = "http://www.w3.org/2002/07/owl#";
 
     @Autowired
-    public RecommendationService(QueryService queryService) {
-        this.queryService = queryService;
-    }
+    private QueryService queryService;
 
     public List<String> getComponents(String componentName){
         ParameterizedSparqlString queryStr = new ParameterizedSparqlString();
@@ -37,24 +34,67 @@ public class RecommendationService {
         queryStr.append(".");
         queryStr.append("}");
         System.out.println(queryStr);
-        return queryService.getQueryResult(queryStr);
+
+        Query q = queryStr.asQuery();
+        var rawResponse =  queryService.executeQuery(q);
+        System.out.println(rawResponse);
+        var components = new ArrayList<String>();
+        for(var rawRam : rawResponse)
+            components.add(rawRam.split("#")[1].split(">")[0]);
+
+        return components;
     }
 
-    public List<String> findSpeakers(String searchValue){
+    public List<String> getComponentDataProperty(String componentName, String propertyName){
+
         ParameterizedSparqlString queryStr = new ParameterizedSparqlString();
         queryStr.setNsPrefix("rdf", RDF);
         queryStr.setNsPrefix("base", BASE);
-        queryStr.append("SELECT ?component");
+        queryStr.append("SELECT ?p");
         queryStr.append("{");
         queryStr.append("?component rdf:type ");
-        queryStr.append("base:Speakers");
-        queryStr.append(".");
-        queryStr.append("?component base:frequency_response '");
-        queryStr.append(searchValue + "'");
+        queryStr.append("base:" + componentName);
+        queryStr.append(". ");
+        queryStr.append("?component base:" + propertyName + " ?p ");
         queryStr.append(".");
         queryStr.append("}");
         System.out.println(queryStr);
-        return queryService.getQueryResult(queryStr);
+
+        Query q = queryStr.asQuery();
+        var rawResponse = queryService.executeQuery(q);
+        var result = new ArrayList<String>();
+        for (var rawRam : rawResponse) {
+            System.out.println(rawRam);
+            result.add(rawRam.split("=")[1].split("\"")[1].split("\"")[0]);
+        }
+
+        return result;
+    }
+
+    public List<String> getComponentObjectProperty(String componentName, String propertyName){
+
+        ParameterizedSparqlString queryStr = new ParameterizedSparqlString();
+        queryStr.setNsPrefix("rdf", RDF);
+        queryStr.setNsPrefix("base", BASE);
+        queryStr.append("SELECT ?p");
+        queryStr.append("{");
+        queryStr.append("?component rdf:type ");
+        queryStr.append("base:" + componentName);
+        queryStr.append(". ");
+        queryStr.append("?component base:" + propertyName + " ?p ");
+        queryStr.append(".");
+        queryStr.append("}");
+        System.out.println(queryStr);
+
+        Query q = queryStr.asQuery();
+        var rawResponse = queryService.executeQuery(q);
+        var result = new ArrayList<String>();
+        for (var rawRam : rawResponse) {
+            System.out.println(rawRam);
+            result.add(rawRam.split("#")[1].split(">")[0]);
+        }
+
+        return result;
     }
 
 }

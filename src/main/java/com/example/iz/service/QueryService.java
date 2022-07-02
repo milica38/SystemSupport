@@ -40,15 +40,6 @@ public class QueryService {
         return PrintQuery(exec.execSelect());
     }
 
-    public ArrayList<String> getQueryResult(ParameterizedSparqlString queryStr) {
-        Query q = queryStr.asQuery();
-        var rawResponse =  executeQuery(q);
-        var components = new ArrayList<String>();
-        for(var rawRam : rawResponse)
-            components.add(rawRam.split("#")[1].split(">")[0]);
-        return components;
-    }
-
     public ArrayList<String> getQueryPropertiesResult(ParameterizedSparqlString queryStr) {
         Query q = queryStr.asQuery();
         var rawResponse =  executeQuery(q);
