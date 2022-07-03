@@ -1,1 +1,65 @@
-<p>suggestion works!</p>
+<!-- COMPONENTS BY TYPE -->
+<div class="row">
+  <h3 class="d-flex justify-content-center">Components by type</h3>
+  <div class="box d-flex justify-content-center">
+    <div class="col-8 card" style="background-color: #cfd1d3;">
+      <div class="card-body row">
+        <div class="col-6">
+          <select #selected (change)="onSelected(selected.value)" class="form-select" aria-label="Choose component type">
+            <option selected>Choose...</option>
+            <option value="Camera">Camera</option>
+            <option value="Case">Case</option>
+            <option value="Cooling_system">Cooling system</option>
+            <option value="CPU">CPU</option>
+            <option value="Graphics_card">Graphics card</option>
+            <option value="Headphones">Headphones</option>
+            <option value="Keyboard">Keyboard</option>
+            <option value="Microphone">Microphone</option>
+            <option value="Display">Monitor</option>
+            <option value="Motherboard">Motherboard</option>
+            <option value="Mouse">Mouse</option>
+            <option value="Network_interface_card">Network cards</option>
+            <option value="Operating_system">Operating system</option>
+            <option value="Power_supply">Power supply</option>
+            <option value="Printer">Printer</option>
+            <option value="RAM">RAM</option>
+            <option value="Scanner">Scanner</option>
+            <option value="Sound_card">Sound card</option>
+            <option value="Speakers">Speakers</option>
+            <option value="Storage_device">Storage device</option>
+            <option value="WiFi_card">Wifi cards</option>
+          </select>
+          <button type="button" class="btn btn-secondary" (click)="onSubmit()">Search</button>
+        </div>
+        <div class="col-6 card" style="width: 48%;">
+          <ul>
+            <li *ngFor="let item of components">{{item}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- SPEAKERS -->
+<div class="row">
+  <h3 class="d-flex justify-content-center">Speakers suggestion</h3>
+  <div class="box d-flex justify-content-center">
+    <div class="col-8 card" style="background-color: #cfd1d3;">
+      <div class="card-body row">
+        <div class="col-6">
+          <select #selected (change)="onSelected(selected.value)" class="form-select" aria-label="Choose component type">
+            <option selected>Choose frequency response</option>
+          </select>
+          <button type="button" class="btn btn-secondary">Suggest</button>
+        </div>
+        <div class="col-6 card" style="width: 48%;">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

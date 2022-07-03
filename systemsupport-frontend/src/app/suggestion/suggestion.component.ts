@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SuggestionService } from '../services/suggestion.service';
 
 @Component({
   selector: 'app-suggestion',
@@ -7,9 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SuggestionComponent implements OnInit {
 
-  constructor() { }
+  constructor(public service: SuggestionService) { }
+
+  components: any[] = []
+  typeComponent: string = "Motherboard";
+  selectedVal: string = "";
 
   ngOnInit(): void {
+    //this.getComponents(this.selectedVal);
+  }
+
+  getComponents(componentType: string): void {
+    this.service.getComponents(componentType).subscribe((response: any) => {
+      this.components = response;
+      console.log(this.components);
+    })
+  }
+
+  onSelected(value: string): void {
+      this.selectedVal = value;
+      console.log(this.selectedVal);
+  }
+
+  onSubmit(): void {
+    this.getComponents(this.selectedVal);
   }
 
 }

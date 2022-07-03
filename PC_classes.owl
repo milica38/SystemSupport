@@ -1835,43 +1835,53 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_STRIX_HELIOS_GX601
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_STRIX_HELIOS_GX601> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_STRIX_HELIOS_GX601> rdf:type :Case ;
+                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_Z11
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_Z11> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_Z11> rdf:type :Case ;
+                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CORSAIR_CC-9011116-WW
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CORSAIR_CC-9011116-WW> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Corsair> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CORSAIR_CC-9011116-WW> rdf:type :Case ;
+                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Corsair> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ColerMaster_MB540-KGNN-S00
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ColerMaster_MB540-KGNN-S00> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ColerMaster_MB540-KGNN-S00> rdf:type :Case ;
+                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_H500-KGNN-S00
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_H500-KGNN-S00> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_H500-KGNN-S00> rdf:type :Case ;
+                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_MASTERBOX_K501L
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_MASTERBOX_K501L> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_MASTERBOX_K501L> rdf:type :Case ;
+                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_973W
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_973W> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LC_Power> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_973W> rdf:type :Case ;
+                                                                                              :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LC_Power> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_998B_Rambot
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_998B_Rambot> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LC_Power> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_998B_Rambot> rdf:type :Case ;
+                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LC_Power> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_ARMOR_V710
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_ARMOR_V710> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_ARMOR_V710> rdf:type :Case ;
+                                                                                              :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_RAIDER_M325
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_RAIDER_M325> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_RAIDER_M325> rdf:type :Case ;
+                                                                                               :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_CORSAIR_iCUE_H150i_RGB_PRO_XT
@@ -2316,7 +2326,7 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_GIGABYTE_48_AORUS_FO48U-EK
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_GIGABYTE_48_AORUS_FO48U-EK> rdf:type :OLED_monitor ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_GIGABYTE_48_AORUS_FO48U-EK> rdf:type :Display ;
                                                                                                               :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_GIGABYTE> ;
                                                                                                               :Display_aspect_ratio "16:9" ;
                                                                                                               :Display_refresh_rate "120Hz" ;
