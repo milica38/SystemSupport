@@ -23,18 +23,21 @@ public class RecommendationController {
     private SpeakersService speakersService;
 
 
+    @CrossOrigin
     @GetMapping("/{componentName}")
     public ResponseEntity<List<String>> getComponents(@PathVariable String componentName){
         var response = recommendationService.getComponents(componentName);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
+    @CrossOrigin
     @GetMapping("/speakers/{searchValue}")
     public ResponseEntity<List<SpeakersDTO>> findSpeakers(@RequestBody String searchValue){
         var response = speakersService.findSpeakers(searchValue);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
+    @CrossOrigin
     @GetMapping("/speakers")
     public ResponseEntity<List<SpeakersDTO>> getAllSpeakers(){
         var response = speakersService.getAllSpeakers();

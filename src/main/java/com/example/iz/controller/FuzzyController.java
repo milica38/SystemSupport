@@ -33,24 +33,29 @@ public class FuzzyController {
         this.service = service;
     }
 
+    @CrossOrigin
     @PostMapping
     public ResponseEntity<List<FuzzyOutputDTO>> performFuzzyQuery(@RequestBody FuzzyInputDTO dto){
         var response = service.performQuery(dto.getCoreNumber(),dto.getRamSize(),
                                         dto.getStorageSize(),dto.getGpuSize(), dto.getCpuClockSpeed());
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
+
+    @CrossOrigin
     @GetMapping("/gpu")
     public ResponseEntity<List<GpuDTO>> getAllGraphicsCards(){
         var response = gpuService.getAllGraphicsCards();
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
+    @CrossOrigin
     @GetMapping("/cpu")
     public ResponseEntity<List<CpuDTO>> getAllCPUs(){
         var response = cpuService.getAllCPUs();
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
+    @CrossOrigin
     @GetMapping("/ssd")
     public ResponseEntity<List<SsdDTO>> getAllSSDs(){
         var response = ssdService.getAllSSDs();
