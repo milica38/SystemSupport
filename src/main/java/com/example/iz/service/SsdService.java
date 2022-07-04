@@ -20,10 +20,10 @@ public class SsdService {
     private RecommendationService recommendationService;
 
     public List<SsdDTO> getAllSSDs() {
-        List<String> ssdNames = recommendationService.getComponents("Storage_device");
-        List<String> ssdSize = recommendationService.getComponentDataProperty("Storage_device", "SSD_memory_size");
-        List<String> ssdBrand = recommendationService.getComponentObjectProperty("Storage_device", "has_brand");
-        List<String> ssdModel = recommendationService.getComponentDataProperty("Storage_device", "has_a_model");
+        List<String> ssdNames = recommendationService.getComponents("SSD");
+        List<String> ssdSize = recommendationService.getComponentDataProperty("SSD", "SSD_memory_size");
+        List<String> ssdBrand = recommendationService.getComponentObjectProperty("SSD", "has_brand");
+        List<String> ssdModel = recommendationService.getComponentDataProperty("SSD", "has_a_model");
 
         List<SsdDTO> result = new ArrayList<>();
 

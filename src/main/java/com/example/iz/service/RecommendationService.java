@@ -64,7 +64,7 @@ public class RecommendationService {
         var rawResponse = queryService.executeQuery(q);
         var result = new ArrayList<String>();
         for (var rawRam : rawResponse) {
-            System.out.println(rawRam);
+            //System.out.println(rawRam);
             result.add(rawRam.split("=")[1].split("\"")[1].split("\"")[0]);
         }
 
