@@ -24,6 +24,7 @@ public class FuzzyController {
     private GpuService gpuService;
     @Autowired
     private CpuService cpuService;
+    @Autowired SsdService ssdService;
    
     private final FuzzyService service;
 
@@ -47,6 +48,12 @@ public class FuzzyController {
     @GetMapping("/cpu")
     public ResponseEntity<List<CpuDTO>> getAllCPUs(){
         var response = cpuService.getAllCPUs();
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @GetMapping("/ssd")
+    public ResponseEntity<List<SsdDTO>> getAllSSDs(){
+        var response = ssdService.getAllSSDs();
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 

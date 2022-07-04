@@ -22,7 +22,7 @@ public class CpuService {
         List<String> cpuNames = recommendationService.getComponents("CPU");
         List<String> cpuModel = recommendationService.getComponentDataProperty("CPU", "CPU_model");
         List<String> cpuBrand = recommendationService.getComponentObjectProperty("CPU", "has_brand");
-        //List<Integer> cpuCore = recommendationService.getComponentDataProperty("CPU", "CPU_core");
+        //List<String> cpuCore = recommendationService.getComponentDataProperty("CPU", "CPU_coreNumber");
         List<String> cpuClockSpeed = recommendationService.getComponentDataProperty("CPU", "CPU_frequency");
 
         List<CpuDTO> result = new ArrayList<>();

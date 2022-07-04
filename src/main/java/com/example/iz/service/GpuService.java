@@ -22,6 +22,7 @@ public class GpuService {
         List<String> gpuNames = recommendationService.getComponents("Graphics_card");
         List<String> gpuMemory = recommendationService.getComponentDataProperty("Graphics_card", "GPU_maximum_memory");
         List<String> gpuBrand = recommendationService.getComponentObjectProperty("Graphics_card", "has_brand");
+        List<String> gpuModel = recommendationService.getComponentDataProperty("Graphics_card", "has_a_model");
 
         List<GpuDTO> result = new ArrayList<>();
 
@@ -30,6 +31,7 @@ public class GpuService {
             dto.setName(gpuNames.get(i));
             dto.setBrand(gpuBrand.get(i));
             dto.setMaxMemory(gpuMemory.get(i));
+            dto.setModel(gpuModel.get(i));
             result.add(dto);
         }
         return result;

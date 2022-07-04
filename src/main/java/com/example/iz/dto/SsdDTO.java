@@ -9,9 +9,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class GpuDTO {
+public class SsdDTO {
     private String name;
-    private String brand;
-    private String maxMemory;
     private String model;
+    private String brand;
+    private String storageSize;
 }

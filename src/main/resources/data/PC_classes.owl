@@ -888,6 +888,22 @@
        rdfs:range xsd:string .
 
 
+###  https://raw.githubusercontent.com/milica38/SystemSupport/main/instances.owl#CPU_coreNumber
+:CPU_coreNumber rdf:type owl:DatatypeProperty ;
+                rdfs:domain :CPU ;
+                rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/milica38/SystemSupport/main/instances.owl#has_a_model
+:has_a_model rdf:type owl:DatatypeProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :PC
+                                         :PC_Element
+                                       )
+                         ] ;
+             rdfs:range xsd:string .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -1644,7 +1660,8 @@
                                                                                                        :CPU_core 6 ;
                                                                                                        :CPU_frequency "3.5 GHz" ;
                                                                                                        :CPU_model "AMD Ryzen5-5600" ;
-                                                                                                       :CPU_turbo_frequency "4.4 GHz" .
+                                                                                                       :CPU_turbo_frequency "4.4 GHz" ;
+                                                                                                       :CPU_coreNumber 6 .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_7_3700X_3.6GHz
@@ -1655,7 +1672,8 @@
                                                                                                         :CPU_core 8 ;
                                                                                                         :CPU_frequency "3.6 GHz" ;
                                                                                                         :CPU_model "AMD Ryzen7-3700X" ;
-                                                                                                        :CPU_turbo_frequency "4.4 GHz" .
+                                                                                                        :CPU_turbo_frequency "4.4 GHz" ;
+                                                                                                        :CPU_coreNumber 8 .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_7_3800X_3.9GHz
@@ -1666,7 +1684,8 @@
                                                                                                         :CPU_core 8 ;
                                                                                                         :CPU_frequency "3.9 GHz" ;
                                                                                                         :CPU_model "AMD Ryzen7-3800X" ;
-                                                                                                        :CPU_turbo_frequency "4.5 GHz" .
+                                                                                                        :CPU_turbo_frequency "4.5 GHz" ;
+                                                                                                        :CPU_coreNumber 8 .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_7_5700X_3.4GHz
@@ -1677,7 +1696,8 @@
                                                                                                         :CPU_core 8 ;
                                                                                                         :CPU_frequency "3.4 GHz" ;
                                                                                                         :CPU_model "AMD Ryzen7-5700X" ;
-                                                                                                        :CPU_turbo_frequency "4.6 GHz" .
+                                                                                                        :CPU_turbo_frequency "4.6 GHz" ;
+                                                                                                        :CPU_coreNumber 8 .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_9_5950X_3.4GHz
@@ -1688,7 +1708,8 @@
                                                                                                         :CPU_core 16 ;
                                                                                                         :CPU_frequency "3.4 GHz" ;
                                                                                                         :CPU_model "AMD Ryzen9-5950X" ;
-                                                                                                        :CPU_turbo_frequency "4.9 GHz" .
+                                                                                                        :CPU_turbo_frequency "4.9 GHz" ;
+                                                                                                        :CPU_coreNumber 16 .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i3-10105_3.70_GHz
@@ -1698,7 +1719,8 @@
                                                                                                             :CPU_core 4 ;
                                                                                                             :CPU_frequency "3.7 GHz" ;
                                                                                                             :CPU_model "Intel Core i3-10105" ;
-                                                                                                            :CPU_turbo_frequency "4.4 GHz" .
+                                                                                                            :CPU_turbo_frequency "4.4 GHz" ;
+                                                                                                            :CPU_coreNumber 4 .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i3-12100_3.30_GHz
@@ -1709,7 +1731,8 @@
                                                                                                             :CPU_core 4 ;
                                                                                                             :CPU_frequency "3.3 GHz" ;
                                                                                                             :CPU_model "Intel Core i3-12100" ;
-                                                                                                            :CPU_turbo_frequency "4.3 GHz" .
+                                                                                                            :CPU_turbo_frequency "4.3 GHz" ;
+                                                                                                            :CPU_coreNumber 4 .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i5-10600_3.30_GHz
@@ -1719,7 +1742,8 @@
                                                                                                             :CPU_core 6 ;
                                                                                                             :CPU_frequency "3.3 GHz" ;
                                                                                                             :CPU_model "Intel Core i5-10600" ;
-                                                                                                            :CPU_turbo_frequency "4.8 GHz" .
+                                                                                                            :CPU_turbo_frequency "4.8 GHz" ;
+                                                                                                            :CPU_coreNumber 6 .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i5-9600K_3.7GHz
@@ -1729,7 +1753,8 @@
                                                                                                           :CPU_core 6 ;
                                                                                                           :CPU_frequency "3.7 GHz" ;
                                                                                                           :CPU_model "Intel Core i5-9600K" ;
-                                                                                                          :CPU_turbo_frequency "4.6 GHz" .
+                                                                                                          :CPU_turbo_frequency "4.6 GHz" ;
+                                                                                                          :CPU_coreNumber 6 .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i7-11700_2.5GHz
@@ -1739,7 +1764,8 @@
                                                                                                           :CPU_core 8 ;
                                                                                                           :CPU_frequency "2.5 GHz" ;
                                                                                                           :CPU_model "Intel Core i7-11700" ;
-                                                                                                          :CPU_turbo_frequency "4.9 GHz" .
+                                                                                                          :CPU_turbo_frequency "4.9 GHz" ;
+                                                                                                          :CPU_coreNumber 8 .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i9-12900KF_3.2GHz
@@ -1750,7 +1776,8 @@
                                                                                                             :CPU_core 16 ;
                                                                                                             :CPU_frequency "3.2 GHz" ;
                                                                                                             :CPU_model "Intel Core i9-12900KF" ;
-                                                                                                            :CPU_turbo_frequency "5.2 GHz" .
+                                                                                                            :CPU_turbo_frequency "5.2 GHz" ;
+                                                                                                            :CPU_coreNumber 16 .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_ASUS_C3
@@ -1835,43 +1862,53 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_STRIX_HELIOS_GX601
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_STRIX_HELIOS_GX601> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_STRIX_HELIOS_GX601> rdf:type :Case ;
+                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_Z11
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_Z11> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ASUS_ROG_Z11> rdf:type :Case ;
+                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CORSAIR_CC-9011116-WW
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CORSAIR_CC-9011116-WW> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Corsair> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CORSAIR_CC-9011116-WW> rdf:type :Case ;
+                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Corsair> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ColerMaster_MB540-KGNN-S00
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ColerMaster_MB540-KGNN-S00> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_ColerMaster_MB540-KGNN-S00> rdf:type :Case ;
+                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_H500-KGNN-S00
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_H500-KGNN-S00> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_H500-KGNN-S00> rdf:type :Case ;
+                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_MASTERBOX_K501L
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_MASTERBOX_K501L> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_CoolerMaster_MASTERBOX_K501L> rdf:type :Case ;
+                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_973W
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_973W> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LC_Power> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_973W> rdf:type :Case ;
+                                                                                              :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LC_Power> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_998B_Rambot
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_998B_Rambot> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LC_Power> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_LC-POWER_998B_Rambot> rdf:type :Case ;
+                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_LC_Power> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_ARMOR_V710
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_ARMOR_V710> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_ARMOR_V710> rdf:type :Case ;
+                                                                                              :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_RAIDER_M325
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_RAIDER_M325> :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> .
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Case_MS_RAIDER_M325> rdf:type :Case ;
+                                                                                               :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_CORSAIR_iCUE_H150i_RGB_PRO_XT
@@ -1934,7 +1971,8 @@
                                                                                                                     :GPU_base_frequency "927 MHz" ;
                                                                                                                     :GPU_maximum_memory "2 GB" ;
                                                                                                                     :GPU_number_of_displays 4 ;
-                                                                                                                    :Graphics_card_type "Discrete_graphics_card" .
+                                                                                                                    :Graphics_card_type "Discrete_graphics_card" ;
+                                                                                                                    :has_a_model "GeForce GT730" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_ASUS_Phoenix_nVidia_GeForce_RTX_3050_8GB_GDDR6_128-bit
@@ -1944,7 +1982,8 @@
                                                                                                                                       :GPU_base_frequency "1807 MHz" ;
                                                                                                                                       :GPU_maximum_memory "8 GB" ;
                                                                                                                                       :GPU_number_of_displays 3 ;
-                                                                                                                                      :Graphics_card_type "Discrete_graphics_card" .
+                                                                                                                                      :Graphics_card_type "Discrete_graphics_card" ;
+                                                                                                                                      :has_a_model "Phoenix nVidia GeForce RTX3050" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_GIGABYTE_AORUS_nVidia_GeForce_RTX3080_MASTER_12GB_GDDR6X_384-bit_LHR
@@ -1953,7 +1992,8 @@
                                                                                                                                                     :GPU_base_frequency "1830 MHz" ;
                                                                                                                                                     :GPU_maximum_memory "12 GB" ;
                                                                                                                                                     :GPU_number_of_displays 3 ;
-                                                                                                                                                    :Graphics_card_type "Discrete_graphics_card" .
+                                                                                                                                                    :Graphics_card_type "Discrete_graphics_card" ;
+                                                                                                                                                    :has_a_model "AORUS nVidia GeForce RTX3080 MASTER" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_GIGABYTE_nVidia_GeForce_RTX_2060_D6_12GB_GDDR6_192-bit
@@ -1962,7 +2002,8 @@
                                                                                                                                       :GPU_base_frequency "1650 MHz" ;
                                                                                                                                       :GPU_maximum_memory "12 GB" ;
                                                                                                                                       :GPU_number_of_displays 3 ;
-                                                                                                                                      :Graphics_card_type "Discrete_graphics_card" .
+                                                                                                                                      :Graphics_card_type "Discrete_graphics_card" ;
+                                                                                                                                      :has_a_model "Nvidia GeForce RTX2060 D6" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_GIGABYTE_nVidia_GeForce_RTX_3080_GAMING_OC_12GB_GDDR6X_384-bit
@@ -1971,7 +2012,8 @@
                                                                                                                                               :GPU_base_frequency "1755 MHz" ;
                                                                                                                                               :GPU_maximum_memory "12 GB" ;
                                                                                                                                               :GPU_number_of_displays 3 ;
-                                                                                                                                              :Graphics_card_type "Discrete_graphics_card" .
+                                                                                                                                              :Graphics_card_type "Discrete_graphics_card" ;
+                                                                                                                                              :has_a_model "Nvidia GeForce RTX3080" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_MSI_AMD_Radeon_RX_6700_XT_MECH_2X_12GB_GDDR6_192-bit
@@ -1980,7 +2022,8 @@
                                                                                                                                     :GPU_base_frequency "2581 MHz" ;
                                                                                                                                     :GPU_maximum_memory "12 GB" ;
                                                                                                                                     :GPU_number_of_displays 3 ;
-                                                                                                                                    :Graphics_card_type "Discrete_graphics_card" .
+                                                                                                                                    :Graphics_card_type "Discrete_graphics_card" ;
+                                                                                                                                    :has_a_model "AMD Radeon RX6700 XT MECH" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_MSI_GeForce_RTX_2060_VENTUS_GP_OC
@@ -1989,7 +2032,8 @@
                                                                                                                  :GPU_base_frequency "1710 MHz" ;
                                                                                                                  :GPU_maximum_memory "6 GB" ;
                                                                                                                  :GPU_number_of_displays 3 ;
-                                                                                                                 :Graphics_card_type "Discrete_graphics_card" .
+                                                                                                                 :Graphics_card_type "Discrete_graphics_card" ;
+                                                                                                                 :has_a_model "GeForce RTX2060 VENTUS GP" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_MSI_nVidia_GeForce_RTX_3080_VENTUS_3X_PLUS_10GB_GDDR6X_320-bit
@@ -1998,7 +2042,8 @@
                                                                                                                                               :GPU_base_frequency "1740 MHz" ;
                                                                                                                                               :GPU_maximum_memory "10 GB" ;
                                                                                                                                               :GPU_number_of_displays 3 ;
-                                                                                                                                              :Graphics_card_type "Discrete_graphics_card" .
+                                                                                                                                              :Graphics_card_type "Discrete_graphics_card" ;
+                                                                                                                                              :has_a_model "nVidia GeForce RTX3080 VENTUS3X" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_MSI_nvidia_GeForce_RTX_2060_VENTUS_12GB_192-bit
@@ -2007,7 +2052,8 @@
                                                                                                                                :GPU_base_frequency "1680 MHz" ;
                                                                                                                                :GPU_maximum_memory "12 GB" ;
                                                                                                                                :GPU_number_of_displays 3 ;
-                                                                                                                               :Graphics_card_type "Discrete_graphics_card" .
+                                                                                                                               :Graphics_card_type "Discrete_graphics_card" ;
+                                                                                                                               :has_a_model "nVidia GeForce RTX2060 VENTUS" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_SAPPHIRE_PULSE_AMD_Radeon_RX_6600XT_8GB_GDDR6_128-bit
@@ -2016,7 +2062,8 @@
                                                                                                                                      :GPU_base_frequency "2593 MHz" ;
                                                                                                                                      :GPU_maximum_memory "8 GB" ;
                                                                                                                                      :GPU_number_of_displays 3 ;
-                                                                                                                                     :Graphics_card_type "Discrete_graphics_card" .
+                                                                                                                                     :Graphics_card_type "Discrete_graphics_card" ;
+                                                                                                                                     :has_a_model "Radeon RX6600XT" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_SAPPHIRE_PULSE_AMD_Radeon_RX_6600_8GB_GDDR6_128-bit
@@ -2025,7 +2072,8 @@
                                                                                                                                    :GPU_base_frequency "2491 MHz" ;
                                                                                                                                    :GPU_maximum_memory "8 GB" ;
                                                                                                                                    :GPU_number_of_displays 3 ;
-                                                                                                                                   :Graphics_card_type "Discrete_graphics_card" .
+                                                                                                                                   :Graphics_card_type "Discrete_graphics_card" ;
+                                                                                                                                   :has_a_model "AMD Radeon RX6600" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_2TB
@@ -2316,7 +2364,7 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_GIGABYTE_48_AORUS_FO48U-EK
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_GIGABYTE_48_AORUS_FO48U-EK> rdf:type :OLED_monitor ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Monitor_GIGABYTE_48_AORUS_FO48U-EK> rdf:type :Display ;
                                                                                                               :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_GIGABYTE> ;
                                                                                                               :Display_aspect_ratio "16:9" ;
                                                                                                               :Display_refresh_rate "120Hz" ;
@@ -2757,7 +2805,8 @@
                                                                                                                               :SSD_memory_size "256 GB" ;
                                                                                                                               :SSD_read_speed "540 MBS" ;
                                                                                                                               :SSD_write_speed "280 MBS" ;
-                                                                                                                              :Storage_device_type "SSD" .
+                                                                                                                              :Storage_device_type "SSD" ;
+                                                                                                                              :has_a_model "PM871a" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7PD128HCFV-00000_Samsung_SM841n_Series_128GB
@@ -2766,7 +2815,8 @@
                                                                                                                               :SSD_memory_size "128 GB" ;
                                                                                                                               :SSD_read_speed "480 MBS" ;
                                                                                                                               :SSD_write_speed "200 MBS" ;
-                                                                                                                              :Storage_device_type "SSD" .
+                                                                                                                              :Storage_device_type "SSD" ;
+                                                                                                                              :has_a_model "SM841n" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZVLB1T0HBLR-00007_Samsung_PM981a_1TB
@@ -2774,7 +2824,8 @@
                                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> ;
                                                                                                                      :SSD_memory_size "1 TB" ;
                                                                                                                      :SSD_read_speed "3200 MBS" ;
-                                                                                                                     :Storage_device_type "SSD" .
+                                                                                                                     :Storage_device_type "SSD" ;
+                                                                                                                     :has_a_model "PM981a" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Scanner_Brother_ADS-2400N
@@ -2827,61 +2878,71 @@
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_EDIFIER_R1280T
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_EDIFIER_R1280T> rdf:type :Speakers ;
                                                                                                    :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Edifer> ;
-                                                                                                   :frequency_response "75Hz - 18000Hz" .
+                                                                                                   :frequency_response "75Hz - 18000Hz" ;
+                                                                                                   :has_a_model "R1280T" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SP-HF280
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SP-HF280> rdf:type :Speakers ;
                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> ;
-                                                                                                    :frequency_response "100Hz - 20000Hz" .
+                                                                                                    :frequency_response "100Hz - 20000Hz" ;
+                                                                                                    :has_a_model "SP-HF280" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SP-HF500A_II
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SP-HF500A_II> rdf:type :Speakers ;
                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> ;
-                                                                                                        :frequency_response "100Hz - 20000Hz" .
+                                                                                                        :frequency_response "100Hz - 20000Hz" ;
+                                                                                                        :has_a_model "SP-HF500AII" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SP-Q180
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SP-Q180> rdf:type :Speakers ;
                                                                                                    :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> ;
-                                                                                                   :frequency_response "150Hz - 20000Hz" .
+                                                                                                   :frequency_response "150Hz - 20000Hz" ;
+                                                                                                   :has_a_model "SP-Q180" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SW-HF_2.1
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Genius_SW-HF_2.1> rdf:type :Speakers ;
                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> ;
-                                                                                                     :frequency_response "65Hz - 20000Hz" .
+                                                                                                     :frequency_response "65Hz - 20000Hz" ;
+                                                                                                     :has_a_model "SW-HF2.1" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_HP_X1000
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_HP_X1000> rdf:type :Speakers ;
                                                                                              :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_HP> ;
-                                                                                             :frequency_response "20Hz - 20000Hz" .
+                                                                                             :frequency_response "20Hz - 20000Hz" ;
+                                                                                             :has_a_model "X1000" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_JBL_QUANTUM_DUO
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_JBL_QUANTUM_DUO> rdf:type :Speakers ;
                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_JBL> ;
-                                                                                                    :frequency_response "60Hz - 20000Hz" .
+                                                                                                    :frequency_response "60Hz - 20000Hz" ;
+                                                                                                    :has_a_model "QUANTUM DUO" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Logitech_Z213
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Logitech_Z213> rdf:type :Speakers ;
                                                                                                   :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
-                                                                                                  :frequency_response "65Hz - 20000Hz" .
+                                                                                                  :frequency_response "65Hz - 20000Hz" ;
+                                                                                                  :has_a_model "Z213" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_MARVO_Scorpion_SG-118
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_MARVO_Scorpion_SG-118> rdf:type :Speakers ;
                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Marvo> ;
-                                                                                                          :frequency_response "150Hz - 20000Hz" .
+                                                                                                          :frequency_response "150Hz - 20000Hz" ;
+                                                                                                          :has_a_model "Scorpion SG-118" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Redragon_ADIEMUS_GS560
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Speakers_Redragon_ADIEMUS_GS560> rdf:type :Speakers ;
                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Redragon> ;
-                                                                                                           :frequency_response "150Hz - 20000Hz" .
+                                                                                                           :frequency_response "150Hz - 20000Hz" ;
+                                                                                                           :has_a_model "ADIEMUS GS560" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#WiFiCard_Asus_USB-AC51_AC600
@@ -2963,7 +3024,8 @@
                                                                                                                         :SSD_memory_size "4 TB" ;
                                                                                                                         :SSD_read_speed "550 MB" ;
                                                                                                                         :SSD_write_speed "520 MB" ;
-                                                                                                                        :Storage_device_type "SSD" .
+                                                                                                                        :Storage_device_type "SSD" ;
+                                                                                                                        :has_a_model "860 EVO" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-77Q1T0B/AM_Samsung_870_QVO_1TB
@@ -2972,14 +3034,16 @@
                                                                                                                  :SSD_memory_size "1 TB" ;
                                                                                                                  :SSD_read_speed "560 MB" ;
                                                                                                                  :SSD_write_speed "530 MB" ;
-                                                                                                                 :Storage_device_type "SSD" .
+                                                                                                                 :Storage_device_type "SSD" ;
+                                                                                                                 :has_a_model "870 QVO" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-7PA0640/0H1_Samsung_PM810_Series_64GB
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-7PA0640/0H1_Samsung_PM810_Series_64GB> rdf:type :Storage_device ;
                                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> ;
                                                                                                                         :SSD_memory_size "64 GB" ;
-                                                                                                                        :Storage_device_type "SSD" .
+                                                                                                                        :Storage_device_type "SSD" ;
+                                                                                                                        :has_a_model "PM810" .
 
 
 #################################################################
