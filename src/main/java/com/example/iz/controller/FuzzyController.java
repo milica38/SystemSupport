@@ -1,8 +1,7 @@
 package com.example.iz.controller;
 
-import com.example.iz.dto.FuzzyInputDTO;
-import com.example.iz.dto.FuzzyOutputDTO;
-import com.example.iz.service.FuzzyService;
+import com.example.iz.dto.*;
+import com.example.iz.service.*;
 import net.sourceforge.jFuzzyLogic.FIS;
 import net.sourceforge.jFuzzyLogic.JFuzzyLogic;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +16,15 @@ import java.util.List;
 @RequestMapping("/fuzzyLogic")
 public class FuzzyController {
 
+    @Autowired
+    private RecommendationService recommendationService;
+    @Autowired
+    private QueryService queryService;
+    @Autowired
+    private GpuService gpuService;
+    @Autowired
+    private CpuService cpuService;
+   
     private final FuzzyService service;
 
     @Autowired
@@ -30,4 +38,17 @@ public class FuzzyController {
                                         dto.getStorageSize(),dto.getGpuSize(), dto.getCpuClockSpeed());
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
+    @GetMapping("/gpu")
+    public ResponseEntity<List<GpuDTO>> getAllGraphicsCards(){
+        var response = gpuService.getAllGraphicsCards();
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @GetMapping("/cpu")
+    public ResponseEntity<List<CpuDTO>> getAllCPUs(){
+        var response = cpuService.getAllCPUs();
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+
 }

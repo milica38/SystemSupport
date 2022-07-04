@@ -26,31 +26,12 @@ public class QueryService {
         }catch (Exception e){
             e.printStackTrace();
         }
-        System.out.println("Model successfully loaded!");
-    }
-
-    public List<String> executeQuery(String queryString)  {
-        Query query = QueryFactory.create(queryString);
-        QueryExecution exec = QueryExecutionFactory.create(query,model);
-        return PrintQuery(exec.execSelect());
+        System.out.println("Model loaded");
     }
 
     public List<String> executeQuery(Query query){
         QueryExecution exec = QueryExecutionFactory.create(query,model);
         return PrintQuery(exec.execSelect());
-    }
-
-    public ArrayList<String> getQueryPropertiesResult(ParameterizedSparqlString queryStr) {
-        Query q = queryStr.asQuery();
-        var rawResponse =  executeQuery(q);
-        var components = new ArrayList<String>();
-        for(var rawRam : rawResponse){
-            if(rawRam.contains("double"))
-                components.add(rawRam.split("\"")[1].split("\"")[0]);
-            else
-                components.add(rawRam.split("=")[1].split(" ")[1]);
-        }
-        return components;
     }
 
     public List<String> PrintQuery(ResultSet resultSet){
