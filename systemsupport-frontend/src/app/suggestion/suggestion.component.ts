@@ -11,7 +11,6 @@ export class SuggestionComponent implements OnInit {
   constructor(public service: SuggestionService) { }
 
   components: any[] = []
-  typeComponent: string = "Motherboard";
   selectedVal: string = "";
 
   ngOnInit(): void {

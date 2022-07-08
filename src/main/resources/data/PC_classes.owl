@@ -1658,8 +1658,8 @@
                                                                                                        :CPU_L2_cache "3 MB" ;
                                                                                                        :CPU_L3_cache "32 MB" ;
                                                                                                        :CPU_core 6 ;
-                                                                                                       :CPU_coreNumber 6 ;
-                                                                                                       :CPU_frequency "3.5 GHz" ;
+                                                                                                       :CPU_coreNumber "6"^^xsd:string ;
+                                                                                                       :CPU_frequency "3.5"^^xsd:string ;
                                                                                                        :CPU_model "AMD Ryzen5-5600" ;
                                                                                                        :CPU_turbo_frequency "4.4 GHz" .
 
@@ -1670,8 +1670,8 @@
                                                                                                         :CPU_L2_cache "4 MB" ;
                                                                                                         :CPU_L3_cache "32 MB" ;
                                                                                                         :CPU_core 8 ;
-                                                                                                        :CPU_coreNumber 8 ;
-                                                                                                        :CPU_frequency "3.6 GHz" ;
+                                                                                                        :CPU_coreNumber "8"^^xsd:string ;
+                                                                                                        :CPU_frequency "3.6"^^xsd:string ;
                                                                                                         :CPU_model "AMD Ryzen7-3700X" ;
                                                                                                         :CPU_turbo_frequency "4.4 GHz" .
 
@@ -1682,8 +1682,8 @@
                                                                                                         :CPU_L2_cache "4 MB" ;
                                                                                                         :CPU_L3_cache "32 MB" ;
                                                                                                         :CPU_core 8 ;
-                                                                                                        :CPU_coreNumber 8 ;
-                                                                                                        :CPU_frequency "3.9 GHz" ;
+                                                                                                        :CPU_coreNumber "8"^^xsd:string ;
+                                                                                                        :CPU_frequency "3.9"^^xsd:string ;
                                                                                                         :CPU_model "AMD Ryzen7-3800X" ;
                                                                                                         :CPU_turbo_frequency "4.5 GHz" .
 
@@ -1694,8 +1694,8 @@
                                                                                                         :CPU_L2_cache "4 MB" ;
                                                                                                         :CPU_L3_cache "32 MB" ;
                                                                                                         :CPU_core 8 ;
-                                                                                                        :CPU_coreNumber 8 ;
-                                                                                                        :CPU_frequency "3.4 GHz" ;
+                                                                                                        :CPU_coreNumber "8"^^xsd:string ;
+                                                                                                        :CPU_frequency "3.4"^^xsd:string ;
                                                                                                         :CPU_model "AMD Ryzen7-5700X" ;
                                                                                                         :CPU_turbo_frequency "4.6 GHz" .
 
@@ -1706,8 +1706,8 @@
                                                                                                         :CPU_L2_cache "8 MB" ;
                                                                                                         :CPU_L3_cache "64 MB" ;
                                                                                                         :CPU_core 16 ;
-                                                                                                        :CPU_coreNumber 16 ;
-                                                                                                        :CPU_frequency "3.4 GHz" ;
+                                                                                                        :CPU_coreNumber "16"^^xsd:string ;
+                                                                                                        :CPU_frequency "3.4"^^xsd:string ;
                                                                                                         :CPU_model "AMD Ryzen9-5950X" ;
                                                                                                         :CPU_turbo_frequency "4.9 GHz" .
 
@@ -1717,8 +1717,8 @@
                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> ;
                                                                                                             :CPU_L2_cache "6 MB" ;
                                                                                                             :CPU_core 4 ;
-                                                                                                            :CPU_coreNumber 4 ;
-                                                                                                            :CPU_frequency "3.7 GHz" ;
+                                                                                                            :CPU_coreNumber "4"^^xsd:string ;
+                                                                                                            :CPU_frequency "3.7"^^xsd:string ;
                                                                                                             :CPU_model "Intel Core i3-10105" ;
                                                                                                             :CPU_turbo_frequency "4.4 GHz" .
 
@@ -1729,8 +1729,8 @@
                                                                                                             :CPU_L2_cache "5 MB" ;
                                                                                                             :CPU_L3_cache "12 MB" ;
                                                                                                             :CPU_core 4 ;
-                                                                                                            :CPU_coreNumber 4 ;
-                                                                                                            :CPU_frequency "3.3 GHz" ;
+                                                                                                            :CPU_coreNumber "4"^^xsd:string ;
+                                                                                                            :CPU_frequency "3.3"^^xsd:string ;
                                                                                                             :CPU_model "Intel Core i3-12100" ;
                                                                                                             :CPU_turbo_frequency "4.3 GHz" .
 
@@ -1740,8 +1740,8 @@
                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> ;
                                                                                                             :CPU_L3_cache "12 MB" ;
                                                                                                             :CPU_core 6 ;
-                                                                                                            :CPU_coreNumber 6 ;
-                                                                                                            :CPU_frequency "3.3 GHz" ;
+                                                                                                            :CPU_coreNumber "6"^^xsd:string ;
+                                                                                                            :CPU_frequency "3.3"^^xsd:string ;
                                                                                                             :CPU_model "Intel Core i5-10600" ;
                                                                                                             :CPU_turbo_frequency "4.8 GHz" .
 
@@ -1751,8 +1751,8 @@
                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> ;
                                                                                                           :CPU_L3_cache "9 MB" ;
                                                                                                           :CPU_core 6 ;
-                                                                                                          :CPU_coreNumber 6 ;
-                                                                                                          :CPU_frequency "3.7 GHz" ;
+                                                                                                          :CPU_coreNumber "6"^^xsd:string ;
+                                                                                                          :CPU_frequency "3.7"^^xsd:string ;
                                                                                                           :CPU_model "Intel Core i5-9600K" ;
                                                                                                           :CPU_turbo_frequency "4.6 GHz" .
 
@@ -1762,8 +1762,8 @@
                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> ;
                                                                                                           :CPU_L2_cache "16 MB" ;
                                                                                                           :CPU_core 8 ;
-                                                                                                          :CPU_coreNumber 8 ;
-                                                                                                          :CPU_frequency "2.5 GHz" ;
+                                                                                                          :CPU_coreNumber "8"^^xsd:string ;
+                                                                                                          :CPU_frequency "2.5"^^xsd:string ;
                                                                                                           :CPU_model "Intel Core i7-11700" ;
                                                                                                           :CPU_turbo_frequency "4.9 GHz" .
 
@@ -1774,8 +1774,8 @@
                                                                                                             :CPU_L2_cache "14 MB" ;
                                                                                                             :CPU_L3_cache "30 MB" ;
                                                                                                             :CPU_core 16 ;
-                                                                                                            :CPU_coreNumber 16 ;
-                                                                                                            :CPU_frequency "3.2 GHz" ;
+                                                                                                            :CPU_coreNumber "16"^^xsd:string ;
+                                                                                                            :CPU_frequency "3.2"^^xsd:string ;
                                                                                                             :CPU_model "Intel Core i9-12900KF" ;
                                                                                                             :CPU_turbo_frequency "5.2 GHz" .
 

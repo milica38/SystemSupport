@@ -14,5 +14,5 @@ public class CpuDTO {
     private String brand;
     private String model;
     private String clockSpeed;
-    private String coreNumber;
+    private String core;
 }
