@@ -25,6 +25,8 @@ public class FuzzyController {
     @Autowired
     private CpuService cpuService;
     @Autowired SsdService ssdService;
+
+    @Autowired RamService ramService;
    
     private final FuzzyService service;
 
@@ -59,6 +61,13 @@ public class FuzzyController {
     @GetMapping("/ssd")
     public ResponseEntity<List<SsdDTO>> getAllSSDs(){
         var response = ssdService.getAllSSDs();
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @CrossOrigin
+    @GetMapping("/ram")
+    public ResponseEntity<List<RamDTO>> getAllRams(){
+        var response = ramService.getAllRams();
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
