@@ -31,8 +31,8 @@ public class RecommendationController {
     }
 
     @CrossOrigin
-    @GetMapping("/speakers/{searchValue}")
-    public ResponseEntity<List<SpeakersDTO>> findSpeakers(@RequestBody String searchValue){
+    @GetMapping("/speakers/search")
+    public ResponseEntity<List<SpeakersDTO>> findSpeakers(@RequestParam String searchValue){
         var response = speakersService.findSpeakers(searchValue);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }

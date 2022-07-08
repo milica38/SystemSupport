@@ -1,6 +1,7 @@
 package com.example.iz.service;
 
 import com.example.iz.dto.SpeakersDTO;
+import org.apache.jena.base.Sys;
 import org.apache.jena.query.ParameterizedSparqlString;
 import org.apache.jena.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
