@@ -22,4 +22,12 @@ export class FuzzyService {
     return this.http.get(this.baseURL + "/ssd");
   }
 
+  getAllRams() {
+    return this.http.get(this.baseURL + "/ram");
+  }
+
+  SendResults(obj: any) {
+    return this.http.post(this.baseURL, obj);
+  }
+
 }

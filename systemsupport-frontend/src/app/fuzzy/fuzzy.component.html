@@ -5,19 +5,23 @@
       <div class="col-8 card" style="background-color: #cfd1d3;">
         <div class="card-body row">
           <div class="col">
-            <select #selected class="form-select">
-              <option selected>Choose GPU</option>
+            <select #selected1  class="form-select" (change)="onSelectedGPU(selected1.value)">
+              <option>Choose GPU</option>
+              <option *ngFor="let i of gpus" [value]="i.maxMemory">{{i.brand}} {{i.model}}</option>
             </select>
-            <select #selected class="form-select">
-                <option selected>Choose CPU</option>
+            <select #selected2 class="form-select" (change)="onSelectedCPU(selected2.value)">
+                <option>Choose CPU</option>
+                <option *ngFor="let c of cpus" [value]="c.core">{{c.brand}} {{c.model}}</option>
             </select>
-            <select #selected class="form-select">
-                <option selected>Choose Storage Device</option>
+            <select #selected3 class="form-select" (change)="onSelectedSSD(selected3.value)">
+                <option>Choose Storage Device</option>
+                <option *ngFor="let s of ssds"  [value]="s.storageSize">{{s.brand}} {{s.model}}</option>
             </select>
-            <select #selected class="form-select">
-                <option selected>Choose RAM</option>
+            <select #selected4 class="form-select" (change)="onSelectedRAM(selected4.value)">
+                <option>Choose RAM</option>
+                <option *ngFor="let r of rams"  [value]="r.ramSize">{{r.brand}} {{r.type}} {{r.ramSize}} GB</option>
             </select>
-            <button type="button" class="btn btn-secondary">Suggest</button>
+            <button type="button" class="btn btn-secondary" (click)="onSuggest()">Suggest</button>
           </div>
         </div>
       </div>

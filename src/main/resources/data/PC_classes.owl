@@ -1969,7 +1969,7 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_ASUS_GeForce_GT_730_2GB_GDDR5_64-bit> rdf:type :Graphics_card ;
                                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
                                                                                                                     :GPU_base_frequency "927 MHz" ;
-                                                                                                                    :GPU_maximum_memory "2 GB" ;
+                                                                                                                    :GPU_maximum_memory "2"^^xsd:string ;
                                                                                                                     :GPU_number_of_displays 4 ;
                                                                                                                     :Graphics_card_type "Discrete_graphics_card" ;
                                                                                                                     :has_a_model "GeForce GT730" .
@@ -1980,7 +1980,7 @@
                                                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
                                                                                                                                       :GPU_Memory_clock "14 Gbps" ;
                                                                                                                                       :GPU_base_frequency "1807 MHz" ;
-                                                                                                                                      :GPU_maximum_memory "8 GB" ;
+                                                                                                                                      :GPU_maximum_memory "8"^^xsd:string ;
                                                                                                                                       :GPU_number_of_displays 3 ;
                                                                                                                                       :Graphics_card_type "Discrete_graphics_card" ;
                                                                                                                                       :has_a_model "Phoenix nVidia GeForce RTX3050" .
@@ -1990,7 +1990,7 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_GIGABYTE_AORUS_nVidia_GeForce_RTX3080_MASTER_12GB_GDDR6X_384-bit_LHR> rdf:type :Graphics_card ;
                                                                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_GIGABYTE> ;
                                                                                                                                                     :GPU_base_frequency "1830 MHz" ;
-                                                                                                                                                    :GPU_maximum_memory "12 GB" ;
+                                                                                                                                                    :GPU_maximum_memory "12"^^xsd:string ;
                                                                                                                                                     :GPU_number_of_displays 3 ;
                                                                                                                                                     :Graphics_card_type "Discrete_graphics_card" ;
                                                                                                                                                     :has_a_model "AORUS nVidia GeForce RTX3080 MASTER" .
@@ -2000,7 +2000,7 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_GIGABYTE_nVidia_GeForce_RTX_2060_D6_12GB_GDDR6_192-bit> rdf:type :Graphics_card ;
                                                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_GIGABYTE> ;
                                                                                                                                       :GPU_base_frequency "1650 MHz" ;
-                                                                                                                                      :GPU_maximum_memory "12 GB" ;
+                                                                                                                                      :GPU_maximum_memory "12"^^xsd:string ;
                                                                                                                                       :GPU_number_of_displays 3 ;
                                                                                                                                       :Graphics_card_type "Discrete_graphics_card" ;
                                                                                                                                       :has_a_model "Nvidia GeForce RTX2060 D6" .
@@ -2010,7 +2010,7 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_GIGABYTE_nVidia_GeForce_RTX_3080_GAMING_OC_12GB_GDDR6X_384-bit> rdf:type :Graphics_card ;
                                                                                                                                               :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_GIGABYTE> ;
                                                                                                                                               :GPU_base_frequency "1755 MHz" ;
-                                                                                                                                              :GPU_maximum_memory "12 GB" ;
+                                                                                                                                              :GPU_maximum_memory "12"^^xsd:string ;
                                                                                                                                               :GPU_number_of_displays 3 ;
                                                                                                                                               :Graphics_card_type "Discrete_graphics_card" ;
                                                                                                                                               :has_a_model "Nvidia GeForce RTX3080" .
@@ -2020,7 +2020,7 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_MSI_AMD_Radeon_RX_6700_XT_MECH_2X_12GB_GDDR6_192-bit> rdf:type :Graphics_card ;
                                                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MSI> ;
                                                                                                                                     :GPU_base_frequency "2581 MHz" ;
-                                                                                                                                    :GPU_maximum_memory "12 GB" ;
+                                                                                                                                    :GPU_maximum_memory "12"^^xsd:string ;
                                                                                                                                     :GPU_number_of_displays 3 ;
                                                                                                                                     :Graphics_card_type "Discrete_graphics_card" ;
                                                                                                                                     :has_a_model "AMD Radeon RX6700 XT MECH" .
@@ -2030,7 +2030,7 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_MSI_GeForce_RTX_2060_VENTUS_GP_OC> rdf:type :Graphics_card ;
                                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MSI> ;
                                                                                                                  :GPU_base_frequency "1710 MHz" ;
-                                                                                                                 :GPU_maximum_memory "6 GB" ;
+                                                                                                                 :GPU_maximum_memory "6"^^xsd:string ;
                                                                                                                  :GPU_number_of_displays 3 ;
                                                                                                                  :Graphics_card_type "Discrete_graphics_card" ;
                                                                                                                  :has_a_model "GeForce RTX2060 VENTUS GP" .
@@ -2040,7 +2040,7 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_MSI_nVidia_GeForce_RTX_3080_VENTUS_3X_PLUS_10GB_GDDR6X_320-bit> rdf:type :Graphics_card ;
                                                                                                                                               :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MSI> ;
                                                                                                                                               :GPU_base_frequency "1740 MHz" ;
-                                                                                                                                              :GPU_maximum_memory "10 GB" ;
+                                                                                                                                              :GPU_maximum_memory "10"^^xsd:string ;
                                                                                                                                               :GPU_number_of_displays 3 ;
                                                                                                                                               :Graphics_card_type "Discrete_graphics_card" ;
                                                                                                                                               :has_a_model "nVidia GeForce RTX3080 VENTUS3X" .
@@ -2050,7 +2050,7 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_MSI_nvidia_GeForce_RTX_2060_VENTUS_12GB_192-bit> rdf:type :Graphics_card ;
                                                                                                                                :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MSI> ;
                                                                                                                                :GPU_base_frequency "1680 MHz" ;
-                                                                                                                               :GPU_maximum_memory "12 GB" ;
+                                                                                                                               :GPU_maximum_memory "12"^^xsd:string ;
                                                                                                                                :GPU_number_of_displays 3 ;
                                                                                                                                :Graphics_card_type "Discrete_graphics_card" ;
                                                                                                                                :has_a_model "nVidia GeForce RTX2060 VENTUS" .
@@ -2060,7 +2060,7 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_SAPPHIRE_PULSE_AMD_Radeon_RX_6600XT_8GB_GDDR6_128-bit> rdf:type :Graphics_card ;
                                                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Sapphire> ;
                                                                                                                                      :GPU_base_frequency "2593 MHz" ;
-                                                                                                                                     :GPU_maximum_memory "8 GB" ;
+                                                                                                                                     :GPU_maximum_memory "8"^^xsd:string ;
                                                                                                                                      :GPU_number_of_displays 3 ;
                                                                                                                                      :Graphics_card_type "Discrete_graphics_card" ;
                                                                                                                                      :has_a_model "Radeon RX6600XT" .
@@ -2070,7 +2070,7 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_SAPPHIRE_PULSE_AMD_Radeon_RX_6600_8GB_GDDR6_128-bit> rdf:type :Graphics_card ;
                                                                                                                                    :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Sapphire> ;
                                                                                                                                    :GPU_base_frequency "2491 MHz" ;
-                                                                                                                                   :GPU_maximum_memory "8 GB" ;
+                                                                                                                                   :GPU_maximum_memory "8"^^xsd:string ;
                                                                                                                                    :GPU_number_of_displays 3 ;
                                                                                                                                    :Graphics_card_type "Discrete_graphics_card" ;
                                                                                                                                    :has_a_model "AMD Radeon RX6600" .
@@ -2715,7 +2715,7 @@
                                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Corsair> ;
                                                                                                          :DDrate_type "DDR4" ;
                                                                                                          :RAM_clock_speed "2400 MHz" ;
-                                                                                                         :RAM_size "4 GB" ;
+                                                                                                         :RAM_size "4"^^xsd:string ;
                                                                                                          :RAM_type "DRAM" .
 
 
@@ -2724,7 +2724,7 @@
                                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Corsair> ;
                                                                                                                         :DDrate_type "DDR4" ;
                                                                                                                         :RAM_clock_speed "3600 MHz" ;
-                                                                                                                        :RAM_size "16 GB" ;
+                                                                                                                        :RAM_size "16"^^xsd:string ;
                                                                                                                         :RAM_type "DRAM" .
 
 
@@ -2733,7 +2733,7 @@
                                                                                                               :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_HP> ;
                                                                                                               :DDrate_type "DDR3" ;
                                                                                                               :RAM_clock_speed "1333 MHz" ;
-                                                                                                              :RAM_size "8 GB" ;
+                                                                                                              :RAM_size "8"^^xsd:string ;
                                                                                                               :RAM_type "DRAM" .
 
 
@@ -2742,7 +2742,7 @@
                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Kingston> ;
                                                                                                       :DDrate_type "DDR4" ;
                                                                                                       :RAM_clock_speed "3200 MHz" ;
-                                                                                                      :RAM_size "8GB" ;
+                                                                                                      :RAM_size "8"^^xsd:string ;
                                                                                                       :RAM_type "DRAM" .
 
 
@@ -2751,7 +2751,7 @@
                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Kingston> ;
                                                                                                             :DDrate_type "DDR4" ;
                                                                                                             :RAM_clock_speed "2666 MHz" ;
-                                                                                                            :RAM_size "4GB" ;
+                                                                                                            :RAM_size "4"^^xsd:string ;
                                                                                                             :RAM_type "DRAM" .
 
 
@@ -2760,7 +2760,7 @@
                                                                                                              :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Kingston> ;
                                                                                                              :DDrate_type "DDR4" ;
                                                                                                              :RAM_clock_speed "2666 MHz" ;
-                                                                                                             :RAM_size "64 GB" ;
+                                                                                                             :RAM_size "64"^^xsd:string ;
                                                                                                              :RAM_type "DRAM" .
 
 
@@ -2769,7 +2769,7 @@
                                                                                                        :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Patriot> ;
                                                                                                        :DDrate_type "DDR2" ;
                                                                                                        :RAM_clock_speed "800 MHz" ;
-                                                                                                       :RAM_size "2GB" ;
+                                                                                                       :RAM_size "2"^^xsd:string ;
                                                                                                        :RAM_type "DRAM" .
 
 
@@ -2778,15 +2778,16 @@
                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Patriot> ;
                                                                                                         :DDrate_type "DDR4" ;
                                                                                                         :RAM_clock_speed "2666 MHz" ;
-                                                                                                        :RAM_size "4GB" ;
+                                                                                                        :RAM_size "4"^^xsd:string ;
                                                                                                         :RAM_type "DRAM" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_SILICON_POWER_4GB_2666MHz_RAM_DDR4
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#RAM_SILICON_POWER_4GB_2666MHz_RAM_DDR4> rdf:type :RAM ;
+                                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
                                                                                                                   :DDrate_type "DDR4" ;
                                                                                                                   :RAM_clock_speed "2666 MHz" ;
-                                                                                                                  :RAM_size "4GB" ;
+                                                                                                                  :RAM_size "4"^^xsd:string ;
                                                                                                                   :RAM_type "DRAM" .
 
 
@@ -2795,14 +2796,14 @@
                                                                                                                        :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Transcend> ;
                                                                                                                        :DDrate_type "DDR4" ;
                                                                                                                        :RAM_clock_speed "2666 MHz" ;
-                                                                                                                       :RAM_size "4GB" ;
+                                                                                                                       :RAM_size "4"^^xsd:string ;
                                                                                                                        :RAM_type "DRAM" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7LN256HMJP-000H1_Samsung_PM871a_Series_256GB
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7LN256HMJP-000H1_Samsung_PM871a_Series_256GB> rdf:type :SSD ;
                                                                                                                               :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> ;
-                                                                                                                              :SSD_memory_size "256 GB" ;
+                                                                                                                              :SSD_memory_size "256"^^xsd:string ;
                                                                                                                               :SSD_read_speed "540 MBS" ;
                                                                                                                               :SSD_write_speed "280 MBS" ;
                                                                                                                               :Storage_device_type "SSD" ;
@@ -2812,7 +2813,7 @@
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7PD128HCFV-00000_Samsung_SM841n_Series_128GB
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ7PD128HCFV-00000_Samsung_SM841n_Series_128GB> rdf:type :SSD ;
                                                                                                                               :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> ;
-                                                                                                                              :SSD_memory_size "128 GB" ;
+                                                                                                                              :SSD_memory_size "128"^^xsd:string ;
                                                                                                                               :SSD_read_speed "480 MBS" ;
                                                                                                                               :SSD_write_speed "200 MBS" ;
                                                                                                                               :Storage_device_type "SSD" ;
@@ -2822,7 +2823,7 @@
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZVLB1T0HBLR-00007_Samsung_PM981a_1TB
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZVLB1T0HBLR-00007_Samsung_PM981a_1TB> rdf:type :SSD ;
                                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> ;
-                                                                                                                     :SSD_memory_size "1 TB" ;
+                                                                                                                     :SSD_memory_size "1000"^^xsd:string ;
                                                                                                                      :SSD_read_speed "3200 MBS" ;
                                                                                                                      :Storage_device_type "SSD" ;
                                                                                                                      :has_a_model "PM981a" .
@@ -3005,7 +3006,7 @@
                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Kingston> ;
                                                                                                           :DDrate_type "DDR4" ;
                                                                                                           :RAM_clock_speed "3200 MHz" ;
-                                                                                                          :RAM_size "4 GB" ;
+                                                                                                          :RAM_size "4"^^xsd:string ;
                                                                                                           :RAM_type "DRAM" .
 
 
@@ -3014,14 +3015,14 @@
                                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Patriot> ;
                                                                                                          :DDrate_type "DDR4" ;
                                                                                                          :RAM_clock_speed "2666 MHz" ;
-                                                                                                         :RAM_size "8 GB" ;
+                                                                                                         :RAM_size "8"^^xsd:string ;
                                                                                                          :RAM_type "DRAM" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-76E4T0B/EU_Samsung_860_EVO_Series_4TB
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-76E4T0B/EU_Samsung_860_EVO_Series_4TB> rdf:type :SSD ;
                                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> ;
-                                                                                                                        :SSD_memory_size "4 TB" ;
+                                                                                                                        :SSD_memory_size "4000"^^xsd:string ;
                                                                                                                         :SSD_read_speed "550 MB" ;
                                                                                                                         :SSD_write_speed "520 MB" ;
                                                                                                                         :Storage_device_type "SSD" ;
@@ -3031,7 +3032,7 @@
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-77Q1T0B/AM_Samsung_870_QVO_1TB
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-77Q1T0B/AM_Samsung_870_QVO_1TB> rdf:type :SSD ;
                                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> ;
-                                                                                                                 :SSD_memory_size "1 TB" ;
+                                                                                                                 :SSD_memory_size "1000"^^xsd:string ;
                                                                                                                  :SSD_read_speed "560 MB" ;
                                                                                                                  :SSD_write_speed "530 MB" ;
                                                                                                                  :Storage_device_type "SSD" ;
@@ -3041,7 +3042,7 @@
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-7PA0640/0H1_Samsung_PM810_Series_64GB
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#SSD_MZ-7PA0640/0H1_Samsung_PM810_Series_64GB> rdf:type :SSD ;
                                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Samsung> ;
-                                                                                                                        :SSD_memory_size "64 GB" ;
+                                                                                                                        :SSD_memory_size "64"^^xsd:string ;
                                                                                                                         :Storage_device_type "SSD" ;
                                                                                                                         :has_a_model "PM810" .
 
