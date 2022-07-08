@@ -1660,7 +1660,7 @@
                                                                                                        :CPU_core 6 ;
                                                                                                        :CPU_coreNumber "6"^^xsd:string ;
                                                                                                        :CPU_frequency "3.5"^^xsd:string ;
-                                                                                                       :CPU_model "AMD Ryzen5-5600" ;
+                                                                                                       :CPU_model "Ryzen5-5600" ;
                                                                                                        :CPU_turbo_frequency "4.4 GHz" .
 
 
@@ -1672,7 +1672,7 @@
                                                                                                         :CPU_core 8 ;
                                                                                                         :CPU_coreNumber "8"^^xsd:string ;
                                                                                                         :CPU_frequency "3.6"^^xsd:string ;
-                                                                                                        :CPU_model "AMD Ryzen7-3700X" ;
+                                                                                                        :CPU_model "Ryzen7-3700X" ;
                                                                                                         :CPU_turbo_frequency "4.4 GHz" .
 
 
@@ -1684,7 +1684,7 @@
                                                                                                         :CPU_core 8 ;
                                                                                                         :CPU_coreNumber "8"^^xsd:string ;
                                                                                                         :CPU_frequency "3.9"^^xsd:string ;
-                                                                                                        :CPU_model "AMD Ryzen7-3800X" ;
+                                                                                                        :CPU_model "Ryzen7-3800X" ;
                                                                                                         :CPU_turbo_frequency "4.5 GHz" .
 
 
@@ -1696,7 +1696,7 @@
                                                                                                         :CPU_core 8 ;
                                                                                                         :CPU_coreNumber "8"^^xsd:string ;
                                                                                                         :CPU_frequency "3.4"^^xsd:string ;
-                                                                                                        :CPU_model "AMD Ryzen7-5700X" ;
+                                                                                                        :CPU_model "Ryzen7-5700X" ;
                                                                                                         :CPU_turbo_frequency "4.6 GHz" .
 
 
@@ -1708,7 +1708,7 @@
                                                                                                         :CPU_core 16 ;
                                                                                                         :CPU_coreNumber "16"^^xsd:string ;
                                                                                                         :CPU_frequency "3.4"^^xsd:string ;
-                                                                                                        :CPU_model "AMD Ryzen9-5950X" ;
+                                                                                                        :CPU_model "Ryzen9-5950X" ;
                                                                                                         :CPU_turbo_frequency "4.9 GHz" .
 
 
@@ -1719,7 +1719,7 @@
                                                                                                             :CPU_core 4 ;
                                                                                                             :CPU_coreNumber "4"^^xsd:string ;
                                                                                                             :CPU_frequency "3.7"^^xsd:string ;
-                                                                                                            :CPU_model "Intel Core i3-10105" ;
+                                                                                                            :CPU_model "Core i3-10105" ;
                                                                                                             :CPU_turbo_frequency "4.4 GHz" .
 
 
@@ -1731,7 +1731,7 @@
                                                                                                             :CPU_core 4 ;
                                                                                                             :CPU_coreNumber "4"^^xsd:string ;
                                                                                                             :CPU_frequency "3.3"^^xsd:string ;
-                                                                                                            :CPU_model "Intel Core i3-12100" ;
+                                                                                                            :CPU_model "Core i3-12100" ;
                                                                                                             :CPU_turbo_frequency "4.3 GHz" .
 
 
@@ -1742,7 +1742,7 @@
                                                                                                             :CPU_core 6 ;
                                                                                                             :CPU_coreNumber "6"^^xsd:string ;
                                                                                                             :CPU_frequency "3.3"^^xsd:string ;
-                                                                                                            :CPU_model "Intel Core i5-10600" ;
+                                                                                                            :CPU_model "Core i5-10600" ;
                                                                                                             :CPU_turbo_frequency "4.8 GHz" .
 
 
@@ -1753,7 +1753,7 @@
                                                                                                           :CPU_core 6 ;
                                                                                                           :CPU_coreNumber "6"^^xsd:string ;
                                                                                                           :CPU_frequency "3.7"^^xsd:string ;
-                                                                                                          :CPU_model "Intel Core i5-9600K" ;
+                                                                                                          :CPU_model "Core i5-9600K" ;
                                                                                                           :CPU_turbo_frequency "4.6 GHz" .
 
 
@@ -1764,7 +1764,7 @@
                                                                                                           :CPU_core 8 ;
                                                                                                           :CPU_coreNumber "8"^^xsd:string ;
                                                                                                           :CPU_frequency "2.5"^^xsd:string ;
-                                                                                                          :CPU_model "Intel Core i7-11700" ;
+                                                                                                          :CPU_model "Core i7-11700" ;
                                                                                                           :CPU_turbo_frequency "4.9 GHz" .
 
 
@@ -1776,7 +1776,7 @@
                                                                                                             :CPU_core 16 ;
                                                                                                             :CPU_coreNumber "16"^^xsd:string ;
                                                                                                             :CPU_frequency "3.2"^^xsd:string ;
-                                                                                                            :CPU_model "Intel Core i9-12900KF" ;
+                                                                                                            :CPU_model "Core i9-12900KF" ;
                                                                                                             :CPU_turbo_frequency "5.2 GHz" .
 
 

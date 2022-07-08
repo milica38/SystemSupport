@@ -1,3 +1,4 @@
+<!-- ################COMBO-BOXES##################### -->
 <div class="row">
     <h3 class="d-flex justify-content-center">
         Evaluation of the validity</h3>
@@ -5,25 +6,47 @@
       <div class="col-8 card" style="background-color: #cfd1d3;">
         <div class="card-body row">
           <div class="col">
+            <label>Choose GPU: </label>
             <select #selected1  class="form-select" (change)="onSelectedGPU(selected1.value)">
-              <option>Choose GPU</option>
-              <option *ngFor="let i of gpus" [value]="i.maxMemory">{{i.brand}} {{i.model}}</option>
+              <option></option>
+              <option *ngFor="let i of gpus" [value]="i.maxMemory">{{i.brand.substring(6)}} {{i.model}}</option>
             </select>
-            <select #selected2 class="form-select" (change)="onSelectedCPU(selected2.value)">
-                <option>Choose CPU</option>
-                <option *ngFor="let c of cpus" [value]="c.core">{{c.brand}} {{c.model}}</option>
+            <label>Choose CPU: </label>
+            <select class="form-select"  #selectedValue id="selectedValue" [ngModel]="selectedValue" (ngModelChange)="onSelectedCPU($event)">
+                <option></option>
+                <option *ngFor="let cpu of cpus" [ngValue]="cpu">{{cpu.brand.substring(6)}} {{cpu.model}}</option>
             </select>
+            <label>Choose Storage device: </label>
             <select #selected3 class="form-select" (change)="onSelectedSSD(selected3.value)">
-                <option>Choose Storage Device</option>
-                <option *ngFor="let s of ssds"  [value]="s.storageSize">{{s.brand}} {{s.model}}</option>
+                <option></option>
+                <option *ngFor="let s of ssds"  [value]="s.storageSize">{{s.brand.substring(6)}} {{s.model}}</option>
             </select>
+            <label>Choose RAM: </label>
             <select #selected4 class="form-select" (change)="onSelectedRAM(selected4.value)">
-                <option>Choose RAM</option>
-                <option *ngFor="let r of rams"  [value]="r.ramSize">{{r.brand}} {{r.type}} {{r.ramSize}} GB</option>
+                <option></option>
+                <option *ngFor="let r of rams"  [value]="r.ramSize">{{r.brand.substring(6)}} {{r.type}} {{r.ramSize}} GB</option>
             </select>
             <button type="button" class="btn btn-secondary" (click)="onSuggest()">Suggest</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- ###########################RESULTS################## -->
+  <div class="row" *ngIf="resultBox">
+    <h3 class="d-flex justify-content-center">
+      Results</h3>
+  <div class="box d-flex justify-content-center">
+    <div class="col-4 card" style="background-color: rgb(32, 74, 171);">
+      <div class="card-body row">
+        <div class="col" style="padding-left: 5%;">
+          <h5>Home usage: {{results[0].percentage}}</h5>
+          <h5>Gaming usage: {{results[1].percentage}}</h5>
+          <h5>Programming usage: {{results[2].percentage}}</h5>
+          <h5>Web hosting usage: {{results[3].percentage}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
