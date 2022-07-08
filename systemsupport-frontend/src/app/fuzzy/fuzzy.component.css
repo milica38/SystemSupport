@@ -1,0 +1,22 @@
+.box {
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+h3{
+    margin-top: 2%;
+    color: rgb(32, 74, 171);
+}
+
+.form-select {
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-bottom: 3%;
+    width: 70%;
+}
+
+.btn {
+    margin-left: 33%;
+    width: 30%;
+    background-color: rgb(32, 74, 171);
+}
