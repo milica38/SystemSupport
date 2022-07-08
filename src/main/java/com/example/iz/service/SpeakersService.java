@@ -22,19 +22,6 @@ public class SpeakersService {
     private RecommendationService recommendationService;
 
     public List<SpeakersDTO> findSpeakers(String searchValue) {
-//        ParameterizedSparqlString queryStr = new ParameterizedSparqlString();
-//        queryStr.setNsPrefix("rdf", RDF);
-//        queryStr.setNsPrefix("base", BASE);
-//        queryStr.append("SELECT ?component");
-//        queryStr.append("{");
-//        queryStr.append("?component rdf:type ");
-//        queryStr.append("base:Speakers");
-//        queryStr.append(". ");
-//        queryStr.append("?component base:frequency_response '");
-//        queryStr.append(searchValue + "'");
-//        queryStr.append(".");
-//        queryStr.append("}");
-//        System.out.println(queryStr);
 
         List<SpeakersDTO> allSpeakers = getAllSpeakers();
         List<SpeakersDTO> result = new ArrayList<SpeakersDTO>();
