@@ -37,4 +37,33 @@ public class MouseService {
         }
         return result;
     }
+
+    public List<MouseDTO> findMouses(String sensitivities, String type){
+        List<MouseDTO> mouses = getAllMouses();
+        List<MouseDTO> result = new ArrayList<>();
+
+        double sens = Double.parseDouble(sensitivities);
+
+        for(MouseDTO mouse: mouses) {
+            if(type.equals("Mechanical") && sens < 101 && Integer.parseInt(mouse.getDpi()) > 4000 && Integer.parseInt(mouse.getDpi()) < 8000){
+                result.add(mouse);
+            }
+            else if(type.equals("Mechanical") && sens > 106 && Integer.parseInt(mouse.getDpi()) > 16000) {
+                result.add(mouse);
+            }
+            else if(type.equals("Mechanical") && sens > 101 && sens < 106 && Integer.parseInt(mouse.getDpi()) > 8000 && Integer.parseInt(mouse.getDpi()) < 19000) {
+                result.add(mouse);
+            }
+            else if(type.equals("Membrane") && sens < 101 && Integer.parseInt(mouse.getDpi()) < 2000){
+                result.add(mouse);
+            }
+            else if(type.equals("Membrane") && sens > 106 && Integer.parseInt(mouse.getDpi()) > 2000 && Integer.parseInt(mouse.getDpi()) < 6000) {
+                result.add(mouse);
+            }
+            else if(type.equals("Membrane") && sens > 101 && sens < 106 && Integer.parseInt(mouse.getDpi()) > 6000 && Integer.parseInt(mouse.getDpi()) < 9000) {
+                result.add(mouse);
+            }
+        }
+        return result;
+    }
 }

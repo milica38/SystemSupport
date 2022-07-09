@@ -93,4 +93,11 @@ public class RecommendationController {
         var response = mouseService.getAllMouses();
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
+
+    @CrossOrigin
+    @PostMapping("/mouse/search")
+    public ResponseEntity<List<MouseDTO>> findMouses(@RequestBody RecommendationForMouseDTO dto){
+        var response = mouseService.findMouses(dto.getHpSensitivities(), dto.getKeyboardType());
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
 }
