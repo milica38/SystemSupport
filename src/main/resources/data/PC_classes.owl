@@ -2425,7 +2425,7 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_ASUS_PRIME_B560-PLUS> rdf:type :Motherboard ;
                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
                                                                                                             :Motherboard_SATA_connections 6 ;
-                                                                                                            :Motherboard_USB_slots 7 ;
+                                                                                                            :Motherboard_USB_slots "7"^^xsd:string ;
                                                                                                             :Motherboard_chipset "Intel B560" ;
                                                                                                             :Motherboard_form_factor "ATX" ;
                                                                                                             :Motherboard_processor_socket "LGA1200" .
@@ -2436,7 +2436,7 @@
                                                                                                                 :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
                                                                                                                 :Motherboard_DIMM 4 ;
                                                                                                                 :Motherboard_SATA_connections 4 ;
-                                                                                                                :Motherboard_USB_slots 12 ;
+                                                                                                                :Motherboard_USB_slots "12"^^xsd:string ;
                                                                                                                 :Motherboard_chipset "Intel Z690" ;
                                                                                                                 :Motherboard_form_factor "Micro-ATX" ;
                                                                                                                 :Motherboard_processor_socket "LGA 1700" .
@@ -2447,7 +2447,7 @@
                                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
                                                                                                                  :Motherboard_DIMM 4 ;
                                                                                                                  :Motherboard_SATA_connections 6 ;
-                                                                                                                 :Motherboard_USB_slots 8 ;
+                                                                                                                 :Motherboard_USB_slots "8"^^xsd:string ;
                                                                                                                  :Motherboard_chipset "AMD B550" ;
                                                                                                                  :Motherboard_form_factor "ATX" ;
                                                                                                                  :Motherboard_processor_socket "" .
@@ -2457,7 +2457,7 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_ASUS_TUF_GAMING_B560M-PLUS> rdf:type :Motherboard ;
                                                                                                                   :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
                                                                                                                   :Motherboard_SATA_connections 6 ;
-                                                                                                                  :Motherboard_USB_slots 9 ;
+                                                                                                                  :Motherboard_USB_slots "9"^^xsd:string ;
                                                                                                                   :Motherboard_chipset "Intel B560" ;
                                                                                                                   :Motherboard_form_factor "Micro-ATX" .
 
@@ -2467,7 +2467,7 @@
                                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
                                                                                                                  :Motherboard_DIMM 4 ;
                                                                                                                  :Motherboard_SATA_connections 4 ;
-                                                                                                                 :Motherboard_USB_slots 8 ;
+                                                                                                                 :Motherboard_USB_slots "8"^^xsd:string ;
                                                                                                                  :Motherboard_chipset "Intel Z690" ;
                                                                                                                  :Motherboard_form_factor "ATX" ;
                                                                                                                  :Motherboard_processor_socket "LGA 1700" .
@@ -2477,7 +2477,7 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_GIGABYTE_B660_AORUS_MASTER_DDR4> rdf:type :Motherboard ;
                                                                                                                        :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_GIGABYTE> ;
                                                                                                                        :Motherboard_SATA_connections 4 ;
-                                                                                                                       :Motherboard_USB_slots 10 ;
+                                                                                                                       :Motherboard_USB_slots "10"^^xsd:string ;
                                                                                                                        :Motherboard_chipset "Intel B660" ;
                                                                                                                        :Motherboard_form_factor "ATX" ;
                                                                                                                        :Motherboard_processor_socket "LGA 1700" .
@@ -2488,7 +2488,7 @@
                                                                                                                    :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_GIGABYTE> ;
                                                                                                                    :Motherboard_DIMM 4 ;
                                                                                                                    :Motherboard_SATA_connections 6 ;
-                                                                                                                   :Motherboard_USB_slots 8 ;
+                                                                                                                   :Motherboard_USB_slots "8"^^xsd:string ;
                                                                                                                    :Motherboard_chipset "AMD X570" ;
                                                                                                                    :Motherboard_form_factor "ATX" .
 
@@ -2498,7 +2498,7 @@
                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MSI> ;
                                                                                                       :Motherboard_DIMM 4 ;
                                                                                                       :Motherboard_SATA_connections 6 ;
-                                                                                                      :Motherboard_USB_slots 15 ;
+                                                                                                      :Motherboard_USB_slots "15"^^xsd:string ;
                                                                                                       :Motherboard_chipset "AMD B550" ;
                                                                                                       :Motherboard_form_factor "ATX" .
 
@@ -2508,7 +2508,7 @@
                                                                                                                 :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MSI> ;
                                                                                                                 :Motherboard_DIMM 4 ;
                                                                                                                 :Motherboard_SATA_connections 4 ;
-                                                                                                                :Motherboard_USB_slots 17 ;
+                                                                                                                :Motherboard_USB_slots "17"^^xsd:string ;
                                                                                                                 :Motherboard_chipset "AMD X570" ;
                                                                                                                 :Motherboard_form_factor "ATX" .
 
@@ -2518,7 +2518,7 @@
                                                                                                                 :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MSI> ;
                                                                                                                 :Motherboard_DIMM 4 ;
                                                                                                                 :Motherboard_SATA_connections 6 ;
-                                                                                                                :Motherboard_USB_slots 15 ;
+                                                                                                                :Motherboard_USB_slots "15"^^xsd:string ;
                                                                                                                 :Motherboard_chipset "Intel Z490" ;
                                                                                                                 :Motherboard_form_factor "ATX" ;
                                                                                                                 :Motherboard_processor_socket "LGA 1200" .

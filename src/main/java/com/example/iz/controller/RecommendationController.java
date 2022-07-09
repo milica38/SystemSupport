@@ -1,6 +1,8 @@
 package com.example.iz.controller;
 
+import com.example.iz.dto.MotherboardDTO;
 import com.example.iz.dto.SpeakersDTO;
+import com.example.iz.service.MotherboardService;
 import com.example.iz.service.QueryService;
 import com.example.iz.service.RecommendationService;
 import com.example.iz.service.SpeakersService;
@@ -18,9 +20,9 @@ public class RecommendationController {
     @Autowired
     private RecommendationService recommendationService;
     @Autowired
-    private QueryService queryService;
-    @Autowired
     private SpeakersService speakersService;
+    @Autowired
+    private MotherboardService motherboardService;
 
 
     @CrossOrigin
@@ -41,6 +43,13 @@ public class RecommendationController {
     @GetMapping("/speakers")
     public ResponseEntity<List<SpeakersDTO>> getAllSpeakers(){
         var response = speakersService.getAllSpeakers();
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @CrossOrigin
+    @GetMapping("/motherboards")
+    public ResponseEntity<List<MotherboardDTO>> getAllMotherboards(){
+        var response = motherboardService.getAllMotherboards();
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 

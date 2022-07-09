@@ -1,9 +1,6 @@
 package com.example.iz.service;
 
 import com.example.iz.dto.SpeakersDTO;
-import org.apache.jena.base.Sys;
-import org.apache.jena.query.ParameterizedSparqlString;
-import org.apache.jena.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,8 +13,6 @@ public class SpeakersService {
     public static final String BASE = "http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#";
     public static final String RDF = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 
-    @Autowired
-    private QueryService queryService;
     @Autowired
     private RecommendationService recommendationService;
 
