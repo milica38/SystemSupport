@@ -15,11 +15,15 @@ export class FuzzyComponent implements OnInit {
   ssds: any[] = [];
   rams: any[] = [];
   results: any[] = [];
+  brandsubs: string = "";
+  
   selectedRamSize: string = "";
   selectedCoreNumber: string = "";
   selectedStorageSize: string = "";
   selectedGpuSize: string = "";
   selectedClockSpeed: string = "";
+
+  resultBox: boolean = false;
 
   ngOnInit(): void {
     this.getAllGraphicsCards();
@@ -34,59 +38,57 @@ export class FuzzyComponent implements OnInit {
       ramSize: this.selectedRamSize,
       storageSize: this.selectedStorageSize,
       gpuSize: this.selectedGpuSize,
-      cpuClockSpeed: 1
+      cpuClockSpeed: this.selectedClockSpeed
     }
     this.service.SendResults(params).subscribe((response: any) => {
+      this.results = response;
       console.log(response);
     })
+    this.resultBox = true;
   }
 
   onSelectedRAM(value: any): void {
     this.selectedRamSize = value;
-    console.log(this.selectedRamSize);
 }
 
 onSelectedSSD(value: any): void {
   this.selectedStorageSize = value;
-  console.log(this.selectedStorageSize);
 }
 
 onSelectedGPU(value: any): void {
   this.selectedGpuSize = value;
-  console.log(this.selectedGpuSize);
 }
 
-onSelectedCPU(value: any): void {
-  this.selectedCoreNumber = value;
-  // this.selectedClockSpeed = value2;
-  console.log(value);
+onSelectedCPU(selectedValue: any): void {
+  this.selectedCoreNumber = selectedValue.core;
+  this.selectedClockSpeed = selectedValue.clockSpeed;
+  console.log( this.selectedClockSpeed,  this.selectedCoreNumber);
 }
 
   getAllGraphicsCards(): void {
     this.service.getAllGraphicsCards().subscribe((response: any) => {
       this.gpus = response;
-      console.log(this.gpus);
     })
   }
 
   getAllCPUs(): void {
     this.service.getAllCPUs().subscribe((response: any) => {
       this.cpus = response;
-      console.log(this.cpus);
     })
+    for(let i of this.cpus){
+      this.brandsubs = i.brand.substring(6);
+    }
   }
 
   getAllSSDs(): void {
     this.service.getAllSSDs().subscribe((response: any) => {
       this.ssds = response;
-      console.log(this.ssds);
     })
   }
 
   getAllRams(): void {
     this.service.getAllRams().subscribe((response: any) => {
       this.rams = response;
-      console.log(this.rams);
     })
   }
 

@@ -1657,10 +1657,9 @@
                                                                                                        :has_brand :Brand_AMD ;
                                                                                                        :CPU_L2_cache "3 MB" ;
                                                                                                        :CPU_L3_cache "32 MB" ;
-                                                                                                       :CPU_core 6 ;
                                                                                                        :CPU_coreNumber "6"^^xsd:string ;
                                                                                                        :CPU_frequency "3.5"^^xsd:string ;
-                                                                                                       :CPU_model "AMD Ryzen5-5600" ;
+                                                                                                       :CPU_model "Ryzen5-5600" ;
                                                                                                        :CPU_turbo_frequency "4.4 GHz" .
 
 
@@ -1669,10 +1668,9 @@
                                                                                                         :has_brand :Brand_AMD ;
                                                                                                         :CPU_L2_cache "4 MB" ;
                                                                                                         :CPU_L3_cache "32 MB" ;
-                                                                                                        :CPU_core 8 ;
                                                                                                         :CPU_coreNumber "8"^^xsd:string ;
                                                                                                         :CPU_frequency "3.6"^^xsd:string ;
-                                                                                                        :CPU_model "AMD Ryzen7-3700X" ;
+                                                                                                        :CPU_model "Ryzen7-3700X" ;
                                                                                                         :CPU_turbo_frequency "4.4 GHz" .
 
 
@@ -1681,10 +1679,9 @@
                                                                                                         :has_brand :Brand_AMD ;
                                                                                                         :CPU_L2_cache "4 MB" ;
                                                                                                         :CPU_L3_cache "32 MB" ;
-                                                                                                        :CPU_core 8 ;
                                                                                                         :CPU_coreNumber "8"^^xsd:string ;
                                                                                                         :CPU_frequency "3.9"^^xsd:string ;
-                                                                                                        :CPU_model "AMD Ryzen7-3800X" ;
+                                                                                                        :CPU_model "Ryzen7-3800X" ;
                                                                                                         :CPU_turbo_frequency "4.5 GHz" .
 
 
@@ -1693,10 +1690,9 @@
                                                                                                         :has_brand :Brand_AMD ;
                                                                                                         :CPU_L2_cache "4 MB" ;
                                                                                                         :CPU_L3_cache "32 MB" ;
-                                                                                                        :CPU_core 8 ;
                                                                                                         :CPU_coreNumber "8"^^xsd:string ;
                                                                                                         :CPU_frequency "3.4"^^xsd:string ;
-                                                                                                        :CPU_model "AMD Ryzen7-5700X" ;
+                                                                                                        :CPU_model "Ryzen7-5700X" ;
                                                                                                         :CPU_turbo_frequency "4.6 GHz" .
 
 
@@ -1705,10 +1701,9 @@
                                                                                                         :has_brand :Brand_AMD ;
                                                                                                         :CPU_L2_cache "8 MB" ;
                                                                                                         :CPU_L3_cache "64 MB" ;
-                                                                                                        :CPU_core 16 ;
                                                                                                         :CPU_coreNumber "16"^^xsd:string ;
                                                                                                         :CPU_frequency "3.4"^^xsd:string ;
-                                                                                                        :CPU_model "AMD Ryzen9-5950X" ;
+                                                                                                        :CPU_model "Ryzen9-5950X" ;
                                                                                                         :CPU_turbo_frequency "4.9 GHz" .
 
 
@@ -1716,10 +1711,9 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i3-10105_3.70_GHz> rdf:type :CPU ;
                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> ;
                                                                                                             :CPU_L2_cache "6 MB" ;
-                                                                                                            :CPU_core 4 ;
                                                                                                             :CPU_coreNumber "4"^^xsd:string ;
                                                                                                             :CPU_frequency "3.7"^^xsd:string ;
-                                                                                                            :CPU_model "Intel Core i3-10105" ;
+                                                                                                            :CPU_model "Core i3-10105" ;
                                                                                                             :CPU_turbo_frequency "4.4 GHz" .
 
 
@@ -1728,10 +1722,9 @@
                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> ;
                                                                                                             :CPU_L2_cache "5 MB" ;
                                                                                                             :CPU_L3_cache "12 MB" ;
-                                                                                                            :CPU_core 4 ;
                                                                                                             :CPU_coreNumber "4"^^xsd:string ;
                                                                                                             :CPU_frequency "3.3"^^xsd:string ;
-                                                                                                            :CPU_model "Intel Core i3-12100" ;
+                                                                                                            :CPU_model "Core i3-12100" ;
                                                                                                             :CPU_turbo_frequency "4.3 GHz" .
 
 
@@ -1739,10 +1732,9 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i5-10600_3.30_GHz> rdf:type :CPU ;
                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> ;
                                                                                                             :CPU_L3_cache "12 MB" ;
-                                                                                                            :CPU_core 6 ;
                                                                                                             :CPU_coreNumber "6"^^xsd:string ;
                                                                                                             :CPU_frequency "3.3"^^xsd:string ;
-                                                                                                            :CPU_model "Intel Core i5-10600" ;
+                                                                                                            :CPU_model "Core i5-10600" ;
                                                                                                             :CPU_turbo_frequency "4.8 GHz" .
 
 
@@ -1750,10 +1742,9 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i5-9600K_3.7GHz> rdf:type :CPU ;
                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> ;
                                                                                                           :CPU_L3_cache "9 MB" ;
-                                                                                                          :CPU_core 6 ;
                                                                                                           :CPU_coreNumber "6"^^xsd:string ;
                                                                                                           :CPU_frequency "3.7"^^xsd:string ;
-                                                                                                          :CPU_model "Intel Core i5-9600K" ;
+                                                                                                          :CPU_model "Core i5-9600K" ;
                                                                                                           :CPU_turbo_frequency "4.6 GHz" .
 
 
@@ -1761,10 +1752,9 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i7-11700_2.5GHz> rdf:type :CPU ;
                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> ;
                                                                                                           :CPU_L2_cache "16 MB" ;
-                                                                                                          :CPU_core 8 ;
                                                                                                           :CPU_coreNumber "8"^^xsd:string ;
                                                                                                           :CPU_frequency "2.5"^^xsd:string ;
-                                                                                                          :CPU_model "Intel Core i7-11700" ;
+                                                                                                          :CPU_model "Core i7-11700" ;
                                                                                                           :CPU_turbo_frequency "4.9 GHz" .
 
 
@@ -1773,10 +1763,9 @@
                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Intel> ;
                                                                                                             :CPU_L2_cache "14 MB" ;
                                                                                                             :CPU_L3_cache "30 MB" ;
-                                                                                                            :CPU_core 16 ;
                                                                                                             :CPU_coreNumber "16"^^xsd:string ;
                                                                                                             :CPU_frequency "3.2"^^xsd:string ;
-                                                                                                            :CPU_model "Intel Core i9-12900KF" ;
+                                                                                                            :CPU_model "Core i9-12900KF" ;
                                                                                                             :CPU_turbo_frequency "5.2 GHz" .
 
 
@@ -2214,7 +2203,7 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_CoolerMaster_TAS01007
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_CoolerMaster_TAS01007> rdf:type :Mechanical_keyboard ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_CoolerMaster_TAS01007> rdf:type :Keyboard ;
                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
                                                                                                           :Keyboard_is_water_resistant "false"^^xsd:boolean ;
                                                                                                           :Keyboard_is_wired "true"^^xsd:boolean ;
@@ -2222,7 +2211,7 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Genius_Scorpion_K220
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Genius_Scorpion_K220> rdf:type :Membrane_keyboard ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Genius_Scorpion_K220> rdf:type :Keyboard ;
                                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> ;
                                                                                                          :Keyboard_is_water_resistant "true"^^xsd:boolean ;
                                                                                                          :Keyboard_is_wired "true"^^xsd:boolean ;
@@ -2230,7 +2219,7 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_HP_QY776AA
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_HP_QY776AA> rdf:type :Membrane_keyboard ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_HP_QY776AA> rdf:type :Keyboard ;
                                                                                                :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_HP> ;
                                                                                                :Keyboard_is_water_resistant "false"^^xsd:boolean ;
                                                                                                :Keyboard_is_wired "true"^^xsd:boolean ;
@@ -2238,7 +2227,7 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Hama_KC-600
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Hama_KC-600> rdf:type :Membrane_keyboard ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Hama_KC-600> rdf:type :Keyboard ;
                                                                                                 :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Hama> ;
                                                                                                 :Keyboard_is_water_resistant "true"^^xsd:boolean ;
                                                                                                 :Keyboard_is_wired "true"^^xsd:boolean ;
@@ -2246,7 +2235,7 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_G512
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_G512> rdf:type :Mechanical_keyboard ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_G512> rdf:type :Keyboard ;
                                                                                                   :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
                                                                                                   :Keyboard_is_water_resistant "false"^^xsd:boolean ;
                                                                                                   :Keyboard_is_wired "true"^^xsd:boolean ;
@@ -2254,7 +2243,7 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_G915_LIGHTSPEED
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_G915_LIGHTSPEED> rdf:type :Mechanical_keyboard ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_G915_LIGHTSPEED> rdf:type :Keyboard ;
                                                                                                              :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
                                                                                                              :Keyboard_is_water_resistant "false"^^xsd:boolean ;
                                                                                                              :Keyboard_is_wired "false"^^xsd:boolean ;
@@ -2262,7 +2251,7 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_K12
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_K12> rdf:type :Membrane_keyboard ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_K12> rdf:type :Keyboard ;
                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
                                                                                                  :Keyboard_is_water_resistant "true"^^xsd:boolean ;
                                                                                                  :Keyboard_is_wired "true"^^xsd:boolean ;
@@ -2270,7 +2259,7 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Razer_CYNOSA_CHROMA_V2
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Razer_CYNOSA_CHROMA_V2> rdf:type :Membrane_keyboard ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Razer_CYNOSA_CHROMA_V2> rdf:type :Keyboard ;
                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Razer> ;
                                                                                                            :Keyboard_is_water_resistant "true"^^xsd:boolean ;
                                                                                                            :Keyboard_is_wired "true"^^xsd:boolean ;
@@ -2278,7 +2267,7 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Redragon_K535-KR
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Redragon_K535-KR> rdf:type :Mechanical_keyboard ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Redragon_K535-KR> rdf:type :Keyboard ;
                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Redragon> ;
                                                                                                      :Keyboard_is_water_resistant "false"^^xsd:boolean ;
                                                                                                      :Keyboard_is_wired "false"^^xsd:boolean ;
@@ -2286,7 +2275,7 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Redragon_Kala_K557_RGB
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Redragon_Kala_K557_RGB> rdf:type :Mechanical_keyboard ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Redragon_Kala_K557_RGB> rdf:type :Keyboard ;
                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Redragon> ;
                                                                                                            :Keyboard_is_water_resistant "true"^^xsd:boolean ;
                                                                                                            :Keyboard_is_wired "true"^^xsd:boolean ;
