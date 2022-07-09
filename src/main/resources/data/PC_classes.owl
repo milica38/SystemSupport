@@ -552,7 +552,7 @@
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Motherboard_USB_slots
 :Motherboard_USB_slots rdf:type owl:DatatypeProperty ;
                        rdfs:domain :Motherboard ;
-                       rdfs:range xsd:integer .
+                       rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Motherboard_chipset
@@ -902,6 +902,10 @@
                                  )
                    ] ;
        rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/milica38/SystemSupport/main/instances.owl#Case_power_supply
+:Case_power_supply rdf:type owl:DatatypeProperty .
 
 
 #################################################################
@@ -2070,8 +2074,7 @@
                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Seagate> ;
                                                                                                      :HDD_buffer_size "256 MB" ;
                                                                                                      :HDD_interface "SATA 3" ;
-                                                                                                     :HDD_memory_size "" ,
-                                                                                                                      "2000"^^xsd:string ;
+                                                                                                     :HDD_memory_size "2000"^^xsd:string ;
                                                                                                      :HDD_physical_size "3.5 inch" ;
                                                                                                      :HDD_rotation_speed "7200 rpm" ;
                                                                                                      :Storage_device_type "HDD" .
@@ -2136,70 +2139,80 @@
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_CoolerMaster_CH321> rdf:type :Headphones ;
                                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
                                                                                                          :frequency_response "20Hz-20000Hz" ;
-                                                                                                         :sensitivities "115dB" .
+                                                                                                         :has_a_model "CH321" ;
+                                                                                                         :sensitivities "115"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_CoolerMaster_MH650
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_CoolerMaster_MH650> rdf:type :Headphones ;
                                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
                                                                                                          :frequency_response "20Hz-20000Hz" ;
-                                                                                                         :sensitivities "107dB" .
+                                                                                                         :has_a_model "MH650" ;
+                                                                                                         :sensitivities "107"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_JBL_QUANTUM_300
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_JBL_QUANTUM_300> rdf:type :Headphones ;
                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_JBL> ;
                                                                                                       :frequency_response "20Hz-20000Hz" ;
-                                                                                                      :sensitivities "100dB" .
+                                                                                                      :has_a_model "QUANTUM300" ;
+                                                                                                      :sensitivities "100"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_JBL_Tune_570BT
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_JBL_Tune_570BT> rdf:type :Headphones ;
                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_JBL> ;
                                                                                                      :frequency_response "20Hz-20000Hz" ;
-                                                                                                     :sensitivities "103.5dB" .
+                                                                                                     :has_a_model "Tune570BT" ;
+                                                                                                     :sensitivities "103.5"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Logitech_G435
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Logitech_G435> rdf:type :Headphones ;
                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
                                                                                                     :frequency_response "20Hz-20000Hz" ;
-                                                                                                    :sensitivities "83dB" .
+                                                                                                    :has_a_model "G435" ;
+                                                                                                    :sensitivities "83"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Logitech_G533
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Logitech_G533> rdf:type :Headphones ;
                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
                                                                                                     :frequency_response "20Hz-20000Hz" ;
-                                                                                                    :sensitivities "107dB" .
+                                                                                                    :has_a_model "G533" ;
+                                                                                                    :sensitivities "107"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Logitech_G635_Lightsync
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Logitech_G635_Lightsync> rdf:type :Headphones ;
                                                                                                               :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
                                                                                                               :frequency_response "20Hz-20000Hz" ;
-                                                                                                              :sensitivities "93dB" .
+                                                                                                              :has_a_model "G635 Lightsync" ;
+                                                                                                              :sensitivities "93"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Philips_TAH4205WT00
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Philips_TAH4205WT00> rdf:type :Headphones ;
                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Philips> ;
                                                                                                           :frequency_response "20Hz-20000Hz" ;
-                                                                                                          :sensitivities "110dB" .
+                                                                                                          :has_a_model "TAH4205WT00" ;
+                                                                                                          :sensitivities "110"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Redragon_H350_Pandora
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Redragon_H350_Pandora> rdf:type :Headphones ;
                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Redragon> ;
                                                                                                             :frequency_response "20Hz-20000Hz" ;
-                                                                                                            :sensitivities "93dB" .
+                                                                                                            :has_a_model "H350 Pandora" ;
+                                                                                                            :sensitivities "93"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Sony_WH1000XM3S.CE7
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Headphones_Sony_WH1000XM3S.CE7> rdf:type :Headphones ;
                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Sony> ;
                                                                                                           :frequency_response "4Hz-40000Hz" ;
-                                                                                                          :sensitivities "104.5dB" .
+                                                                                                          :has_a_model "WH1000XM3S.CE7" ;
+                                                                                                          :sensitivities "104.5"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_CoolerMaster_TAS01007
@@ -2207,7 +2220,8 @@
                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
                                                                                                           :Keyboard_is_water_resistant "false"^^xsd:boolean ;
                                                                                                           :Keyboard_is_wired "true"^^xsd:boolean ;
-                                                                                                          :Keyboard_type "Mechanical" .
+                                                                                                          :Keyboard_type "Mechanical" ;
+                                                                                                          :has_a_model "TAS01007" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Genius_Scorpion_K220
@@ -2215,7 +2229,8 @@
                                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> ;
                                                                                                          :Keyboard_is_water_resistant "true"^^xsd:boolean ;
                                                                                                          :Keyboard_is_wired "true"^^xsd:boolean ;
-                                                                                                         :Keyboard_type "Membrane" .
+                                                                                                         :Keyboard_type "Membrane" ;
+                                                                                                         :has_a_model "Scorpion K220" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_HP_QY776AA
@@ -2223,7 +2238,8 @@
                                                                                                :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_HP> ;
                                                                                                :Keyboard_is_water_resistant "false"^^xsd:boolean ;
                                                                                                :Keyboard_is_wired "true"^^xsd:boolean ;
-                                                                                               :Keyboard_type "Membrane" .
+                                                                                               :Keyboard_type "Membrane" ;
+                                                                                               :has_a_model "QY776AA" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Hama_KC-600
@@ -2231,7 +2247,8 @@
                                                                                                 :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Hama> ;
                                                                                                 :Keyboard_is_water_resistant "true"^^xsd:boolean ;
                                                                                                 :Keyboard_is_wired "true"^^xsd:boolean ;
-                                                                                                :Keyboard_type "Membrane" .
+                                                                                                :Keyboard_type "Membrane" ;
+                                                                                                :has_a_model "KC600" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_G512
@@ -2239,7 +2256,8 @@
                                                                                                   :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
                                                                                                   :Keyboard_is_water_resistant "false"^^xsd:boolean ;
                                                                                                   :Keyboard_is_wired "true"^^xsd:boolean ;
-                                                                                                  :Keyboard_type "Mechanical" .
+                                                                                                  :Keyboard_type "Mechanical" ;
+                                                                                                  :has_a_model "G512" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_G915_LIGHTSPEED
@@ -2247,7 +2265,8 @@
                                                                                                              :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
                                                                                                              :Keyboard_is_water_resistant "false"^^xsd:boolean ;
                                                                                                              :Keyboard_is_wired "false"^^xsd:boolean ;
-                                                                                                             :Keyboard_type "Mechanical" .
+                                                                                                             :Keyboard_type "Mechanical" ;
+                                                                                                             :has_a_model "G915 Lightspeed" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Logitech_K12
@@ -2255,7 +2274,8 @@
                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
                                                                                                  :Keyboard_is_water_resistant "true"^^xsd:boolean ;
                                                                                                  :Keyboard_is_wired "true"^^xsd:boolean ;
-                                                                                                 :Keyboard_type "Membrane" .
+                                                                                                 :Keyboard_type "Membrane" ;
+                                                                                                 :has_a_model "K12" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Razer_CYNOSA_CHROMA_V2
@@ -2263,7 +2283,8 @@
                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Razer> ;
                                                                                                            :Keyboard_is_water_resistant "true"^^xsd:boolean ;
                                                                                                            :Keyboard_is_wired "true"^^xsd:boolean ;
-                                                                                                           :Keyboard_type "Membrane" .
+                                                                                                           :Keyboard_type "Membrane" ;
+                                                                                                           :has_a_model "Cynosa Chroma V2" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Redragon_K535-KR
@@ -2271,7 +2292,8 @@
                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Redragon> ;
                                                                                                      :Keyboard_is_water_resistant "false"^^xsd:boolean ;
                                                                                                      :Keyboard_is_wired "false"^^xsd:boolean ;
-                                                                                                     :Keyboard_type "Mechanical" .
+                                                                                                     :Keyboard_type "Mechanical" ;
+                                                                                                     :has_a_model "K535KR" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Keyboard_Redragon_Kala_K557_RGB
@@ -2279,7 +2301,8 @@
                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Redragon> ;
                                                                                                            :Keyboard_is_water_resistant "true"^^xsd:boolean ;
                                                                                                            :Keyboard_is_wired "true"^^xsd:boolean ;
-                                                                                                           :Keyboard_type "Mechanical" .
+                                                                                                           :Keyboard_type "Mechanical" ;
+                                                                                                           :has_a_model "Kala k557" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Micriphone_Hama_CS-461
@@ -2514,84 +2537,93 @@
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Asus_ROG_Gladius_III
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Asus_ROG_Gladius_III> rdf:type :Optical_mouse ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Asus_ROG_Gladius_III> rdf:type :Mouse ;
                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
-                                                                                                      :Mouse_DPI 19000 ;
+                                                                                                      :Mouse_DPI "19000"^^xsd:string ;
                                                                                                       :Mouse_number_of_buttons 6 ;
                                                                                                       :Mouse_polling_rate "125Hz" ;
-                                                                                                      :Mouse_type "Optical" .
+                                                                                                      :Mouse_type "Optical" ;
+                                                                                                      :has_a_model "ROG Gladius 3" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Genius_M8-610_Scorpion
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Genius_M8-610_Scorpion> rdf:type :Laser_mouse ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Genius_M8-610_Scorpion> rdf:type :Mouse ;
                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Genius> ;
-                                                                                                        :Mouse_DPI 8200 ;
+                                                                                                        :Mouse_DPI "8200"^^xsd:string ;
                                                                                                         :Mouse_number_of_buttons 6 ;
                                                                                                         :Mouse_polling_rate "1000Hz" ;
-                                                                                                        :Mouse_type "Laser" .
+                                                                                                        :Mouse_type "Laser" ;
+                                                                                                        :has_a_model "M8610 Scorpion" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Hama_MW800
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Hama_MW800> rdf:type :Laser_mouse ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Hama_MW800> rdf:type :Mouse ;
                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Hama> ;
-                                                                                            :Mouse_DPI 2400 ;
+                                                                                            :Mouse_DPI "2400"^^xsd:string ;
                                                                                             :Mouse_number_of_buttons 2 ;
                                                                                             :Mouse_polling_rate "1000Hz" ;
-                                                                                            :Mouse_type "Laser" .
+                                                                                            :Mouse_type "Laser" ;
+                                                                                            :has_a_model "MW800" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Lenovo_Wireless_Laser_X30H56886
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Lenovo_Wireless_Laser_X30H56886> rdf:type :Laser_mouse ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Lenovo_Wireless_Laser_X30H56886> rdf:type :Mouse ;
                                                                                                                  :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Lenovo> ;
-                                                                                                                 :Mouse_DPI 1600 ;
+                                                                                                                 :Mouse_DPI "1600"^^xsd:string ;
                                                                                                                  :Mouse_number_of_buttons 5 ;
                                                                                                                  :Mouse_polling_rate "1000Hz" ;
-                                                                                                                 :Mouse_type "Laser" .
+                                                                                                                 :Mouse_type "Laser" ;
+                                                                                                                 :has_a_model "X30H56886" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_B100
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_B100> rdf:type :Optical_mouse ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_B100> rdf:type :Mouse ;
                                                                                                :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
-                                                                                               :Mouse_DPI 800 ;
+                                                                                               :Mouse_DPI "800"^^xsd:string ;
                                                                                                :Mouse_number_of_buttons 3 ;
                                                                                                :Mouse_polling_rate "1000Hz" ;
-                                                                                               :Mouse_type "Optical" .
+                                                                                               :Mouse_type "Optical" ;
+                                                                                               :has_a_model "B100" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_G502_LIGHTSPEED
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_G502_LIGHTSPEED> rdf:type :Optical_mouse ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_G502_LIGHTSPEED> rdf:type :Mouse ;
                                                                                                           :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
-                                                                                                          :Mouse_DPI 16000 ;
+                                                                                                          :Mouse_DPI "16000"^^xsd:string ;
                                                                                                           :Mouse_number_of_buttons 7 ;
                                                                                                           :Mouse_polling_rate "1000Hz" ;
-                                                                                                          :Mouse_type "Optical" .
+                                                                                                          :Mouse_type "Optical" ;
+                                                                                                          :has_a_model "G502 Lightspeed" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_Lift_Ggraphite
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_Lift_Ggraphite> rdf:type :Optical_mouse ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_Lift_Ggraphite> rdf:type :Mouse ;
                                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
-                                                                                                         :Mouse_DPI 4000 ;
+                                                                                                         :Mouse_DPI "4000"^^xsd:string ;
                                                                                                          :Mouse_number_of_buttons 6 ;
                                                                                                          :Mouse_polling_rate "800Hz" ;
-                                                                                                         :Mouse_type "Optical" .
+                                                                                                         :Mouse_type "Optical" ;
+                                                                                                         :has_a_model "Lift Graphite" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_MX_MASTER3
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_MX_MASTER3> rdf:type :Laser_mouse ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_MX_MASTER3> rdf:type :Mouse ;
                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Logitech> ;
-                                                                                                     :Mouse_DPI 4000 ;
+                                                                                                     :Mouse_DPI "4000"^^xsd:string ;
                                                                                                      :Mouse_number_of_buttons 5 ;
                                                                                                      :Mouse_polling_rate "125Hz" ;
-                                                                                                     :Mouse_type "Laser" .
+                                                                                                     :Mouse_type "Laser" ;
+                                                                                                     :has_a_model "MX Master 3" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Razer_NAGA_PRO_RZ01
-<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Razer_NAGA_PRO_RZ01> rdf:type :Optical_mouse ;
+<http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Razer_NAGA_PRO_RZ01> rdf:type :Mouse ;
                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Razer> ;
-                                                                                                     :Mouse_DPI 20000 ;
+                                                                                                     :Mouse_DPI "20000"^^xsd:string ;
                                                                                                      :Mouse_number_of_buttons 12 ;
                                                                                                      :Mouse_polling_rate "1000Hz" ;
-                                                                                                     :Mouse_type "Optical" .
+                                                                                                     :Mouse_type "Optical" ;
+                                                                                                     :has_a_model "Naga PRO RZ01" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Network_card_Realtek_Chipset_Gigabit_PCI_Express

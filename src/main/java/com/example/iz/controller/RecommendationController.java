@@ -23,6 +23,12 @@ public class RecommendationController {
     private GpuService gpuService;
     @Autowired
     private CpuService cpuService;
+    @Autowired
+    private  HeadphonesService hpService;
+    @Autowired
+    private  KeyboardService kbService;
+
+    @Autowired MouseService mouseService;
 
 
     @CrossOrigin
@@ -67,4 +73,24 @@ public class RecommendationController {
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
+    @CrossOrigin
+    @GetMapping("/headphones")
+    public ResponseEntity<List<HeadphonesDTO>> getAllHeadphones(){
+        var response = hpService.getAllHeadphones();
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @CrossOrigin
+    @GetMapping("/keyboards")
+    public ResponseEntity<List<KeyboardDTO>> getAllKeyboards(){
+        var response = kbService.getAllKeyboards();
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @CrossOrigin
+    @GetMapping("/mouses")
+    public ResponseEntity<List<MouseDTO>> getAllMouses(){
+        var response = mouseService.getAllMouses();
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
 }
