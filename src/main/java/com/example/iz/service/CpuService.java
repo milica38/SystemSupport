@@ -1,6 +1,7 @@
 package com.example.iz.service;
 
 import com.example.iz.dto.CpuDTO;
+import com.example.iz.dto.GpuDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,8 +14,6 @@ public class CpuService {
     public static final String BASE = "http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#";
     public static final String RDF = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 
-    @Autowired
-    private QueryService queryService;
     @Autowired
     private RecommendationService recommendationService;
 
@@ -35,6 +34,30 @@ public class CpuService {
             dto.setCore(cpuCore.get(i));
             dto.setClockSpeed(cpuClockSpeed.get(i));
             result.add(dto);
+        }
+        return result;
+    }
+
+    public List<CpuDTO> findCpus(String ssdSize, String ramSize){
+        List<CpuDTO> cpus = getAllCPUs();
+        List<CpuDTO> result = new ArrayList<CpuDTO>();
+
+        int ssd = Integer.parseInt(ssdSize);
+        int ram = Integer.parseInt(ramSize);
+
+        for (CpuDTO cpu: cpus) {
+            if(ram < 8 && ssd < 900 && Double.parseDouble(cpu.getClockSpeed()) < 3.3){
+                result.add(cpu);
+            }
+            else if (ram < 8 && ssd > 900 && Double.parseDouble(cpu.getClockSpeed()) > 3.2 && Double.parseDouble(cpu.getClockSpeed()) < 3.5){
+                result.add(cpu);
+            }
+            else if (ram > 8 && ssd < 900 && Double.parseDouble(cpu.getClockSpeed()) > 3.4 && Double.parseDouble(cpu.getClockSpeed()) < 3.7){
+                result.add(cpu);
+            }
+            else if (ram > 8 && ssd > 900 && Double.parseDouble(cpu.getClockSpeed()) > 3.6){
+                result.add(cpu);
+            }
         }
         return result;
     }

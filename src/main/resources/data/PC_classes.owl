@@ -2071,7 +2071,7 @@
                                                                                                      :HDD_buffer_size "256 MB" ;
                                                                                                      :HDD_interface "SATA 3" ;
                                                                                                      :HDD_memory_size "" ,
-                                                                                                                      "2 TB" ;
+                                                                                                                      "2000"^^xsd:string ;
                                                                                                      :HDD_physical_size "3.5 inch" ;
                                                                                                      :HDD_rotation_speed "7200 rpm" ;
                                                                                                      :Storage_device_type "HDD" .
@@ -2082,7 +2082,7 @@
                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Seagate> ;
                                                                                                      :HDD_buffer_size "256MB" ;
                                                                                                      :HDD_interface "SATA 3" ;
-                                                                                                     :HDD_memory_size "4 TB" ;
+                                                                                                     :HDD_memory_size "4000"^^xsd:string ;
                                                                                                      :HDD_physical_size "3.5 inch" ;
                                                                                                      :HDD_rotation_speed "5900 rpm" ;
                                                                                                      :Storage_device_type "HDD" .
@@ -2093,7 +2093,7 @@
                                                                                                      :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Seagate> ;
                                                                                                      :HDD_buffer_size "256 MB" ;
                                                                                                      :HDD_interface "SATA 3" ;
-                                                                                                     :HDD_memory_size "8 TB" ;
+                                                                                                     :HDD_memory_size "8000"^^xsd:string ;
                                                                                                      :HDD_physical_size "3.5 inch" ;
                                                                                                      :HDD_rotation_speed "5400 rpm" ;
                                                                                                      :Storage_device_type "HDD" .
@@ -2104,7 +2104,7 @@
                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_WesternDigital> ;
                                                                                                            :HDD_buffer_size "64 MB" ;
                                                                                                            :HDD_interface "SATA 3" ;
-                                                                                                           :HDD_memory_size "1 TB" ;
+                                                                                                           :HDD_memory_size "1000"^^xsd:string ;
                                                                                                            :HDD_physical_size "3.5 inch" ;
                                                                                                            :HDD_rotation_speed "7200 rpm" ;
                                                                                                            :Storage_device_type "HDD" .
@@ -2115,7 +2115,7 @@
                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_WesternDigital> ;
                                                                                                            :HDD_buffer_size "64 MB" ;
                                                                                                            :HDD_interface "SATA 3" ;
-                                                                                                           :HDD_memory_size "2 TB" ;
+                                                                                                           :HDD_memory_size "2000"^^xsd:string ;
                                                                                                            :HDD_physical_size "3.5 inch" ;
                                                                                                            :HDD_rotation_speed "5400 rpm" ;
                                                                                                            :Storage_device_type "HDD" .
@@ -2126,7 +2126,7 @@
                                                                                                            :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_WesternDigital> ;
                                                                                                            :HDD_buffer_size "64 MB" ;
                                                                                                            :HDD_interface "SATA 3" ;
-                                                                                                           :HDD_memory_size "4 TB" ;
+                                                                                                           :HDD_memory_size "4000"^^xsd:string ;
                                                                                                            :HDD_physical_size "3.5 inch" ;
                                                                                                            :HDD_rotation_speed "5400 rpm" ;
                                                                                                            :Storage_device_type "HDD" .

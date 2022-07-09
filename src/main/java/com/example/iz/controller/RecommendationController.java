@@ -1,9 +1,6 @@
 package com.example.iz.controller;
 
-import com.example.iz.dto.GpuDTO;
-import com.example.iz.dto.MotherboardDTO;
-import com.example.iz.dto.RecommendationForGpuDTO;
-import com.example.iz.dto.SpeakersDTO;
+import com.example.iz.dto.*;
 import com.example.iz.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -24,6 +21,8 @@ public class RecommendationController {
     private MotherboardService motherboardService;
     @Autowired
     private GpuService gpuService;
+    @Autowired
+    private CpuService cpuService;
 
 
     @CrossOrigin
@@ -58,6 +57,13 @@ public class RecommendationController {
     @GetMapping("/gpu/search")
     public ResponseEntity<List<GpuDTO>> findGPUs(@RequestBody RecommendationForGpuDTO dto){
         var response = gpuService.findGpus(dto.getMotherboardUSBslots(), dto.getCpuFrequency());
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @CrossOrigin
+    @GetMapping("/cpu/search")
+    public ResponseEntity<List<CpuDTO>> findCPUs(@RequestBody RecommendationForCpuDTO dto){
+        var response = cpuService.findCpus(dto.getSsdMemorySize(), dto.getRamSize());
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
