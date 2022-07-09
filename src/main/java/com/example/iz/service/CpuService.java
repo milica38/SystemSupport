@@ -46,16 +46,16 @@ public class CpuService {
         int ram = Integer.parseInt(ramSize);
 
         for (CpuDTO cpu: cpus) {
-            if(ram < 8 && ssd < 900 && Double.parseDouble(cpu.getClockSpeed()) < 3.3){
+            if(ram < 9 && ssd < 900 && Double.parseDouble(cpu.getClockSpeed()) < 3.3){
                 result.add(cpu);
             }
-            else if (ram < 8 && ssd > 900 && Double.parseDouble(cpu.getClockSpeed()) > 3.2 && Double.parseDouble(cpu.getClockSpeed()) < 3.5){
+            else if (ram < 9 && ssd > 900 && Double.parseDouble(cpu.getClockSpeed()) > 3.2 && Double.parseDouble(cpu.getClockSpeed()) < 3.5){
                 result.add(cpu);
             }
-            else if (ram > 8 && ssd < 900 && Double.parseDouble(cpu.getClockSpeed()) > 3.4 && Double.parseDouble(cpu.getClockSpeed()) < 3.7){
+            else if (ram > 9 && ssd < 900 && Double.parseDouble(cpu.getClockSpeed()) > 3.4 && Double.parseDouble(cpu.getClockSpeed()) < 3.7){
                 result.add(cpu);
             }
-            else if (ram > 8 && ssd > 900 && Double.parseDouble(cpu.getClockSpeed()) > 3.6){
+            else if (ram > 9 && ssd > 900 && Double.parseDouble(cpu.getClockSpeed()) > 3.6){
                 result.add(cpu);
             }
         }

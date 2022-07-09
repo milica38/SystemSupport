@@ -1,3 +1,61 @@
+<!-- GPU RECOMMENDATION -->
+<div class="row">
+  <h3 class="d-flex justify-content-center">GPU suggestion</h3>
+  <div class="box d-flex justify-content-center">
+    <div class="col-8 card" style="background-color: #cfd1d3;">
+      <div class="card-body row">
+        <div class="col-6">
+          <label>Choose Motherboard: </label>
+          <select #selected1 (change)="onSelectedSlotsForGpu(selected1.value)" class="form-select">
+            <option selected>--Motherboard--</option>
+            <option *ngFor="let i of motherboards" [value]="i.usbSlots">{{i.brand.substring(6)}} {{i.formFactor}} {{i.chipset}}</option>
+          </select>
+          <label>Choose CPU: </label>
+          <select #selected2 (change)="onSelectedFrequencyForGpu(selected2.value)" class="form-select">
+            <option selected>--CPU--</option>
+            <option *ngFor="let i of cpus" [value]="i.clockSpeed">{{i.brand.substring(6)}} {{i.model}}</option>
+          </select>
+          <button type="button" class="btn btn-secondary" (click)="getRecoommendedGpus()">Suggest</button>
+        </div>
+        <div class="col-6 card" style="width: 48%;">
+          <ul>
+            <li *ngFor="let i of resultsGpu">{{i.brand.substring(6)}} {{i.model}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CPU RECOMMENDATION -->
+<div class="row">
+  <h3 class="d-flex justify-content-center">CPU suggestion</h3>
+  <div class="box d-flex justify-content-center">
+    <div class="col-8 card" style="background-color: #cfd1d3;">
+      <div class="card-body row">
+        <div class="col-6">
+          <label>Choose SSD: </label>
+          <select #selected3 (change)="onSelectedSsdSizeForCpu(selected3.value)" class="form-select">
+            <option selected>--SSD--</option>
+            <option *ngFor="let i of ssds" [value]="i.storageSize">{{i.brand.substring(6)}} {{i.model}} {{i.storageSize}}GB</option>
+          </select>
+          <label>Choose RAM: </label>
+          <select #selected4 (change)="onSelectedRamSizeForCpu(selected4.value)" class="form-select">
+            <option selected>--RAM--</option>
+            <option *ngFor="let i of rams" [value]="i.ramSize">{{i.brand.substring(6)}} {{i.type}} {{i.ramSize}}GB</option>
+          </select>
+          <button type="button" class="btn btn-secondary" (click)="getRecoommendedCpus()">Suggest</button>
+        </div>
+        <div class="col-6 card" style="width: 48%;">
+          <ul>
+            <li *ngFor="let i of resultsCpu">{{i.brand.substring(6)}} {{i.model}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- COMPONENTS BY TYPE -->
 <div class="row">
   <h3 class="d-flex justify-content-center">Components by type</h3>
@@ -5,7 +63,7 @@
     <div class="col-8 card" style="background-color: #cfd1d3;">
       <div class="card-body row">
         <div class="col-6">
-          <select #selected (change)="onSelected(selected.value)" class="form-select" aria-label="Choose component type">
+          <select #selected (change)="onSelected(selected.value)" class="form-select" style="margin-top: 15%;">
             <option selected>Choose...</option>
             <option value="Camera">Camera</option>
             <option value="Case">Case</option>
@@ -34,29 +92,6 @@
         <div class="col-6 card" style="width: 48%;">
           <ul>
             <li *ngFor="let item of components">{{item}}</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- SPEAKERS -->
-<div class="row">
-  <h3 class="d-flex justify-content-center">Speakers suggestion</h3>
-  <div class="box d-flex justify-content-center">
-    <div class="col-8 card" style="background-color: #cfd1d3;">
-      <div class="card-body row">
-        <div class="col-6">
-          <select #selected (change)="onSelected(selected.value)" class="form-select" aria-label="Choose component type">
-            <option selected>Choose frequency response</option>
-          </select>
-          <button type="button" class="btn btn-secondary">Suggest</button>
-        </div>
-        <div class="col-6 card" style="width: 48%;">
-          <ul>
-            <li></li>
           </ul>
         </div>
       </div>

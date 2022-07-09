@@ -54,14 +54,14 @@ public class RecommendationController {
     }
 
     @CrossOrigin
-    @GetMapping("/gpu/search")
+    @PostMapping("/gpu/search")
     public ResponseEntity<List<GpuDTO>> findGPUs(@RequestBody RecommendationForGpuDTO dto){
         var response = gpuService.findGpus(dto.getMotherboardUSBslots(), dto.getCpuFrequency());
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
     @CrossOrigin
-    @GetMapping("/cpu/search")
+    @PostMapping("/cpu/search")
     public ResponseEntity<List<CpuDTO>> findCPUs(@RequestBody RecommendationForCpuDTO dto){
         var response = cpuService.findCpus(dto.getSsdMemorySize(), dto.getRamSize());
         return new ResponseEntity<>(response, HttpStatus.OK);
