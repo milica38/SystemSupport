@@ -37,4 +37,28 @@ public class GpuService {
         return result;
     }
 
+    public List<GpuDTO> findGpus(String usbSlots, String frequency){
+        List<GpuDTO> gpus = getAllGraphicsCards();
+        List<GpuDTO> result = new ArrayList<GpuDTO>();
+
+        double freq = Double.parseDouble(frequency);
+        int slots = Integer.parseInt(usbSlots);
+
+        for (GpuDTO gpu: gpus) {
+            if(slots < 11 && freq <= 3.4 && Integer.parseInt(gpu.getMaxMemory()) <= 6){
+                result.add(gpu);
+            }
+            else if (slots < 11 && freq > 3.4 && Integer.parseInt(gpu.getMaxMemory()) == 8){
+                result.add(gpu);
+            }
+            else if (slots > 11 && freq > 3.4 && Integer.parseInt(gpu.getMaxMemory()) >= 10){
+                result.add(gpu);
+            }
+            else if (slots > 11 && freq <= 3.4 && Integer.parseInt(gpu.getMaxMemory()) >= 6 && Integer.parseInt(gpu.getMaxMemory()) <= 8){
+                result.add(gpu);
+            }
+        }
+        return result;
+    }
+
 }
