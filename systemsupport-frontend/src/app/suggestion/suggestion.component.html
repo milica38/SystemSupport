@@ -1,6 +1,6 @@
 <!-- GPU RECOMMENDATION -->
 <div class="row">
-  <h3 class="d-flex justify-content-center">GPU suggestion</h3>
+  <h3 class="d-flex justify-content-center">Graphics Card suggestion</h3>
   <div class="box d-flex justify-content-center">
     <div class="col-8 card" style="background-color: #cfd1d3;">
       <div class="card-body row">
@@ -49,6 +49,35 @@
         <div class="col-6 card" style="width: 48%;">
           <ul>
             <li *ngFor="let i of resultsCpu">{{i.brand.substring(6)}} {{i.model}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MOUSE RECOMMENDATION -->
+<div class="row">
+  <h3 class="d-flex justify-content-center">Mouse suggestion</h3>
+  <div class="box d-flex justify-content-center">
+    <div class="col-8 card" style="background-color: #cfd1d3;">
+      <div class="card-body row">
+        <div class="col-6">
+          <label>Choose Headphones: </label>
+          <select #selected5 (change)="onSelectedHpSensForMouse(selected5.value)" class="form-select">
+            <option selected>--Headphones--</option>
+            <option *ngFor="let i of headphones" [value]="i.sensitivities">{{i.brand.substring(6)}} {{i.model}}</option>
+          </select>
+          <label>Choose Keyboard: </label>
+          <select #selected6 (change)="onSelectedKbTypeForMouse(selected6.value)" class="form-select">
+            <option selected>--Keyboard--</option>
+            <option *ngFor="let i of keyboards" [value]="i.type">{{i.brand.substring(6)}} {{i.type}} {{i.type}}</option>
+          </select>
+          <button type="button" class="btn btn-secondary" (click)="getRecoommendedMouses()">Suggest</button>
+        </div>
+        <div class="col-6 card" style="width: 48%;">
+          <ul>
+            <li *ngFor="let i of resultsMouse">{{i.brand.substring(6)}} {{i.model}} {{i.type}}</li>
           </ul>
         </div>
       </div>

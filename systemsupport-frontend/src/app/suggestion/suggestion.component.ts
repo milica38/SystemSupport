@@ -14,22 +14,29 @@ export class SuggestionComponent implements OnInit {
   cpus: any[] = [];
   ssds: any[] = [];
   rams: any[] = [];
+  keyboards: any[] = [];
+  headphones: any[] = [];
   
   components: any[] = [];
   resultsGpu: any[] = [];
   resultsCpu: any[] = [];
+  resultsMouse: any[] = [];
 
   selectedVal: string = "";
   selectedUsbSlotsForGpu: string = "";
   selectedCpuFrequencyForGpu: string = "";
   selectedRamSizeForCpu: string = "";
   selectedSsdSizeForCpu: string = "";
+  selectedKeyboardForMouse: string = "";
+  selectedHpSensitivitiesForMouse: string = "";
 
   ngOnInit(): void {
     this.getMotherboards();
     this.getCpus();
     this.getRams();
     this.getSsds();
+    this.getHeadphones();
+    this.getKeyboards();
   }
 
   //#################GET COMPONENTS FOR BOXES#####################
@@ -65,6 +72,18 @@ export class SuggestionComponent implements OnInit {
     })
   }
 
+  getKeyboards(): void {
+    this.service.getAllKeyboards().subscribe((response: any) => {
+      this.keyboards = response;
+    })
+  }
+
+  getHeadphones(): void {
+    this.service.getAllHeadphones().subscribe((response: any) => {
+      this.headphones = response;
+    })
+  }
+
 //#################RECOMMENDATIONS-RESULTS-BUTTONS#####################
 
   onSubmit(): void {
@@ -93,6 +112,17 @@ export class SuggestionComponent implements OnInit {
     })
   }
 
+  getRecoommendedMouses(): void {
+    let params = {
+      hpSensitivities: this.selectedHpSensitivitiesForMouse,
+      keyboardType: this.selectedKeyboardForMouse
+    }
+    this.service.getRecommendationForMouse(params).subscribe((response: any) => {
+      this.resultsMouse = response;
+      console.log(response);
+    })
+  }
+
   //################# ON SELECTED FOR BOXES#####################
 
   onSelectedSlotsForGpu(value: string): void {
@@ -115,10 +145,19 @@ export class SuggestionComponent implements OnInit {
     console.log(this.selectedSsdSizeForCpu);
   }
 
+  onSelectedHpSensForMouse(value: string): void {
+    this.selectedHpSensitivitiesForMouse = value;
+    console.log(this.selectedHpSensitivitiesForMouse);
+  }
+
+  onSelectedKbTypeForMouse(value: string): void {
+    this.selectedKeyboardForMouse = value;
+    console.log(this.selectedKeyboardForMouse);
+  }
+
   onSelected(value: string): void {
       this.selectedVal = value;
       console.log(this.selectedVal);
   }
-
 
 }

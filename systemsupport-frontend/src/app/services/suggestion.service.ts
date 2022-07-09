@@ -30,11 +30,23 @@ export class SuggestionService {
     return this.http.get(this.baseURL + "/fuzzyLogic/ram");
   }
 
+  getAllHeadphones() {
+    return this.http.get(this.baseURL + "/recommendation/headphones");
+  }
+
+  getAllKeyboards() {
+    return this.http.get(this.baseURL + "/recommendation/keyboards");
+  }
+
   getRecommendationForGpu(obj: any) {
     return this.http.post(this.baseURL + "/recommendation/gpu/search", obj);
   }
 
   getRecommendationForCpu(obj: any) {
     return this.http.post(this.baseURL + "/recommendation/cpu/search", obj);
+  }
+
+  getRecommendationForMouse(obj: any) {
+    return this.http.post(this.baseURL + "/recommendation/mouse/search", obj);
   }
 }

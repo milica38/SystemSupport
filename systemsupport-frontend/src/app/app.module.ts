@@ -10,6 +10,7 @@ import { FuzzyComponent } from './fuzzy/fuzzy.component';
 import { BayesComponent } from './bayes/bayes.component';
 import { NavBarComponent } from './core/nav-bar/nav-bar.component';
 import { HomeComponent } from './core/home/home.component';
+import { SimilarComputersComponent } from './similar-computers/similar-computers.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './core/home/home.component';
     FuzzyComponent,
     BayesComponent,
     NavBarComponent,
-    HomeComponent
+    HomeComponent,
+    SimilarComputersComponent
   ],
   imports: [
     BrowserModule,

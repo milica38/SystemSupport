@@ -5,9 +5,22 @@
 }
 
 .opis {
-    margin-top: 40%;
+    margin-top: 30%;
 }
 
 h3 {
     color: rgb(32, 74, 171);
+}
+
+label {
+    width: 220px;
+    background-color: #cfd1d3;
+    border: none;
+    padding: 1%;
+    border-radius: 50px;
+    text-align: center;
+    color: rgb(32, 74, 171);
+    font-weight: bold;
+    margin-left: 13%;
+    margin-bottom: 2%;
 }
