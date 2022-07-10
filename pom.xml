@@ -92,6 +92,20 @@
 			<type>pom</type>
 			<version>4.5.0</version>
 		</dependency>
+		<dependency>
+			<groupId>local.jcolibri</groupId>
+			<artifactId>jCOLIBRI-3.2</artifactId>
+			<scope>system</scope>
+			<version>3.2</version>
+			<systemPath>${project.basedir}/lib/jCOLIBRI-3.2.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>local.log4j</groupId>
+			<artifactId>log4j-api-2.11.1</artifactId>
+			<scope>system</scope>
+			<version>2.11.1</version>
+			<systemPath>${project.basedir}/lib/log4j-api-2.11.1.jar</systemPath>
+		</dependency>
 
 	</dependencies>
 

@@ -904,10 +904,6 @@
        rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/milica38/SystemSupport/main/instances.owl#Case_power_supply
-:Case_power_supply rdf:type owl:DatatypeProperty .
-
-
 #################################################################
 #    Classes
 #################################################################
@@ -1452,6 +1448,18 @@
            :has_a_name "AMD" .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Brand_Antec
+:Brand_Antec rdf:type owl:NamedIndividual ,
+                      :Brand ;
+             :has_a_name "Antec" .
+
+
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Brand_Hyper
+:Brand_Hyper rdf:type owl:NamedIndividual ,
+                      :Brand ;
+             :has_a_name "Hyper" .
+
+
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#BluetoothCard_ASUS_BT400
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#BluetoothCard_ASUS_BT400> rdf:type :Bluetooth_card ;
                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
@@ -1906,56 +1914,83 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_CORSAIR_iCUE_H150i_RGB_PRO_XT
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_CORSAIR_iCUE_H150i_RGB_PRO_XT> rdf:type :Cooling_system ;
+                                                                                                                :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Corsair> ;
                                                                                                                 :CS_max_rotation 2400 ;
-                                                                                                                :CS_type "Air_cooling_system" .
+                                                                                                                :CS_type "Air_cooling_system" ;
+                                                                                                                :has_a_model "iCUE H150I RGB PRO"^^xsd:string ;
+                                                                                                                :price "31210"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_Hyper_212_Black_Edition
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_Hyper_212_Black_Edition> rdf:type :Cooling_system ;
+                                                                                                                 :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
                                                                                                                  :CS_max_rotation 2000 ;
-                                                                                                                 :CS_type "Air_cooling_system" .
+                                                                                                                 :CS_type "Air_cooling_system" ;
+                                                                                                                 :has_a_model "Hyper 212"^^xsd:string ;
+                                                                                                                 :price "7779"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_Hyper_TX3_EVO
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_Hyper_TX3_EVO> rdf:type :Cooling_system ;
+                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
                                                                                                        :CS_max_rotation 2200 ;
-                                                                                                       :CS_type "Air_cooling_system" .
+                                                                                                       :CS_type "Air_cooling_system" ;
+                                                                                                       :has_a_model "Hyper TX3 EVO"^^xsd:string ;
+                                                                                                       :price "4229"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MASTERAIR_MA612_STEALTH
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MASTERAIR_MA612_STEALTH> rdf:type :Cooling_system ;
+                                                                                                                 :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
                                                                                                                  :CS_max_rotation 1800 ;
-                                                                                                                 :CS_type "Air_cooling_system" .
+                                                                                                                 :CS_type "Air_cooling_system" ;
+                                                                                                                 :has_a_model "Masterair MA612"^^xsd:string ;
+                                                                                                                 :price "11590"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MASTERFAN_MF120_PRISMATIC
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MASTERFAN_MF120_PRISMATIC> rdf:type :Cooling_system ;
+                                                                                                                   :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
                                                                                                                    :CS_max_rotation 1800 ;
-                                                                                                                   :CS_type "Air_cooling_system" .
+                                                                                                                   :CS_type "Air_cooling_system" ;
+                                                                                                                   :has_a_model "Masterfan MF120"^^xsd:string ;
+                                                                                                                   :price "2190"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MasterLiquid_ML120L
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MasterLiquid_ML120L> rdf:type :Cooling_system ;
+                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
                                                                                                              :CS_max_rotation 1800 ;
-                                                                                                             :CS_type "Water_cooling_system" .
+                                                                                                             :CS_type "Water_cooling_system" ;
+                                                                                                             :has_a_model "Masterliquid ML120L"^^xsd:string ;
+                                                                                                             :price "14688"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MasterLiquid_ML360R
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_MasterLiquid_ML360R> rdf:type :Cooling_system ;
+                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
                                                                                                              :CS_max_rotation 2000 ;
-                                                                                                             :CS_type "Water_cooling_system" .
+                                                                                                             :CS_type "Water_cooling_system" ;
+                                                                                                             :has_a_model "Masterliquid ML360R"^^xsd:string ;
+                                                                                                             :price "21110"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_Sickleflow_140_ARGB
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_Master_Sickleflow_140_ARGB> rdf:type :Cooling_system ;
+                                                                                                             :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
                                                                                                              :CS_max_rotation 1400 ;
-                                                                                                             :CS_type "Air_cooling_system" .
+                                                                                                             :CS_type "Air_cooling_system" ;
+                                                                                                             :has_a_model "Sickeflow 140ARGB"^^xsd:string ;
+                                                                                                             :price "3109"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_NZXT_Kraken_Z73_360mm
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Cooler_NZXT_Kraken_Z73_360mm> rdf:type :Cooling_system ;
+                                                                                                        :has_brand :Brand_NZXT ;
                                                                                                         :CS_max_rotation 2000 ;
-                                                                                                        :CS_type "Water_cooling_system" .
+                                                                                                        :CS_type "Water_cooling_system" ;
+                                                                                                        :has_a_model "Kraken Z73"^^xsd:string ;
+                                                                                                        :price "34990"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_ASUS_GeForce_GT_730_2GB_GDDR5_64-bit
@@ -2462,7 +2497,7 @@
                                                                                                                  :Motherboard_USB_slots "8"^^xsd:string ;
                                                                                                                  :Motherboard_chipset "AMD B550" ;
                                                                                                                  :Motherboard_form_factor "ATX" ;
-                                                                                                                 :Motherboard_processor_socket "" .
+                                                                                                                 :Motherboard_processor_socket "Lga 1200" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_ASUS_TUF_GAMING_B560M-PLUS
@@ -2471,7 +2506,8 @@
                                                                                                                   :Motherboard_SATA_connections 6 ;
                                                                                                                   :Motherboard_USB_slots "9"^^xsd:string ;
                                                                                                                   :Motherboard_chipset "Intel B560" ;
-                                                                                                                  :Motherboard_form_factor "Micro-ATX" .
+                                                                                                                  :Motherboard_form_factor "Micro-ATX" ;
+                                                                                                                  :Motherboard_processor_socket "Lga 1200" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_ASUS_TUF_GAMING_Z690-PLUS
@@ -3066,6 +3102,12 @@
                                                                                                                         :SSD_memory_size "64"^^xsd:string ;
                                                                                                                         :Storage_device_type "SSD" ;
                                                                                                                         :has_a_model "PM810" .
+
+
+###  https://raw.githubusercontent.com/milica38/SystemSupport/main/instances.owl#Brand_NZXT
+:Brand_NZXT rdf:type owl:NamedIndividual ,
+                     :Brand ;
+            :has_a_name "NZXT" .
 
 
 #################################################################
