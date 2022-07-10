@@ -85,6 +85,30 @@
   </div>
 </div>
 
+<!--COOLER RECOMMENDATION-->
+<div class="row">
+  <h3 class="d-flex justify-content-center">Cooler suggestion</h3>
+  <div class="box d-flex justify-content-center">
+    <div class="col-8 card" style="background-color: #cfd1d3;">
+      <div class="card-body row">
+        <div class="col-6" style="margin-top: 3%;">
+          <label>Choose CPU: </label>
+          <select #selected7 (change)="onSelectedCpuForCooler(selected7.value)" class="form-select">
+            <option selected>--CPU--</option>
+            <option *ngFor="let i of cpus" [value]="i.clockSpeed">{{i.brand.substring(6)}} {{i.model}}</option>
+          </select>
+          <button type="button" class="btn btn-secondary" (click)="getRecoommendedCoolers()">Suggest</button>
+        </div>
+        <div class="col-6 card" style="width: 48%;">
+          <ul>
+            <li *ngFor="let i of resultsCooler">{{i.brand.substring(6)}} {{i.model}} - {{i.rotation}} RPM, <span style="font-weight: bold;">Price: </span>{{i.price}} din</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- COMPONENTS BY TYPE -->
 <div class="row">
   <h3 class="d-flex justify-content-center">Components by type</h3>

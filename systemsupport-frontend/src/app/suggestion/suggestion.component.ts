@@ -21,6 +21,7 @@ export class SuggestionComponent implements OnInit {
   resultsGpu: any[] = [];
   resultsCpu: any[] = [];
   resultsMouse: any[] = [];
+  resultsCooler: any[] = [];
 
   selectedVal: string = "";
   selectedUsbSlotsForGpu: string = "";
@@ -29,6 +30,7 @@ export class SuggestionComponent implements OnInit {
   selectedSsdSizeForCpu: string = "";
   selectedKeyboardForMouse: string = "";
   selectedHpSensitivitiesForMouse: string = "";
+  selectedCpuFrequencyForCooler: string = "";
 
   ngOnInit(): void {
     this.getMotherboards();
@@ -123,6 +125,16 @@ export class SuggestionComponent implements OnInit {
     })
   }
 
+  getRecoommendedCoolers(): void {
+    let params = {
+      frequency: this.selectedCpuFrequencyForCooler
+    }
+    this.service.getRecommendationForCooler(params).subscribe((response: any) => {
+      this.resultsCooler = response;
+      console.log(response);
+    })
+  }  
+
   //################# ON SELECTED FOR BOXES#####################
 
   onSelectedSlotsForGpu(value: string): void {
@@ -153,6 +165,11 @@ export class SuggestionComponent implements OnInit {
   onSelectedKbTypeForMouse(value: string): void {
     this.selectedKeyboardForMouse = value;
     console.log(this.selectedKeyboardForMouse);
+  }
+
+  onSelectedCpuForCooler(value: string): void {
+    this.selectedCpuFrequencyForCooler = value;
+    console.log(this.selectedCpuFrequencyForCooler);
   }
 
   onSelected(value: string): void {

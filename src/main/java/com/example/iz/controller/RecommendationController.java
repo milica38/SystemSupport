@@ -27,7 +27,8 @@ public class RecommendationController {
     private  HeadphonesService hpService;
     @Autowired
     private  KeyboardService kbService;
-
+    @Autowired
+    private CoolerService coolerService;
     @Autowired MouseService mouseService;
 
 
@@ -98,6 +99,20 @@ public class RecommendationController {
     @PostMapping("/mouse/search")
     public ResponseEntity<List<MouseDTO>> findMouses(@RequestBody RecommendationForMouseDTO dto){
         var response = mouseService.findMouses(dto.getHpSensitivities(), dto.getKeyboardType());
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @CrossOrigin
+    @GetMapping("/coolers")
+    public ResponseEntity<List<CoolerDTO>> getAllCoolers(){
+        var response = coolerService.getAllCoolers();
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @CrossOrigin
+    @PostMapping("/cooler/search")
+    public ResponseEntity<List<CoolerDTO>> findMouses(@RequestBody RecommendationForCoolerDTO dto){
+        var response = coolerService.findCoolers(dto.getFrequency());
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }

@@ -49,4 +49,9 @@ export class SuggestionService {
   getRecommendationForMouse(obj: any) {
     return this.http.post(this.baseURL + "/recommendation/mouse/search", obj);
   }
+
+  getRecommendationForCooler(obj: any) {
+    return this.http.post(this.baseURL + "/recommendation/cooler/search", obj);
+  }
+
 }
