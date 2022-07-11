@@ -2006,7 +2006,8 @@
                                                                                                                     :GPU_maximum_memory "2"^^xsd:string ;
                                                                                                                     :GPU_number_of_displays 4 ;
                                                                                                                     :Graphics_card_type "Discrete_graphics_card" ;
-                                                                                                                    :has_a_model "GeForce GT730" .
+                                                                                                                    :has_a_model "GeForce GT730" ;
+                                                                                                                    :price "11500"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_ASUS_Phoenix_nVidia_GeForce_RTX_3050_8GB_GDDR6_128-bit
@@ -2017,7 +2018,8 @@
                                                                                                                                       :GPU_maximum_memory "8"^^xsd:string ;
                                                                                                                                       :GPU_number_of_displays 3 ;
                                                                                                                                       :Graphics_card_type "Discrete_graphics_card" ;
-                                                                                                                                      :has_a_model "Phoenix nVidia GeForce RTX3050" .
+                                                                                                                                      :has_a_model "Phoenix nVidia GeForce RTX3050" ;
+                                                                                                                                      :price "43900"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_GIGABYTE_AORUS_nVidia_GeForce_RTX3080_MASTER_12GB_GDDR6X_384-bit_LHR
@@ -2027,7 +2029,8 @@
                                                                                                                                                     :GPU_maximum_memory "12"^^xsd:string ;
                                                                                                                                                     :GPU_number_of_displays 3 ;
                                                                                                                                                     :Graphics_card_type "Discrete_graphics_card" ;
-                                                                                                                                                    :has_a_model "AORUS nVidia GeForce RTX3080 MASTER" .
+                                                                                                                                                    :has_a_model "AORUS nVidia GeForce RTX3080 MASTER" ;
+                                                                                                                                                    :price "171999"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_GIGABYTE_nVidia_GeForce_RTX_2060_D6_12GB_GDDR6_192-bit
@@ -2037,7 +2040,8 @@
                                                                                                                                       :GPU_maximum_memory "12"^^xsd:string ;
                                                                                                                                       :GPU_number_of_displays 3 ;
                                                                                                                                       :Graphics_card_type "Discrete_graphics_card" ;
-                                                                                                                                      :has_a_model "Nvidia GeForce RTX2060 D6" .
+                                                                                                                                      :has_a_model "Nvidia GeForce RTX2060 D6" ;
+                                                                                                                                      :price "68000"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_GIGABYTE_nVidia_GeForce_RTX_3080_GAMING_OC_12GB_GDDR6X_384-bit
@@ -2047,7 +2051,8 @@
                                                                                                                                               :GPU_maximum_memory "12"^^xsd:string ;
                                                                                                                                               :GPU_number_of_displays 3 ;
                                                                                                                                               :Graphics_card_type "Discrete_graphics_card" ;
-                                                                                                                                              :has_a_model "Nvidia GeForce RTX3080" .
+                                                                                                                                              :has_a_model "Nvidia GeForce RTX3080" ;
+                                                                                                                                              :price "120000"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_MSI_AMD_Radeon_RX_6700_XT_MECH_2X_12GB_GDDR6_192-bit
@@ -2057,7 +2062,8 @@
                                                                                                                                     :GPU_maximum_memory "12"^^xsd:string ;
                                                                                                                                     :GPU_number_of_displays 3 ;
                                                                                                                                     :Graphics_card_type "Discrete_graphics_card" ;
-                                                                                                                                    :has_a_model "AMD Radeon RX6700 XT MECH" .
+                                                                                                                                    :has_a_model "AMD Radeon RX6700 XT MECH" ;
+                                                                                                                                    :price "82100"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_MSI_GeForce_RTX_2060_VENTUS_GP_OC
@@ -2067,7 +2073,8 @@
                                                                                                                  :GPU_maximum_memory "6"^^xsd:string ;
                                                                                                                  :GPU_number_of_displays 3 ;
                                                                                                                  :Graphics_card_type "Discrete_graphics_card" ;
-                                                                                                                 :has_a_model "GeForce RTX2060 VENTUS GP" .
+                                                                                                                 :has_a_model "GeForce RTX2060 VENTUS GP" ;
+                                                                                                                 :price "52199"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_MSI_nVidia_GeForce_RTX_3080_VENTUS_3X_PLUS_10GB_GDDR6X_320-bit
@@ -2077,7 +2084,8 @@
                                                                                                                                               :GPU_maximum_memory "10"^^xsd:string ;
                                                                                                                                               :GPU_number_of_displays 3 ;
                                                                                                                                               :Graphics_card_type "Discrete_graphics_card" ;
-                                                                                                                                              :has_a_model "nVidia GeForce RTX3080 VENTUS3X" .
+                                                                                                                                              :has_a_model "nVidia GeForce RTX3080 VENTUS3X" ;
+                                                                                                                                              :price "152000"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_MSI_nvidia_GeForce_RTX_2060_VENTUS_12GB_192-bit
@@ -2087,7 +2095,8 @@
                                                                                                                                :GPU_maximum_memory "12"^^xsd:string ;
                                                                                                                                :GPU_number_of_displays 3 ;
                                                                                                                                :Graphics_card_type "Discrete_graphics_card" ;
-                                                                                                                               :has_a_model "nVidia GeForce RTX2060 VENTUS" .
+                                                                                                                               :has_a_model "nVidia GeForce RTX2060 VENTUS" ;
+                                                                                                                               :price "98000"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_SAPPHIRE_PULSE_AMD_Radeon_RX_6600XT_8GB_GDDR6_128-bit
@@ -2097,7 +2106,8 @@
                                                                                                                                      :GPU_maximum_memory "8"^^xsd:string ;
                                                                                                                                      :GPU_number_of_displays 3 ;
                                                                                                                                      :Graphics_card_type "Discrete_graphics_card" ;
-                                                                                                                                     :has_a_model "Radeon RX6600XT" .
+                                                                                                                                     :has_a_model "Radeon RX6600XT" ;
+                                                                                                                                     :price "61234"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#GPU_SAPPHIRE_PULSE_AMD_Radeon_RX_6600_8GB_GDDR6_128-bit
@@ -2107,7 +2117,8 @@
                                                                                                                                    :GPU_maximum_memory "8"^^xsd:string ;
                                                                                                                                    :GPU_number_of_displays 3 ;
                                                                                                                                    :Graphics_card_type "Discrete_graphics_card" ;
-                                                                                                                                   :has_a_model "AMD Radeon RX6600" .
+                                                                                                                                   :has_a_model "AMD Radeon RX6600" ;
+                                                                                                                                   :price "69212"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#HDD_Seagate_BarraCuda_2TB
@@ -2588,7 +2599,8 @@
                                                                                                       :Mouse_number_of_buttons 6 ;
                                                                                                       :Mouse_polling_rate "125Hz" ;
                                                                                                       :Mouse_type "Optical" ;
-                                                                                                      :has_a_model "ROG Gladius 3" .
+                                                                                                      :has_a_model "ROG Gladius 3" ;
+                                                                                                      :price "11999"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Genius_M8-610_Scorpion
@@ -2598,7 +2610,8 @@
                                                                                                         :Mouse_number_of_buttons 6 ;
                                                                                                         :Mouse_polling_rate "1000Hz" ;
                                                                                                         :Mouse_type "Laser" ;
-                                                                                                        :has_a_model "M8610 Scorpion" .
+                                                                                                        :has_a_model "M8610 Scorpion" ;
+                                                                                                        :price "4700"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Hama_MW800
@@ -2608,7 +2621,8 @@
                                                                                             :Mouse_number_of_buttons 2 ;
                                                                                             :Mouse_polling_rate "1000Hz" ;
                                                                                             :Mouse_type "Laser" ;
-                                                                                            :has_a_model "MW800" .
+                                                                                            :has_a_model "MW800" ;
+                                                                                            :price "3590"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Lenovo_Wireless_Laser_X30H56886
@@ -2618,7 +2632,8 @@
                                                                                                                  :Mouse_number_of_buttons 5 ;
                                                                                                                  :Mouse_polling_rate "1000Hz" ;
                                                                                                                  :Mouse_type "Laser" ;
-                                                                                                                 :has_a_model "X30H56886" .
+                                                                                                                 :has_a_model "X30H56886" ;
+                                                                                                                 :price "2887"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_B100
@@ -2628,7 +2643,8 @@
                                                                                                :Mouse_number_of_buttons 3 ;
                                                                                                :Mouse_polling_rate "1000Hz" ;
                                                                                                :Mouse_type "Optical" ;
-                                                                                               :has_a_model "B100" .
+                                                                                               :has_a_model "B100" ;
+                                                                                               :price "773"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_G502_LIGHTSPEED
@@ -2638,7 +2654,8 @@
                                                                                                           :Mouse_number_of_buttons 7 ;
                                                                                                           :Mouse_polling_rate "1000Hz" ;
                                                                                                           :Mouse_type "Optical" ;
-                                                                                                          :has_a_model "G502 Lightspeed" .
+                                                                                                          :has_a_model "G502 Lightspeed" ;
+                                                                                                          :price "19999"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_Lift_Ggraphite
@@ -2648,7 +2665,8 @@
                                                                                                          :Mouse_number_of_buttons 6 ;
                                                                                                          :Mouse_polling_rate "800Hz" ;
                                                                                                          :Mouse_type "Optical" ;
-                                                                                                         :has_a_model "Lift Graphite" .
+                                                                                                         :has_a_model "Lift Graphite" ;
+                                                                                                         :price "10499"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Logitech_MX_MASTER3
@@ -2658,7 +2676,8 @@
                                                                                                      :Mouse_number_of_buttons 5 ;
                                                                                                      :Mouse_polling_rate "125Hz" ;
                                                                                                      :Mouse_type "Laser" ;
-                                                                                                     :has_a_model "MX Master 3" .
+                                                                                                     :has_a_model "MX Master 3" ;
+                                                                                                     :price "14999"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Mouse_Razer_NAGA_PRO_RZ01
@@ -2668,7 +2687,8 @@
                                                                                                      :Mouse_number_of_buttons 12 ;
                                                                                                      :Mouse_polling_rate "1000Hz" ;
                                                                                                      :Mouse_type "Optical" ;
-                                                                                                     :has_a_model "Naga PRO RZ01" .
+                                                                                                     :has_a_model "Naga PRO RZ01" ;
+                                                                                                     :price "21900"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Network_card_Realtek_Chipset_Gigabit_PCI_Express
