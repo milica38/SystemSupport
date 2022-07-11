@@ -9,33 +9,38 @@ import lombok.Setter;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class CaseDescription implements CaseComponent {
 
-    private String cores;
-    private String cpuFrequency;
-    private String cpuBrand;
-    private String cpuName;
-    private String cpuModel;
-    private String ramSize;
-    private String hddMemorySize;
-    private String usbSlots;
+    private int cores;
+    private double cpuFrequency;
+
+    private int ramSize;
+    private String storageType;
+    private int storageSize;
+
     private String formFactor;
-    private String gpuSize;
+    private int gpuSize;
+    private int price;
 
-    public CaseDescription(String cores, String cpuFrequency, String cpuBrand, String cpuName, String cpuModel, String ramSize, String hddMemorySize, String usbSlots, String formFactor, String gpuSize) {
-        this.cores = cores;
-        this.cpuFrequency = cpuFrequency;
-        this.cpuBrand = cpuBrand;
-        this.cpuName = cpuName;
-        this.cpuModel = cpuModel;
-        this.ramSize = ramSize;
-        this.hddMemorySize = hddMemorySize;
-        this.usbSlots = usbSlots;
-        this.formFactor = formFactor;
-        this.gpuSize = gpuSize;
+    private String brand;
+
+    private String name;
+
+    @Override
+    public String toString() {
+        return "cores=" + cores +
+                ",cpuFrequency=" + cpuFrequency +
+                ",ramSize=" + ramSize +
+                ",storageType=" + storageType +
+                ",storageSize=" + storageSize +
+                ",formFactor=" + formFactor +
+                ",gpuSize=" + gpuSize +
+                ",price=" + price +
+                ",brand=" + brand +
+                ",name=" + name ;
     }
-
-    public CaseDescription() {}
 
     @Override
     public Attribute getIdAttribute() {

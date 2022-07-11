@@ -11,14 +11,19 @@ import lombok.Setter;
 @AllArgsConstructor
 public class SimilarityDTO {
 
-    private String cores;
-    private String cpuFrequency;
-    private String cpuBrand;
-    private String cpuName;
-    private String cpuModel;
-    private String ramSize;
-    private String hddMemorySize;
-    private String usbSlots;
+    private int cores;
+    private double cpuFrequency;
+
+    private int ramSize;
+    private String storageType;
+    private int storageSize;
+
     private String formFactor;
-    private String gpuSize;
+    private int gpuSize;
+    private int price;
+
+    private String brand;
+
+    private String name;
+
 }
