@@ -1,1 +1,13 @@
-#cores;cpuFrequency;cpuBrand;cpuName;cpuModel;ramSize;hddMemorySize;usbSlots;formFactor;gpuSize;
+#cores;cpuFrequency;ramSize;storageType;storageSize;formFactor;gpuSize;price;brand;name
+6;3.5;8;SSD;2000;ATX;8;135000;AMD;Ryzen 5 5600
+8;3.6;8;SSD;2000;Micro_ATX;12;145000;AMD;Ryzen 7 3700X
+8;3.9;16;HDD;4000;ATX;8;155000;AMD;Ryzen 7 3800X
+8;3.4;8;HDD;2000;Micro_ATX;10;140000;AMD;Ryzen 7 5700X
+16;3.4;64;HDD;4000;ATX;12;250000;AMD;Ryzen 9 5950X
+4;3.7;2;SSD;256;Micro_ATX;2;105000;Intel;Core i3
+4;3.3;4;SSD;2000;Micro_ATX;8;115000;Intel;Core i3
+6;3.3;4;SSD;2000;ATX;8;127000;Intel;Core i5
+6;3.7;8;HDD;4000;ATX;6;135000;Intel;Core i5
+8;2.5;16;HDD;2000;ATX;12;170000;Intel;Core i7
+16;3.2;64;HDD;8000;ATX;12;210000;Intel;Core i9
+
