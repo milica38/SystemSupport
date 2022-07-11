@@ -21,6 +21,7 @@ public class SimilarityController {
     @Autowired
     private SimilarityService similarityService;
 
+    @CrossOrigin
     @GetMapping("/{cores}/{cpuFrequency}/{ramSize}/{storageType}/{storageSize}/{formFactor}/{gpuSize}/{price}")
     public ResponseEntity<List<SimilarityDTO>> getSimilarity(@PathVariable int cores,
                                                              @PathVariable double cpuFrequency,

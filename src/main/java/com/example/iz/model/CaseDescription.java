@@ -15,15 +15,12 @@ public class CaseDescription implements CaseComponent {
 
     private int cores;
     private double cpuFrequency;
-
     private int ramSize;
     private String storageType;
     private int storageSize;
-
     private String formFactor;
     private int gpuSize;
     private int price;
-
     private String brand;
 
     private String name;

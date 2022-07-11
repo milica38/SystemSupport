@@ -1,1 +1,67 @@
-<p>similar-computers works!</p>
+<!-- ################COMBO-BOXES##################### -->
+<div class="row">
+    <h3 class="d-flex justify-content-center">
+        Find similar computer</h3>
+    <div class="box d-flex justify-content-center">
+      <div class="col-8 card" style="background-color: #cfd1d3;">
+        <div class="card-body row">
+          <div class="col">
+            <label>Enter the number of CPU cores: </label>
+            <input [(ngModel)]="cores" type="number" min="0" max="16" class="form-control" placeholder="Core number">
+            <label>Enter CPU freequency: </label>
+            <input [(ngModel)]="freq" type="number" min="0" class="form-control" placeholder="Freequency">
+            <label>Enter ram memory: </label>
+            <input [(ngModel)]="ramSize" type="number" min="0" class="form-control" placeholder="Ram memory">
+            <label>Choose motherboard form factor: </label>
+            <select #selected5 (change)="onSelectedFormFactor(selected5.value)" class="form-select">
+                <option>--Choose--</option>
+                <option>ATX</option>
+                <option>Mini_ATX</option>
+            </select>
+          </div>
+          <div class="col">
+            <label>Choose storage type: </label>
+            <select #selected4 (change)="onSelectedStorage(selected4.value)" class="form-select">
+                <option>--Choose--</option>
+                <option>HDD</option>
+                <option>SSD</option>
+            </select>
+            <label>Enter storage size: </label>
+            <input [(ngModel)]="storageSize" type="number" min="0" class="form-control" placeholder="Storage size">
+            <label>Enter GPU size: </label>
+            <input [(ngModel)]="gpuSize" type="number" min="0" class="form-control" placeholder="GPU size">
+            <label>Enter price: </label>
+            <input [(ngModel)]="price" type="number" min="0" class="form-control" placeholder="Price">
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-secondary" (click)="onFind()">Find</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ###########################RESULTS################## -->
+  <div class="row" *ngIf="resultBox">
+    <h3 class="d-flex justify-content-center">
+      Results</h3>
+  <div class="box d-flex justify-content-center">
+    <div class="col-8 card" style="background-color: rgb(32, 74, 171);">
+      <div class="card-body row">
+        <div class="col">
+            <ul>
+                <li style="color: white; margin-bottom: 1%; margin-top: 1%;" *ngFor="let i of computers">
+                    <span style="color: rgb(255, 255, 255); font-weight: bold;">{{i.brand}} {{i.name}}</span>,
+                    <span style="color: rgb(197, 194, 194); font-weight: bold;">Cores:</span> {{i.cores}},
+                    <span style="color: rgb(197, 194, 194); font-weight: bold;">Frequency:</span> {{i.freq}}Hz,
+                    <span style="color: rgb(197, 194, 194); font-weight: bold;">Ram capacity:</span> {{i.ramSize}}GB, 
+                    <span style="color: rgb(197, 194, 194); font-weight: bold;">Form factor:</span> {{i.formFactor}}, 
+                    <span style="color: rgb(197, 194, 194); font-weight: bold;">{{i.storageType}} size:</span> {{i.storageSize}}GB, 
+                    <span style="color: rgb(197, 194, 194); font-weight: bold;">GPU size: </span> {{i.gpuSize}}GB, 
+                    <span style="color: rgb(197, 194, 194); font-weight: bold;">Price: </span> {{i.price}}din.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
