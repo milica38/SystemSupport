@@ -1678,7 +1678,8 @@
                                                                                                        :CPU_coreNumber "6"^^xsd:string ;
                                                                                                        :CPU_frequency "3.5"^^xsd:string ;
                                                                                                        :CPU_model "Ryzen5-5600" ;
-                                                                                                       :CPU_turbo_frequency "4.4 GHz" .
+                                                                                                       :CPU_turbo_frequency "4.4 GHz" ;
+                                                                                                       :price "34999"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_7_3700X_3.6GHz
@@ -1689,7 +1690,8 @@
                                                                                                         :CPU_coreNumber "8"^^xsd:string ;
                                                                                                         :CPU_frequency "3.6"^^xsd:string ;
                                                                                                         :CPU_model "Ryzen7-3700X" ;
-                                                                                                        :CPU_turbo_frequency "4.4 GHz" .
+                                                                                                        :CPU_turbo_frequency "4.4 GHz" ;
+                                                                                                        :price "44999"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_7_3800X_3.9GHz
@@ -1700,7 +1702,8 @@
                                                                                                         :CPU_coreNumber "8"^^xsd:string ;
                                                                                                         :CPU_frequency "3.9"^^xsd:string ;
                                                                                                         :CPU_model "Ryzen7-3800X" ;
-                                                                                                        :CPU_turbo_frequency "4.5 GHz" .
+                                                                                                        :CPU_turbo_frequency "4.5 GHz" ;
+                                                                                                        :price "49250"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_7_5700X_3.4GHz
@@ -1711,7 +1714,8 @@
                                                                                                         :CPU_coreNumber "8"^^xsd:string ;
                                                                                                         :CPU_frequency "3.4"^^xsd:string ;
                                                                                                         :CPU_model "Ryzen7-5700X" ;
-                                                                                                        :CPU_turbo_frequency "4.6 GHz" .
+                                                                                                        :CPU_turbo_frequency "4.6 GHz" ;
+                                                                                                        :price "67200"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_AMD_Ryzen_9_5950X_3.4GHz
@@ -1722,7 +1726,8 @@
                                                                                                         :CPU_coreNumber "16"^^xsd:string ;
                                                                                                         :CPU_frequency "3.4"^^xsd:string ;
                                                                                                         :CPU_model "Ryzen9-5950X" ;
-                                                                                                        :CPU_turbo_frequency "4.9 GHz" .
+                                                                                                        :CPU_turbo_frequency "4.9 GHz" ;
+                                                                                                        :price "71000"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i3-10105_3.70_GHz
@@ -1732,7 +1737,8 @@
                                                                                                             :CPU_coreNumber "4"^^xsd:string ;
                                                                                                             :CPU_frequency "3.7"^^xsd:string ;
                                                                                                             :CPU_model "Core i3-10105" ;
-                                                                                                            :CPU_turbo_frequency "4.4 GHz" .
+                                                                                                            :CPU_turbo_frequency "4.4 GHz" ;
+                                                                                                            :price "19450"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i3-12100_3.30_GHz
@@ -1743,7 +1749,8 @@
                                                                                                             :CPU_coreNumber "4"^^xsd:string ;
                                                                                                             :CPU_frequency "3.3"^^xsd:string ;
                                                                                                             :CPU_model "Core i3-12100" ;
-                                                                                                            :CPU_turbo_frequency "4.3 GHz" .
+                                                                                                            :CPU_turbo_frequency "4.3 GHz" ;
+                                                                                                            :price "18700"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i5-10600_3.30_GHz
@@ -1753,7 +1760,8 @@
                                                                                                             :CPU_coreNumber "6"^^xsd:string ;
                                                                                                             :CPU_frequency "3.3"^^xsd:string ;
                                                                                                             :CPU_model "Core i5-10600" ;
-                                                                                                            :CPU_turbo_frequency "4.8 GHz" .
+                                                                                                            :CPU_turbo_frequency "4.8 GHz" ;
+                                                                                                            :price "23999"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i5-9600K_3.7GHz
@@ -1763,7 +1771,8 @@
                                                                                                           :CPU_coreNumber "6"^^xsd:string ;
                                                                                                           :CPU_frequency "3.7"^^xsd:string ;
                                                                                                           :CPU_model "Core i5-9600K" ;
-                                                                                                          :CPU_turbo_frequency "4.6 GHz" .
+                                                                                                          :CPU_turbo_frequency "4.6 GHz" ;
+                                                                                                          :price "26500"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i7-11700_2.5GHz
@@ -1773,7 +1782,8 @@
                                                                                                           :CPU_coreNumber "8"^^xsd:string ;
                                                                                                           :CPU_frequency "2.5"^^xsd:string ;
                                                                                                           :CPU_model "Core i7-11700" ;
-                                                                                                          :CPU_turbo_frequency "4.9 GHz" .
+                                                                                                          :CPU_turbo_frequency "4.9 GHz" ;
+                                                                                                          :price "44090"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#CPU_INTEL_Core_i9-12900KF_3.2GHz
@@ -1784,7 +1794,8 @@
                                                                                                             :CPU_coreNumber "16"^^xsd:string ;
                                                                                                             :CPU_frequency "3.2"^^xsd:string ;
                                                                                                             :CPU_model "Core i9-12900KF" ;
-                                                                                                            :CPU_turbo_frequency "5.2 GHz" .
+                                                                                                            :CPU_turbo_frequency "5.2 GHz" ;
+                                                                                                            :price "71111"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Camera_ASUS_C3
