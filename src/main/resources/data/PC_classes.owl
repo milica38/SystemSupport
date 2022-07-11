@@ -1460,6 +1460,12 @@
              :has_a_name "Hyper" .
 
 
+###  http://www.semanticweb.org/anja/ontologies/2022/3/untitled-ontology-3#Brand_NZXT
+:Brand_NZXT rdf:type owl:NamedIndividual ,
+                     :Brand ;
+            :has_a_name "NZXT" .
+
+
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#BluetoothCard_ASUS_BT400
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#BluetoothCard_ASUS_BT400> rdf:type :Bluetooth_card ;
                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_Asus> ;
@@ -2497,7 +2503,7 @@
                                                                                                                  :Motherboard_USB_slots "8"^^xsd:string ;
                                                                                                                  :Motherboard_chipset "AMD B550" ;
                                                                                                                  :Motherboard_form_factor "ATX" ;
-                                                                                                                 :Motherboard_processor_socket "Lga 1200" .
+                                                                                                                 :Motherboard_processor_socket "LGA 1200" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_ASUS_TUF_GAMING_B560M-PLUS
@@ -2507,7 +2513,7 @@
                                                                                                                   :Motherboard_USB_slots "9"^^xsd:string ;
                                                                                                                   :Motherboard_chipset "Intel B560" ;
                                                                                                                   :Motherboard_form_factor "Micro-ATX" ;
-                                                                                                                  :Motherboard_processor_socket "Lga 1200" .
+                                                                                                                  :Motherboard_processor_socket "LGA 1200" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_ASUS_TUF_GAMING_Z690-PLUS
@@ -2538,7 +2544,8 @@
                                                                                                                    :Motherboard_SATA_connections 6 ;
                                                                                                                    :Motherboard_USB_slots "8"^^xsd:string ;
                                                                                                                    :Motherboard_chipset "AMD X570" ;
-                                                                                                                   :Motherboard_form_factor "ATX" .
+                                                                                                                   :Motherboard_form_factor "ATX" ;
+                                                                                                                   :Motherboard_processor_socket "LGA 1200" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_MSI_B550-A_PRO
@@ -2548,7 +2555,8 @@
                                                                                                       :Motherboard_SATA_connections 6 ;
                                                                                                       :Motherboard_USB_slots "15"^^xsd:string ;
                                                                                                       :Motherboard_chipset "AMD B550" ;
-                                                                                                      :Motherboard_form_factor "ATX" .
+                                                                                                      :Motherboard_form_factor "ATX" ;
+                                                                                                      :Motherboard_processor_socket "LGA 1700" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_MSI_MPG_X570_GAMING_PLUS
@@ -2558,7 +2566,8 @@
                                                                                                                 :Motherboard_SATA_connections 4 ;
                                                                                                                 :Motherboard_USB_slots "17"^^xsd:string ;
                                                                                                                 :Motherboard_chipset "AMD X570" ;
-                                                                                                                :Motherboard_form_factor "ATX" .
+                                                                                                                :Motherboard_form_factor "ATX" ;
+                                                                                                                :Motherboard_processor_socket "LGA 1700" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_MSI_MPG_Z490_GAMING_PLUS
@@ -3102,12 +3111,6 @@
                                                                                                                         :SSD_memory_size "64"^^xsd:string ;
                                                                                                                         :Storage_device_type "SSD" ;
                                                                                                                         :has_a_model "PM810" .
-
-
-###  https://raw.githubusercontent.com/milica38/SystemSupport/main/instances.owl#Brand_NZXT
-:Brand_NZXT rdf:type owl:NamedIndividual ,
-                     :Brand ;
-            :has_a_name "NZXT" .
 
 
 #################################################################
