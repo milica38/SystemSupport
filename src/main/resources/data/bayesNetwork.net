@@ -1,0 +1,298 @@
+net
+{
+     node_size = (0 0);
+     name = "New BN";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node computer_cant_start
+{
+     label = "C1";
+     position = (106 13);
+     states = ("yes" "no");
+}
+
+node power_supply_damage
+{
+     label = "C2";
+     position = (357 96);
+     states = ("yes" "no");
+}
+
+node blank_screen
+{
+     label = "C3";
+     position = (678 38);
+     states = ("yes" "no");
+}
+
+node monitor_damage
+{
+     label = "C4";
+     position = (710 191);
+     states = ("yes" "no");
+}
+
+node GPU_damage
+{
+     label = "C5";
+     position = (465 204);
+     states = ("yes" "no");
+}
+
+node frozen_screen
+{
+     label = "C6";
+     position = (1587 302);
+     states = ("yes" "no");
+}
+
+node ram_damage
+{
+     label = "C7";
+     position = (1175 341);
+     states = ("yes" "no");
+}
+
+node wifi_disconnecting
+{
+     label = "C8";
+     position = (984 64);
+     states = ("yes" "no");
+}
+
+node network_card_damage
+{
+     label = "C9";
+     position = (967 181);
+     states = ("yes" "no");
+}
+
+node pc_crash_before_loading_os
+{
+     label = "C10";
+     position = (1557 413);
+     states = ("yes" "no");
+}
+
+node hdd_damage
+{
+     label = "C11";
+     position = (1238 463);
+     states = ("yes" "no");
+}
+
+node sound_isnt_working
+{
+     label = "C12";
+     position = (1209 59);
+     states = ("yes" "no");
+}
+
+node speakers_damage
+{
+     label = "C13";
+     position = (1232 196);
+     states = ("yes" "no");
+}
+
+node bluetooth_connection
+{
+     label = "C14";
+     position = (1433 137);
+     states = ("yes" "no");
+}
+
+node apps_cant_install
+{
+     label = "C15";
+     position = (1072 624);
+     states = ("yes" "no");
+}
+
+node ssd_damage
+{
+     label = "C16";
+     position = (1259 556);
+     states = ("yes" "no");
+}
+
+node blue_screen_of_death
+{
+     label = "C17";
+     position = (909 412);
+     states = ("yes" "no");
+}
+
+node overheating
+{
+     label = "C18";
+     position = (669 451);
+     states = ("yes" "no");
+}
+
+node cooling_system_damage
+{
+     label = "C19";
+     position = (649 310);
+     states = ("yes" "no");
+}
+
+node computer_beeps
+{
+     label = "C20";
+     position = (919 289);
+     states = ("yes" "no");
+}
+
+potential (computer_cant_start)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (power_supply_damage | blank_screen computer_cant_start)
+{
+ data = ((( 0.9 0.1 )
+( 0.2 0.8 ))
+(( 0.8 0.2 )
+( 0.0 1.0 )));
+}
+
+potential (blank_screen)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (monitor_damage | blank_screen)
+{
+ data = (( 0.9 0.1 )
+( 0.0 1.0 ));
+}
+
+potential (GPU_damage | blank_screen)
+{
+ data = (( 0.9 0.1 )
+( 0.0 1.0 ));
+}
+
+potential (frozen_screen)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (ram_damage | computer_beeps blue_screen_of_death apps_cant_install pc_crash_before_loading_os frozen_screen)
+{
+ data = (((((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.7 0.3 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.0 1.0 ))))
+(((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.7 0.3 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.0 1.0 )))))
+((((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.7 0.3 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.0 1.0 ))))
+(((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.7 0.3 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.0 1.0 ))))));
+}
+
+potential (wifi_disconnecting)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (network_card_damage | wifi_disconnecting)
+{
+ data = (( 0.99 0.01 )
+( 0.0 1.0 ));
+}
+
+potential (pc_crash_before_loading_os)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (hdd_damage | blue_screen_of_death apps_cant_install pc_crash_before_loading_os)
+{
+ data = (((( 0.99 0.01 )
+( 0.8 0.2 ))
+(( 0.99 0.01 )
+( 0.0 1.0 )))
+((( 0.99 0.01 )
+( 0.8 0.2 ))
+(( 0.99 0.01 )
+( 0.0 1.0 ))));
+}
+
+potential (sound_isnt_working)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (speakers_damage | sound_isnt_working)
+{
+ data = (( 0.9 0.1 )
+( 0.0 1.0 ));
+}
+
+potential (bluetooth_connection | sound_isnt_working)
+{
+ data = (( 0.9 0.1 )
+( 0.0 1.0 ));
+}
+
+potential (apps_cant_install)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (ssd_damage | apps_cant_install)
+{
+ data = (( 0.9 0.1 )
+( 0.0 1.0 ));
+}
+
+potential (blue_screen_of_death)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (overheating)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (cooling_system_damage | blue_screen_of_death overheating)
+{
+ data = ((( 1.0 0.0 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.0 1.0 )));
+}
+
+potential (computer_beeps)
+{
+ data = ( 0.99 0.01 );
+}
+
