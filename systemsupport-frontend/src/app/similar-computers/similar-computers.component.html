@@ -50,10 +50,10 @@
       <div class="card-body row">
         <div class="col">
             <ul>
-                <li style="color: white; margin-bottom: 1%; margin-top: 1%;" *ngFor="let i of computers">
+                <li style="color: white; padding: 1%;" *ngFor="let i of computers">
                     <span style="color: rgb(255, 255, 255); font-weight: bold;">{{i.brand}} {{i.name}}</span>,
                     <span style="color: rgb(197, 194, 194); font-weight: bold;">Cores:</span> {{i.cores}},
-                    <span style="color: rgb(197, 194, 194); font-weight: bold;">Frequency:</span> {{i.freq}}Hz,
+                    <span style="color: rgb(197, 194, 194); font-weight: bold;">Frequency:</span> {{i.cpuFrequency}}Hz,
                     <span style="color: rgb(197, 194, 194); font-weight: bold;">Ram capacity:</span> {{i.ramSize}}GB, 
                     <span style="color: rgb(197, 194, 194); font-weight: bold;">Form factor:</span> {{i.formFactor}}, 
                     <span style="color: rgb(197, 194, 194); font-weight: bold;">{{i.storageType}} size:</span> {{i.storageSize}}GB, 
