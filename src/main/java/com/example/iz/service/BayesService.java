@@ -1,6 +1,7 @@
 package com.example.iz.service;
 
-import com.example.iz.dto.BayesDTO;
+import com.example.iz.dto.BayesInputDTO;
+import com.example.iz.dto.BayesOutputDTO;
 import com.fasterxml.jackson.core.type.TypeReference;
 import org.springframework.stereotype.Service;
 import unbbayes.io.BaseIO;
@@ -20,8 +21,9 @@ import java.util.List;
 @Service
 public class BayesService {
 
-    public List<BayesDTO> findDamage(BayesDTO dto) throws IOException, URISyntaxException {
-        List<BayesDTO> results = new ArrayList<BayesDTO>();
+    public List<BayesOutputDTO> findDamage(BayesInputDTO dto) throws IOException, URISyntaxException {
+
+        List<BayesOutputDTO> results = new ArrayList<BayesOutputDTO>();
 
         // loading from file
         BaseIO io = new NetIO();
@@ -33,6 +35,7 @@ public class BayesService {
         algorithm.run();
 
         // states overview
+        System.out.println("States overview:");
         List<Node> nodeList = net.getNodes();
         for (Node node: nodeList) {
             System.out.println(node.getName());
@@ -42,8 +45,9 @@ public class BayesService {
         }
 
         // adding an evidence
+
         ProbabilisticNode factNode = (ProbabilisticNode)net.getNode(dto.getSymptome());
-        int stateIndex = 1; // index of state "green"
+        int stateIndex = 0; // index of state "green"
         factNode.addFinding(stateIndex);
 
         System.out.println();
@@ -56,14 +60,19 @@ public class BayesService {
         }
 
         // states overview after propagation
+
+        System.out.println("States overview after propagation:");
         for (Node node : nodeList) {
             System.out.println(node.getName());
             for (int i = 0; i < node.getStatesSize(); i++) {
                 System.out.println(node.getStateAt(i) + ": " + ((ProbabilisticNode)node).getMarginalAt(i));
+                if(node.getStateAt(i).equals("yes") && node.getName().endsWith("damage")) {
+                    results.add(new BayesOutputDTO(node.getName().toUpperCase().replace("_", " ") ,((ProbabilisticNode) node).getMarginalAt(i)*100));
+                }
             }
         }
         // saving to file
-        new NetIO().save(new File("/data/results.net"), net);
+        new NetIO().save(new File(TypeReference.class.getResource("/data").toURI().getPath() +"/results.net"), net);
 
         return results;
     }

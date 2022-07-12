@@ -9,8 +9,6 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class BayesDTO {
-
+public class BayesInputDTO {
     private String symptome;
-    private double percentage;
 }

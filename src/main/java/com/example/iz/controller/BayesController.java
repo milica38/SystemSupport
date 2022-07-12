@@ -1,12 +1,10 @@
 package com.example.iz.controller;
 
-import com.example.iz.dto.BayesDTO;
+import com.example.iz.dto.BayesInputDTO;
+import com.example.iz.dto.BayesOutputDTO;
 import com.example.iz.service.BayesService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -20,7 +18,7 @@ public class BayesController {
 
     @CrossOrigin
     @GetMapping
-    public List<BayesDTO> findDamage(BayesDTO dto) throws IOException, URISyntaxException {
+    public List<BayesOutputDTO> findDamage(@RequestBody BayesInputDTO dto) throws IOException, URISyntaxException {
         return service.findDamage(dto);
     }
 }
