@@ -2,7 +2,7 @@ net
 {
      node_size = (0 0);
      name = "New BN";
-     tree = "(C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18,C19,C20)";
+     tree = "(C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18,C19,C20,C21,C22,C23,C24)";
      UnBBayes_Color_Probabilistic_Description = "-256";
      UnBBayes_Color_Probabilistic_Explanation = "-16711936";
 }
@@ -17,7 +17,7 @@ node power_supply_damage
 node blank_screen
 {
      label = "C3";
-     position = (540 44);
+     position = (540 0);
      states = ("yes" "no");
 }
 
@@ -213,7 +213,7 @@ node antivirus_damage
 node startup_programs_damage
 {
      label = "C12";
-     position = (1477 711);
+     position = (1479 718);
      states = ("yes" "no");
 }
 
@@ -719,7 +719,7 @@ potential (antivirus_damage | usb_wont_load slow_internet slow_pc)
 
 potential (startup_programs_damage | slow_pc)
 {
- data = (( 0.6 0.3 )
+ data = (( 0.6 0.4 )
 ( 1.0 0.0 ));
 }
 
