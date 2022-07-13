@@ -20,7 +20,7 @@ npm install
 ~~~
 ng serve
 ~~~
-<br><br>
+<br>
 ## Authors 
 - Anja Pesic RA36/2018
 - Milica Urukalo RA38/2018
