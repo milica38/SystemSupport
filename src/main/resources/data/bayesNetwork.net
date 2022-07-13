@@ -10,21 +10,21 @@ net
 node power_supply_damage
 {
      label = "C2";
-     position = (330 129);
+     position = (281 129);
      states = ("yes" "no");
 }
 
 node blank_screen
 {
      label = "C3";
-     position = (679 39);
+     position = (540 44);
      states = ("yes" "no");
 }
 
 node monitor_damage
 {
      label = "C4";
-     position = (710 192);
+     position = (710 193);
      states = ("yes" "no");
 }
 
@@ -38,21 +38,21 @@ node GPU_damage
 node frozen_screen
 {
      label = "C6";
-     position = (1587 303);
+     position = (1273 281);
      states = ("yes" "no");
 }
 
 node ram_damage
 {
      label = "C7";
-     position = (1175 341);
+     position = (974 293);
      states = ("yes" "no");
 }
 
 node wifi_disconnecting
 {
      label = "C8";
-     position = (983 64);
+     position = (884 46);
      states = ("yes" "no");
 }
 
@@ -66,84 +66,247 @@ node network_card_damage
 node pc_crash_before_loading_os
 {
      label = "C10";
-     position = (1558 413);
+     position = (1317 387);
      states = ("yes" "no");
 }
 
 node hdd_damage
 {
      label = "C11";
-     position = (1238 463);
+     position = (1056 459);
      states = ("yes" "no");
 }
 
 node sound_isnt_working
 {
      label = "C12";
-     position = (1209 61);
+     position = (1210 61);
      states = ("yes" "no");
 }
 
 node speakers_damage
 {
      label = "C13";
-     position = (1232 196);
+     position = (1185 197);
      states = ("yes" "no");
 }
 
 node bluetooth_connection_damage
 {
      label = "C14";
-     position = (1431 137);
+     position = (1375 185);
      states = ("yes" "no");
 }
 
 node apps_cant_install
 {
      label = "C15";
-     position = (1072 624);
-     states = ("yes" "no");
-}
-
-node ssd_damage
-{
-     label = "C16";
-     position = (1259 556);
+     position = (779 494);
      states = ("yes" "no");
 }
 
 node blue_screen_of_death
 {
      label = "C17";
-     position = (909 412);
+     position = (687 391);
      states = ("yes" "no");
 }
 
 node overheating
 {
      label = "C18";
-     position = (720 440);
+     position = (479 372);
      states = ("yes" "no");
 }
 
 node cooling_system_damage
 {
      label = "C19";
-     position = (649 289);
+     position = (535 278);
      states = ("yes" "no");
 }
 
 node computer_beeps
 {
      label = "C20";
-     position = (918 289);
+     position = (754 276);
      states = ("yes" "no");
 }
 
-potential (power_supply_damage | blank_screen)
+node sound_card_damage
 {
- data = (( 0.9 0.1 )
-( 0.0 1.0 ));
+     label = "C1";
+     position = (1485 108);
+     states = ("yes" "no");
+}
+
+node port_damage
+{
+     label = "C2";
+     position = (1529 29);
+     states = ("yes" "no");
+}
+
+node CPU_damage
+{
+     label = "C3";
+     position = (396 279);
+     states = ("yes" "no");
+}
+
+node motherboard_damage
+{
+     label = "C4";
+     position = (523 477);
+     states = ("yes" "no");
+}
+
+node pc_randomly_shuts_down
+{
+     label = "C5";
+     position = (277 459);
+     states = ("yes" "no");
+}
+
+node driver_damage
+{
+     label = "C6";
+     position = (1583 380);
+     states = ("yes" "no");
+}
+
+node os_damage
+{
+     label = "C7";
+     position = (1019 376);
+     states = ("yes" "no");
+}
+
+node keyboard_malfunction
+{
+     label = "C8";
+     position = (1783 51);
+     states = ("yes" "no");
+}
+
+node physical_damage
+{
+     label = "C9";
+     position = (1969 94);
+     states = ("yes" "no");
+}
+
+node slow_pc
+{
+     label = "C10";
+     position = (1300 477);
+     states = ("yes" "no");
+}
+
+node antivirus_damage
+{
+     label = "C11";
+     position = (1435 562);
+     states = ("yes" "no");
+}
+
+node startup_programs_damage
+{
+     label = "C12";
+     position = (1477 711);
+     states = ("yes" "no");
+}
+
+node app_not_responding
+{
+     label = "C13";
+     position = (836 637);
+     states = ("yes" "no");
+}
+
+node usb_wont_load
+{
+     label = "C14";
+     position = (1102 651);
+     states = ("yes" "no");
+}
+
+node mouse_malfunction
+{
+     label = "C15";
+     position = (1928 431);
+     states = ("yes" "no");
+}
+
+node cable_damage
+{
+     label = "C16";
+     position = (1723 460);
+     states = ("yes" "no");
+}
+
+node slow_internet
+{
+     label = "C17";
+     position = (1646 562);
+     states = ("yes" "no");
+}
+
+node provider_damage
+{
+     label = "C18";
+     position = (1817 540);
+     states = ("yes" "no");
+}
+
+node router_damage
+{
+     label = "C19";
+     position = (1797 615);
+     states = ("yes" "no");
+}
+
+node usb_port_malfunction
+{
+     label = "C20";
+     position = (2121 157);
+     states = ("yes" "no");
+}
+
+node pins_damage
+{
+     label = "C21";
+     position = (2108 320);
+     states = ("yes" "no");
+}
+
+node disk_wont_load
+{
+     label = "C22";
+     position = (690 622);
+     states = ("yes" "no");
+}
+
+node bios_damage
+{
+     label = "C23";
+     position = (524 589);
+     states = ("yes" "no");
+}
+
+node disk_phyisical_damage
+{
+     label = "C24";
+     position = (485 687);
+     states = ("yes" "no");
+}
+
+potential (power_supply_damage | pc_randomly_shuts_down blank_screen)
+{
+ data = ((( 0.75 0.25 )
+( 0.65 0.35 ))
+(( 0.75 0.25 )
+( 0.0 1.0 )));
 }
 
 potential (blank_screen)
@@ -153,13 +316,13 @@ potential (blank_screen)
 
 potential (monitor_damage | blank_screen)
 {
- data = (( 0.7 0.3 )
+ data = (( 0.9 0.1 )
 ( 0.0 1.0 ));
 }
 
 potential (GPU_damage | blank_screen)
 {
- data = (( 0.9 0.1 )
+ data = (( 0.55 0.45 )
 ( 0.0 1.0 ));
 }
 
@@ -168,9 +331,9 @@ potential (frozen_screen)
  data = ( 0.99 0.01 );
 }
 
-potential (ram_damage | computer_beeps blue_screen_of_death apps_cant_install pc_crash_before_loading_os frozen_screen)
+potential (ram_damage | app_not_responding slow_pc computer_beeps blue_screen_of_death apps_cant_install pc_crash_before_loading_os frozen_screen)
 {
- data = (((((( 0.9 0.1 )
+ data = (((((((( 0.9 0.1 )
 ( 0.8 0.2 ))
 (( 0.7 0.3 )
 ( 0.7 0.3 )))
@@ -185,7 +348,7 @@ potential (ram_damage | computer_beeps blue_screen_of_death apps_cant_install pc
 ((( 0.9 0.1 )
 ( 0.8 0.2 ))
 (( 0.7 0.3 )
-( 0.0 1.0 )))))
+( 0.95 0.05 )))))
 ((((( 0.9 0.1 )
 ( 0.8 0.2 ))
 (( 0.7 0.3 )
@@ -193,6 +356,22 @@ potential (ram_damage | computer_beeps blue_screen_of_death apps_cant_install pc
 ((( 0.9 0.1 )
 ( 0.8 0.2 ))
 (( 0.7 0.3 )
+( 0.8 0.2 ))))
+(((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.8 0.2 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.85 0.15 ))))))
+(((((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.7 0.3 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
 ( 0.0 1.0 ))))
 (((( 0.9 0.1 )
 ( 0.8 0.2 ))
@@ -201,7 +380,87 @@ potential (ram_damage | computer_beeps blue_screen_of_death apps_cant_install pc
 ((( 0.9 0.1 )
 ( 0.8 0.2 ))
 (( 0.7 0.3 )
-( 0.0 1.0 ))))));
+( 0.95 0.05 )))))
+((((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.7 0.3 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.8 0.2 ))))
+(((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.8 0.2 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.85 0.15 )))))))
+((((((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.7 0.3 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.0 1.0 ))))
+(((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.7 0.3 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.95 0.05 )))))
+((((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.7 0.3 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.8 0.2 ))))
+(((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.8 0.2 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.85 0.15 ))))))
+(((((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.7 0.3 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.0 1.0 ))))
+(((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.7 0.3 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.95 0.05 )))))
+((((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.7 0.3 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.8 0.2 ))))
+(((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.8 0.2 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.0 1.0 ))))))));
 }
 
 potential (wifi_disconnecting)
@@ -211,7 +470,7 @@ potential (wifi_disconnecting)
 
 potential (network_card_damage | wifi_disconnecting)
 {
- data = (( 0.99 0.01 )
+ data = (( 0.95 0.05 )
 ( 0.0 1.0 ));
 }
 
@@ -220,16 +479,72 @@ potential (pc_crash_before_loading_os)
  data = ( 0.99 0.01 );
 }
 
-potential (hdd_damage | blue_screen_of_death apps_cant_install pc_crash_before_loading_os)
+potential (hdd_damage | usb_wont_load slow_pc frozen_screen blue_screen_of_death apps_cant_install pc_crash_before_loading_os)
 {
- data = (((( 0.99 0.01 )
+ data = ((((((( 0.99 0.01 )
 ( 0.8 0.2 ))
 (( 0.99 0.01 )
 ( 0.0 1.0 )))
 ((( 0.99 0.01 )
 ( 0.8 0.2 ))
 (( 0.99 0.01 )
-( 0.0 1.0 ))));
+( 0.65 0.35 ))))
+(((( 0.99 0.01 )
+( 0.8 0.2 ))
+(( 0.99 0.01 )
+( 0.65 0.35 )))
+((( 0.99 0.01 )
+( 0.85 0.15 ))
+(( 0.75 0.25 )
+( 0.0 1.0 )))))
+((((( 0.99 0.01 )
+( 0.8 0.2 ))
+(( 0.99 0.01 )
+( 0.0 1.0 )))
+((( 0.99 0.01 )
+( 0.8 0.2 ))
+(( 0.99 0.01 )
+( 0.65 0.35 ))))
+(((( 0.99 0.01 )
+( 0.8 0.2 ))
+(( 0.99 0.01 )
+( 0.65 0.35 )))
+((( 0.99 0.01 )
+( 0.85 0.15 ))
+(( 0.75 0.25 )
+( 0.65 0.35 ))))))
+(((((( 0.99 0.01 )
+( 0.8 0.2 ))
+(( 0.99 0.01 )
+( 0.0 1.0 )))
+((( 0.99 0.01 )
+( 0.8 0.2 ))
+(( 0.99 0.01 )
+( 0.65 0.35 ))))
+(((( 0.99 0.01 )
+( 0.8 0.2 ))
+(( 0.99 0.01 )
+( 0.65 0.35 )))
+((( 0.99 0.01 )
+( 0.85 0.15 ))
+(( 0.75 0.25 )
+( 0.0 1.0 )))))
+((((( 0.99 0.01 )
+( 0.8 0.2 ))
+(( 0.99 0.01 )
+( 0.0 1.0 )))
+((( 0.99 0.01 )
+( 0.8 0.2 ))
+(( 0.99 0.01 )
+( 0.65 0.35 ))))
+(((( 0.99 0.01 )
+( 0.8 0.2 ))
+(( 0.99 0.01 )
+( 0.65 0.35 )))
+((( 0.99 0.01 )
+( 0.85 0.15 ))
+(( 0.75 0.25 )
+( 0.0 1.0 )))))));
 }
 
 potential (sound_isnt_working)
@@ -239,25 +554,25 @@ potential (sound_isnt_working)
 
 potential (speakers_damage | sound_isnt_working)
 {
- data = (( 0.9 0.1 )
+ data = (( 0.85 0.15 )
 ( 0.0 1.0 ));
 }
 
-potential (bluetooth_connection_damage | sound_isnt_working)
+potential (bluetooth_connection_damage | mouse_malfunction keyboard_malfunction sound_isnt_working)
 {
- data = (( 0.9 0.1 )
-( 0.0 1.0 ));
+ data = (((( 0.3 0.7 )
+( 0.65 0.35 ))
+(( 0.3 0.7 )
+( 0.4 0.6 )))
+((( 0.3 0.7 )
+( 0.65 0.35 ))
+(( 0.3 0.7 )
+( 0.0 1.0 ))));
 }
 
 potential (apps_cant_install)
 {
  data = ( 0.99 0.01 );
-}
-
-potential (ssd_damage | apps_cant_install)
-{
- data = (( 0.9 0.1 )
-( 0.0 1.0 ));
 }
 
 potential (blue_screen_of_death)
@@ -272,8 +587,8 @@ potential (overheating)
 
 potential (cooling_system_damage | blue_screen_of_death overheating)
 {
- data = ((( 1.0 0.0 )
-( 0.7 0.3 ))
+ data = ((( 0.99 0.01 )
+( 0.35 0.65 ))
 (( 0.8 0.2 )
 ( 0.0 1.0 )));
 }
@@ -281,5 +596,198 @@ potential (cooling_system_damage | blue_screen_of_death overheating)
 potential (computer_beeps)
 {
  data = ( 0.99 0.01 );
+}
+
+potential (sound_card_damage | sound_isnt_working)
+{
+ data = (( 0.75 0.25 )
+( 1.0 0.0 ));
+}
+
+potential (port_damage | mouse_malfunction keyboard_malfunction sound_isnt_working)
+{
+ data = (((( 0.4 0.6 )
+( 0.7 0.3 ))
+(( 0.4 0.6 )
+( 0.45 0.55 )))
+((( 0.4 0.6 )
+( 0.7 0.3 ))
+(( 0.4 0.6 )
+( 0.0 1.0 ))));
+}
+
+potential (CPU_damage | overheating)
+{
+ data = (( 0.65 0.35 )
+( 0.0 1.0 ));
+}
+
+potential (motherboard_damage | pc_randomly_shuts_down blue_screen_of_death)
+{
+ data = ((( 0.85 0.15 )
+( 0.85 0.15 ))
+(( 0.85 0.15 )
+( 0.0 1.0 )));
+}
+
+potential (pc_randomly_shuts_down)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (driver_damage | usb_wont_load usb_port_malfunction mouse_malfunction keyboard_malfunction frozen_screen)
+{
+ data = (((((( 0.85 0.15 )
+( 0.8 0.2 ))
+(( 0.85 0.15 )
+( 0.7 0.3 )))
+((( 0.85 0.15 )
+( 0.8 0.2 ))
+(( 0.85 0.15 )
+( 0.8 0.2 ))))
+(((( 0.85 0.15 )
+( 0.8 0.2 ))
+(( 0.85 0.15 )
+( 0.7 0.3 )))
+((( 0.85 0.15 )
+( 0.8 0.2 ))
+(( 0.85 0.15 )
+( 0.7 0.3 )))))
+((((( 0.85 0.15 )
+( 0.8 0.2 ))
+(( 0.85 0.15 )
+( 0.7 0.3 )))
+((( 0.85 0.15 )
+( 0.8 0.2 ))
+(( 0.85 0.15 )
+( 0.8 0.2 ))))
+(((( 0.85 0.15 )
+( 0.8 0.2 ))
+(( 0.85 0.15 )
+( 0.7 0.3 )))
+((( 0.85 0.15 )
+( 0.8 0.2 ))
+(( 0.85 0.15 )
+( 0.0 1.0 ))))));
+}
+
+potential (os_damage | app_not_responding pc_crash_before_loading_os frozen_screen)
+{
+ data = (((( 0.75 0.25 )
+( 0.65 0.35 ))
+(( 0.75 0.25 )
+( 0.8 0.2 )))
+((( 0.75 0.25 )
+( 0.65 0.35 ))
+(( 0.75 0.25 )
+( 0.0 1.0 ))));
+}
+
+potential (keyboard_malfunction)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (physical_damage | usb_port_malfunction mouse_malfunction keyboard_malfunction)
+{
+ data = (((( 0.85 0.15 )
+( 0.8 0.2 ))
+(( 0.85 0.15 )
+( 0.5 0.5 )))
+((( 0.85 0.15 )
+( 0.8 0.2 ))
+(( 0.85 0.15 )
+( 0.0 1.0 ))));
+}
+
+potential (slow_pc)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (antivirus_damage | usb_wont_load slow_internet slow_pc)
+{
+ data = (((( 1.0 0.0 )
+( 0.45 0.55 ))
+(( 0.45 0.55 )
+( 0.65 0.35 )))
+((( 1.0 0.0 )
+( 0.45 0.55 ))
+(( 0.45 0.55 )
+( 0.0 1.0 ))));
+}
+
+potential (startup_programs_damage | slow_pc)
+{
+ data = (( 0.6 0.3 )
+( 1.0 0.0 ));
+}
+
+potential (app_not_responding)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (usb_wont_load)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (mouse_malfunction)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (cable_damage | slow_internet mouse_malfunction)
+{
+ data = ((( 0.3 0.7 )
+( 0.35 0.65 ))
+(( 0.3 0.7 )
+( 0.0 1.0 )));
+}
+
+potential (slow_internet)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (provider_damage | slow_internet)
+{
+ data = (( 0.85 0.15 )
+( 0.0 1.0 ));
+}
+
+potential (router_damage | slow_internet)
+{
+ data = (( 0.9 0.1 )
+( 0.0 1.0 ));
+}
+
+potential (usb_port_malfunction)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (pins_damage | usb_port_malfunction)
+{
+ data = (( 0.75 0.25 )
+( 0.0 1.0 ));
+}
+
+potential (disk_wont_load)
+{
+ data = ( 0.99 0.01 );
+}
+
+potential (bios_damage | disk_wont_load)
+{
+ data = (( 0.65 0.35 )
+( 1.0 0.0 ));
+}
+
+potential (disk_phyisical_damage | disk_wont_load)
+{
+ data = (( 0.9 0.1 )
+( 1.0 0.0 ));
 }
 
