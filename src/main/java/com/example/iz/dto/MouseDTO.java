@@ -15,4 +15,5 @@ public class MouseDTO {
     private String model;
     private String type;
     private String dpi;
+    private String price;
 }

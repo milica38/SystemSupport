@@ -14,4 +14,5 @@ public class GpuDTO {
     private String brand;
     private String maxMemory;
     private String model;
+    private String price;
 }

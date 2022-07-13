@@ -8,7 +8,7 @@
           <label>Choose Motherboard: </label>
           <select #selected1 (change)="onSelectedSlotsForGpu(selected1.value)" class="form-select">
             <option selected>--Motherboard--</option>
-            <option *ngFor="let i of motherboards" [value]="i.usbSlots">{{i.brand.substring(6)}} {{i.formFactor}} {{i.chipset}}</option>
+            <option *ngFor="let i of motherboards" [value]="i.usbSlots">{{i.brand.substring(6)}} {{i.chipset}} {{i.formFactor}}</option>
           </select>
           <label>Choose CPU: </label>
           <select #selected2 (change)="onSelectedFrequencyForGpu(selected2.value)" class="form-select">
@@ -19,7 +19,7 @@
         </div>
         <div class="col-6 card" style="width: 48%;">
           <ul>
-            <li *ngFor="let i of resultsGpu">{{i.brand.substring(6)}} {{i.model}}</li>
+            <li *ngFor="let i of resultsGpu">{{i.brand.substring(6)}} {{i.model}}, {{i.maxMemory}}GB - <span style="font-weight: bold;">{{i.price}}din</span></li>
           </ul>
         </div>
       </div>
@@ -48,7 +48,7 @@
         </div>
         <div class="col-6 card" style="width: 48%;">
           <ul>
-            <li *ngFor="let i of resultsCpu">{{i.brand.substring(6)}} {{i.model}}</li>
+            <li *ngFor="let i of resultsCpu">{{i.brand.substring(6)}} {{i.model}}, {{i.clockSpeed}}Hz - <span style="font-weight: bold;">{{i.price}}din</span></li>
           </ul>
         </div>
       </div>
@@ -71,13 +71,13 @@
           <label>Choose Keyboard: </label>
           <select #selected6 (change)="onSelectedKbTypeForMouse(selected6.value)" class="form-select">
             <option selected>--Keyboard--</option>
-            <option *ngFor="let i of keyboards" [value]="i.type">{{i.brand.substring(6)}} {{i.type}} {{i.type}}</option>
+            <option *ngFor="let i of keyboards" [value]="i.type">{{i.brand.substring(6)}} {{i.model}} {{i.type}}</option>
           </select>
           <button type="button" class="btn btn-secondary" (click)="getRecoommendedMouses()">Suggest</button>
         </div>
         <div class="col-6 card" style="width: 48%;">
           <ul>
-            <li *ngFor="let i of resultsMouse">{{i.brand.substring(6)}} {{i.model}} {{i.type}}</li>
+            <li *ngFor="let i of resultsMouse">{{i.brand.substring(6)}} {{i.model}} {{i.type}}, {{i.dpi}}DPI  - <span style="font-weight: bold;">{{i.price}}din</span></li>
           </ul>
         </div>
       </div>
@@ -101,7 +101,7 @@
         </div>
         <div class="col-6 card" style="width: 48%;">
           <ul>
-            <li *ngFor="let i of resultsCooler">{{i.brand.substring(6)}} {{i.model}} - {{i.rotation}} RPM, <span style="font-weight: bold;">Price: </span>{{i.price}} din</li>
+            <li *ngFor="let i of resultsCooler">{{i.brand.substring(6)}} {{i.model}} - {{i.rotation}} RPM - <span style="font-weight: bold;">{{i.price}}din</span></li>
           </ul>
         </div>
       </div>

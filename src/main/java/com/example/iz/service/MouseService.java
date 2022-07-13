@@ -22,7 +22,7 @@ public class MouseService {
         List<String> mouseBrand = recommendationService.getComponentObjectProperty("Mouse", "has_brand");
         List<String> mouseType = recommendationService.getComponentDataProperty("Mouse", "Mouse_type");
         List<String> mouseDpi = recommendationService.getComponentDataProperty("Mouse", "Mouse_DPI");
-
+        List<String> mousePrice = recommendationService.getComponentDataProperty("Mouse", "price");
 
         List<MouseDTO> result = new ArrayList<>();
 
@@ -33,6 +33,7 @@ public class MouseService {
             dto.setModel(mouseModel.get(i));
             dto.setType(mouseType.get(i));
             dto.setDpi(mouseDpi.get(i));
+            dto.setPrice(mousePrice.get(i));
             result.add(dto);
         }
         return result;
