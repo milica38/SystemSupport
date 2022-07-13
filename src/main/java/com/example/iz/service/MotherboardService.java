@@ -23,7 +23,7 @@ public class MotherboardService {
         List<String> motherboardUSBSlots = recommendationService.getComponentDataProperty("Motherboard", "Motherboard_USB_slots");
         List<String> motherboardChipsets = recommendationService.getComponentDataProperty("Motherboard", "Motherboard_chipset");
         //List<String> motherboardSataConnections = recommendationService.getComponentDataProperty("Motherboard", "SATA_connections");
-        List<String> motherboardProcessorSockets = recommendationService.getComponentDataProperty("Motherboard", "processor_socket");
+        List<String> motherboardProcessorSockets = recommendationService.getComponentDataProperty("Motherboard", "Motherboard_processor_socket");
 
         List<MotherboardDTO> result = new ArrayList<>();
 

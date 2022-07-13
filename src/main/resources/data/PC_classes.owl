@@ -2503,7 +2503,7 @@
                                                                                                             :Motherboard_USB_slots "7"^^xsd:string ;
                                                                                                             :Motherboard_chipset "Intel B560" ;
                                                                                                             :Motherboard_form_factor "ATX" ;
-                                                                                                            :Motherboard_processor_socket "LGA1200" .
+                                                                                                            :Motherboard_processor_socket "LGA 1200" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Motherboard_ASUS_PRIME_Z690M-PLUS_D4

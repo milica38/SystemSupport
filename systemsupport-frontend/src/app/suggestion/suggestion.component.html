@@ -109,6 +109,30 @@
   </div>
 </div>
 
+<!--POWER SUPPLY RECOMMENDATION-->
+<div class="row">
+  <h3 class="d-flex justify-content-center">Power supply suggestion</h3>
+  <div class="box d-flex justify-content-center">
+    <div class="col-8 card" style="background-color: #cfd1d3;">
+      <div class="card-body row">
+        <div class="col-6" style="margin-top: 3%;">
+          <label>Choose Motherboard: </label>
+          <select class="form-select" #selectedValue id="selectedValue" [ngModel]="selectedValue" (ngModelChange)="onSelectedMotherboardForPS($event)">
+            <option>--CPU--</option>
+            <option *ngFor="let m of motherboards" [ngValue]="m">{{m.brand.substring(6)}}  {{m.chipset}} {{m.socket}}</option>
+          </select>
+          <button type="button" class="btn btn-secondary" (click)="getRecoommendedPSs()">Suggest</button>
+        </div>
+        <div class="col-6 card" style="width: 48%;">
+          <ul>
+            <li *ngFor="let i of resultsPSs">{{i.brand.substring(6)}} {{i.model}} - {{i.voltage}}W</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- COMPONENTS BY TYPE -->
 <div class="row">
   <h3 class="d-flex justify-content-center">Components by type</h3>
