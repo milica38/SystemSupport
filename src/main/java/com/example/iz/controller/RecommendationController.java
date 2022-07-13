@@ -30,7 +30,7 @@ public class RecommendationController {
     @Autowired
     private CoolerService coolerService;
     @Autowired MouseService mouseService;
-
+    @Autowired PowerSupplyService psService;
 
     @CrossOrigin
     @GetMapping("/{componentName}")
@@ -96,6 +96,13 @@ public class RecommendationController {
     }
 
     @CrossOrigin
+    @GetMapping("/powerSupply")
+    public ResponseEntity<List<PowerSupplyDTO>> getAllPSs(){
+        var response = psService.getAllPSs();
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @CrossOrigin
     @PostMapping("/mouse/search")
     public ResponseEntity<List<MouseDTO>> findMouses(@RequestBody RecommendationForMouseDTO dto){
         var response = mouseService.findMouses(dto.getHpSensitivities(), dto.getKeyboardType());
@@ -113,6 +120,13 @@ public class RecommendationController {
     @PostMapping("/cooler/search")
     public ResponseEntity<List<CoolerDTO>> findMouses(@RequestBody RecommendationForCoolerDTO dto){
         var response = coolerService.findCoolers(dto.getFrequency());
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @CrossOrigin
+    @PostMapping("/ps/search")
+    public ResponseEntity<List<PowerSupplyDTO>> findPSs(@RequestBody RecommendationForPpowerSupply dto){
+        var response = psService.findPSs(dto.getSocket(), dto.getSlots());
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }

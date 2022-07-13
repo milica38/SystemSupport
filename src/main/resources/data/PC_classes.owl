@@ -2714,61 +2714,72 @@
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_ANTEC_VP700P_PLUS
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_ANTEC_VP700P_PLUS> rdf:type :Power_supply ;
-                                                                                                          :Power_supply_voltage "700 W" .
+                                                                                                          :has_brand :Brand_Antec ;
+                                                                                                          :Power_supply_voltage "700"^^xsd:string ;
+                                                                                                          :has_a_model "VP700P Plus" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER_600W_ELITE_V3
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER_600W_ELITE_V3> rdf:type :Power_supply ;
                                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
-                                                                                                                    :Power_supply_voltage "600 W" .
+                                                                                                                    :Power_supply_voltage "600"^^xsd:string ;
+                                                                                                                    :has_a_model "Elite V3" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER_MWE_BRONZE_550W
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER_MWE_BRONZE_550W> rdf:type :Power_supply ;
                                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
-                                                                                                                      :Power_supply_voltage "550 W" .
+                                                                                                                      :Power_supply_voltage "550"^^xsd:string ;
+                                                                                                                      :has_a_model "MWE Bronze" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER_XG750_Platinum_Plus_750W
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER_XG750_Platinum_Plus_750W> rdf:type :Power_supply ;
                                                                                                                                :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
-                                                                                                                               :Power_supply_voltage "750 W" .
+                                                                                                                               :Power_supply_voltage "750"^^xsd:string ;
+                                                                                                                               :has_a_model "XG750 Platinum Plus" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MWE_750_BRONZE_V2
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MWE_750_BRONZE_V2> rdf:type :Power_supply ;
                                                                                                                          :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
-                                                                                                                         :Power_supply_voltage "750 W" .
+                                                                                                                         :Power_supply_voltage "750"^^xsd:string ;
+                                                                                                                         :has_a_model "MWE Bronze V2" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MWE_GOLD_750
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MWE_GOLD_750> rdf:type :Power_supply ;
                                                                                                                     :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
-                                                                                                                    :Power_supply_voltage "750 W" .
+                                                                                                                    :Power_supply_voltage "750"^^xsd:string ;
+                                                                                                                    :has_a_model "MWE Gold" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MWE_GOLD_850W_V2
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MWE_GOLD_850W_V2> rdf:type :Power_supply ;
                                                                                                                         :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
-                                                                                                                        :Power_supply_voltage "850 W" .
+                                                                                                                        :Power_supply_voltage "850"^^xsd:string ;
+                                                                                                                        :has_a_model "MWE Gold V2" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MasterWatt_750
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_COOLER_MASTER__MasterWatt_750> rdf:type :Power_supply ;
                                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_CoolerMaster> ;
-                                                                                                                      :Power_supply_voltage "750  W" .
+                                                                                                                      :Power_supply_voltage "750"^^xsd:string ;
+                                                                                                                      :has_a_model "MasterWatt" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_MS_CORE_M700_80_Plus_PLATINUM
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_MS_CORE_M700_80_Plus_PLATINUM> rdf:type :Power_supply ;
                                                                                                                       :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> ;
-                                                                                                                      :Power_supply_voltage "700 W" .
+                                                                                                                      :Power_supply_voltage "700"^^xsd:string ;
+                                                                                                                      :has_a_model "CORE M700 80 Plus" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_MS__CORE_M600_80_Plus_PLATINUM
 <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Power_Supply_MS__CORE_M600_80_Plus_PLATINUM> rdf:type :Power_supply ;
                                                                                                                        :has_brand <http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Brand_MS> ;
-                                                                                                                       :Power_supply_voltage "600 W" .
+                                                                                                                       :Power_supply_voltage "600"^^xsd:string ;
+                                                                                                                       :has_a_model "CORE M600 80 Plus" .
 
 
 ###  http://www.semanticweb.org/milica/ontologies/2022/4/untitled-ontology-19#Printer_BROTHER_DCP-T425W

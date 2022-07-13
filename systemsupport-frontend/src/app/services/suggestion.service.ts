@@ -18,6 +18,10 @@ export class SuggestionService {
     return this.http.get(this.baseURL + "/recommendation/motherboards");
   }
 
+  getAllPSs() {
+    return this.http.get(this.baseURL + "/recommendation/powerSupply")
+  }
+
   getAllCpus() {
     return this.http.get(this.baseURL + "/fuzzyLogic/cpu");
   }
@@ -52,6 +56,10 @@ export class SuggestionService {
 
   getRecommendationForCooler(obj: any) {
     return this.http.post(this.baseURL + "/recommendation/cooler/search", obj);
+  }
+
+  getRecommendationForPS(obj: any) {
+    return this.http.post(this.baseURL + "/recommendation/ps/search", obj);
   }
 
 }

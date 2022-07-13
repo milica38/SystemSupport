@@ -9,11 +9,10 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class MotherboardDTO {
+public class PowerSupplyDTO {
+
     private String name;
     private String brand;
-    private String usbSlots;
-    private String chipset;
-    private String formFactor;
-    private String socket;
+    private String model;
+    private String voltage;
 }
