@@ -9,22 +9,22 @@
             <label>Choose GPU: </label>
             <select #selected1  class="form-select" (change)="onSelectedGPU(selected1.value)">
               <option></option>
-              <option *ngFor="let i of gpus" [value]="i.maxMemory">{{i.brand.substring(6)}} {{i.model}}</option>
+              <option *ngFor="let i of gpus" [value]="i.maxMemory">{{i.brand.substring(6)}} {{i.model}} - {{i.maxMemory}}GB</option>
             </select>
             <label>Choose CPU: </label>
             <select class="form-select"  #selectedValue id="selectedValue" [ngModel]="selectedValue" (ngModelChange)="onSelectedCPU($event)">
                 <option></option>
-                <option *ngFor="let cpu of cpus" [ngValue]="cpu">{{cpu.brand.substring(6)}} {{cpu.model}}</option>
+                <option *ngFor="let cpu of cpus" [ngValue]="cpu">{{cpu.brand.substring(6)}} {{cpu.model}} - {{cpu.clockSpeed}}Hz, {{cpu.core}} cores</option>
             </select>
             <label>Choose Storage device: </label>
             <select #selected3 class="form-select" (change)="onSelectedSSD(selected3.value)">
                 <option></option>
-                <option *ngFor="let s of ssds"  [value]="s.storageSize">{{s.brand.substring(6)}} {{s.model}}</option>
+                <option *ngFor="let s of ssds"  [value]="s.storageSize">{{s.brand.substring(6)}} {{s.model}} - {{s.storageSize}}GB</option>
             </select>
             <label>Choose RAM: </label>
             <select #selected4 class="form-select" (change)="onSelectedRAM(selected4.value)">
                 <option></option>
-                <option *ngFor="let r of rams"  [value]="r.ramSize">{{r.brand.substring(6)}} {{r.type}} {{r.ramSize}} GB</option>
+                <option *ngFor="let r of rams"  [value]="r.ramSize">{{r.brand.substring(6)}} {{r.type}} - {{r.ramSize}} GB</option>
             </select>
             <button type="button" class="btn btn-secondary" (click)="onSuggest()">Suggest</button>
           </div>

@@ -87,72 +87,60 @@ FUNCTION_BLOCK sablon
 
 
         //home rules
-        RULE 1: IF coreNumber IS medium THEN home IS high;
-        RULE 2: IF coreNumber IS big THEN home IS low;
-        RULE 3: IF coreNumber IS small THEN home IS high;
-
-        RULE 4: IF ramSize IS small THEN home IS high;
-        RULE 5: IF ramSize IS medium THEN home IS low;
-        RULE 6: IF ramSize IS big THEN home IS low;
-
-        RULE 7: IF gpuSize IS small THEN home IS high;
-        RULE 8: IF gpuSize IS medium THEN home IS high;
-        RULE 9: IF gpuSize IS big THEN home IS medium;
-
-        RULE 10: IF storageSize IS small THEN home IS medium;
-        RULE 11: IF storageSize IS medium THEN home IS medium;
-        RULE 12: IF storageSize IS big THEN home IS low;
-
-        RULE 13: IF cpuClockSpeed IS small THEN home IS high;
-        RULE 14: IF cpuClockSpeed IS medium THEN home IS high;
-        RULE 15: IF cpuClockSpeed IS big THEN home IS low;
+        RULE 1: IF coreNumber IS medium AND ramSize is small THEN home IS high;
+        RULE 2: IF coreNumber IS big AND ramSize is big THEN home IS low;
+        RULE 3: IF coreNumber IS small AND ramSize IS small THEN home IS high;
+        RULE 4: IF ramSize IS small AND gpuSize IS small THEN home IS high;
+        RULE 5: IF ramSize IS medium OR ramSize is big THEN home IS low;
+        RULE 6: IF ramSize IS big AND storageSize IS big THEN home IS low;
+        RULE 7: IF gpuSize IS small or gpuSize IS medium THEN home IS high;
+        RULE 8: IF gpuSize IS medium AND cpuClockSpeed IS small THEN home IS high;
+        RULE 9: IF gpuSize IS big AND storageSize IS small THEN home IS medium;
+        RULE 10: IF storageSize IS small OR storageSize IS medium THEN home IS medium;
+        RULE 11: IF storageSize IS medium AND gpuSize IS big THEN home IS medium;
+        RULE 12: IF storageSize IS big AND cpuClockSpeed IS big THEN home IS low;
+        RULE 13: IF cpuClockSpeed IS small OR cpuClockSpeed IS medium THEN home IS high;
+        RULE 14: IF cpuClockSpeed IS medium AND coreNumber IS medium THEN home IS high;
+        RULE 15: IF cpuClockSpeed IS big AND ramSize IS medium THEN home IS low;
 
         //gaming rules
-        RULE 16: IF coreNumber IS medium THEN gaming IS low;
-        RULE 17: IF coreNumber IS big THEN gaming IS high;
-        RULE 18: IF coreNumber IS small THEN gaming IS low;
-
-        RULE 19: IF ramSize IS small THEN gaming IS low;
-        RULE 20: IF ramSize IS medium THEN gaming IS low;
-        RULE 21: IF ramSize IS big THEN gaming IS high;
-
-        RULE 22: IF gpuSize IS small THEN gaming IS low;
-        RULE 23: IF gpuSize IS medium THEN gaming IS low;
-        RULE 24: IF gpuSize IS big THEN gaming IS high;
-
-        RULE 28: IF cpuClockSpeed IS small THEN gaming IS low;
-        RULE 29: IF cpuClockSpeed IS medium THEN gaming IS low;
-        RULE 30: IF cpuClockSpeed IS big THEN gaming IS high;
-
-        RULE 25: IF storageSize IS medium THEN gaming IS medium;
-        RULE 26: IF storageSize IS big THEN gaming IS high;
-        RULE 27: IF storageSize IS small THEN gaming IS low;
+        RULE 16: IF coreNumber IS medium OR coreNumber IS small THEN gaming IS low;
+        RULE 17: IF coreNumber IS big AND ramSize IS big THEN gaming IS high;
+        RULE 18: IF coreNumber IS small AND ramSize IS small THEN gaming IS low;
+        RULE 19: IF ramSize IS small OR ramSize IS medium THEN gaming IS low;
+        RULE 20: IF ramSize IS medium AND gpuSize IS medium THEN gaming IS low;
+        RULE 21: IF ramSize IS big AND gpuSize IS big THEN gaming IS high;
+        RULE 22: IF gpuSize IS small OR gpuSize IS medium THEN gaming IS low;
+        RULE 23: IF gpuSize IS medium AND cpuClockSpeed IS small THEN gaming IS low;
+        RULE 24: IF gpuSize IS big AND cpuClockSpeed IS big THEN gaming IS high;
+        RULE 28: IF cpuClockSpeed IS small OR cpuClockSpeed IS medium THEN gaming IS low;
+        RULE 29: IF cpuClockSpeed IS medium AND storageSize IS small THEN gaming IS low;
+        RULE 30: IF cpuClockSpeed IS big AND coreNumber IS big THEN gaming IS high;
+        RULE 25: IF storageSize IS medium AND cpuClockSpeed IS medium THEN gaming IS medium;
+        RULE 26: IF storageSize IS big AND cpuClockSpeed IS big THEN gaming IS high;
+        RULE 27: IF storageSize IS small AND cpuClockSpeed IS small THEN gaming IS low;
 
         //programming rules
         RULE 31: IF coreNumber IS medium THEN programming IS medium;
         RULE 32: IF coreNumber IS big THEN programming IS medium;
         RULE 33: IF coreNumber IS small THEN programming IS low;
-
         RULE 34: IF ramSize IS small THEN programming IS low;
         RULE 35: IF ramSize IS medium THEN programming IS medium;
         RULE 36: IF ramSize IS big THEN programming IS medium;
-
         RULE 37: IF cpuClockSpeed IS small THEN programming IS low;
         RULE 38: IF cpuClockSpeed IS medium THEN programming IS medium;
         RULE 39: IF cpuClockSpeed IS big THEN programming IS medium;
 
         //web hosting rules
-        RULE 40: IF storageSize IS medium THEN webHosting IS medium;
-        RULE 41: IF storageSize IS big THEN webHosting IS high;
-        RULE 42: IF storageSize IS small THEN webHosting IS low;
-
-        RULE 43: IF ramSize IS small THEN webHosting IS low;
-        RULE 44: IF ramSize IS medium THEN webHosting IS medium;
-        RULE 45: IF ramSize IS big THEN webHosting IS high;
-
-        RULE 46: IF cpuClockSpeed IS small THEN webHosting IS low;
-        RULE 47: IF cpuClockSpeed IS medium THEN webHosting IS low;
-        RULE 48: IF cpuClockSpeed IS big THEN webHosting IS medium;
+        RULE 40: IF storageSize IS medium AND ramSize IS medium THEN webHosting IS medium;
+        RULE 41: IF storageSize IS big AND ramSize IS big THEN webHosting IS high;
+        RULE 42: IF storageSize IS small AND ramSize IS small THEN webHosting IS low;
+        RULE 43: IF ramSize IS small OR cpuClockSpeed IS small THEN webHosting IS low;
+        RULE 44: IF ramSize IS medium OR cpuClockSpeed IS medium THEN webHosting IS medium;
+        RULE 45: IF ramSize IS big OR cpuClockSpeed IS big THEN webHosting IS high;
+        RULE 46: IF cpuClockSpeed IS small AND storageSize IS small THEN webHosting IS low;
+        RULE 47: IF cpuClockSpeed IS medium OR storageSize IS small THEN webHosting IS low;
+        RULE 48: IF cpuClockSpeed IS big AND storageSize IS medium THEN webHosting IS medium;
 
     END_RULEBLOCK
 
