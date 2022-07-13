@@ -1,6 +1,6 @@
 # <p align="center"> SYSTEM SUPPORT </p> 
 ## <p align="center"> Full stack - project </p>
-System support is a web application where users will be able to get information about computer upgrades, computer usage, malfunctions with syptoms and be able to find a computer similar to theirs. 
+System support is a web application where users will be able to get information about computer upgrades, computer usage, malfunctions with symptoms and be able to find a computer similar to theirs. 
 Project made for Faculty of Technical Sciences' in Novi Sad, course: Inzinjering Znanja. 
 <br><br><br>
 ## Technologies <br>
