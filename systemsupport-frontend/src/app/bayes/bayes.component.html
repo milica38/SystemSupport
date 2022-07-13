@@ -1,1 +1,54 @@
-<p>bayes works!</p>
+<!-- GPU RECOMMENDATION -->
+<div class="row">
+    <h3 class="d-flex justify-content-center">Graphics Card suggestion</h3>
+    <div class="box d-flex justify-content-center">
+      <div class="col-6 card" style="background-color: #cfd1d3;">
+        <div class="card-body row">
+          <div class="col">
+            <label>Choose symptome: </label>
+            <select #selected1 class="form-select" (change)="onSelected(selected1.value)">
+              <option selected>--Choose--</option>
+              <option value="app_not_responding">App not responding</option>
+              <option value="apps_cant_install">Apps can't install</option>
+              <option value="blank_screen">Blank screen</option>
+              <option value="overheating">Overheating</option>
+              <option value="disk_wont_load">Disk won't load</option>
+              <option value="pc_randomly_shuts_down">PC randomly shuts down</option>
+              <option value="pc_crash_before_loading_os">PC crash before loading OS</option>
+              <option value="sound_isnt_working">Sound isn't working</option>
+              <option value="wifi_disconnecting">WiFi disconnecting</option>
+              <option value="slow_internet">Slow internet</option>
+              <option value="slow_pc">Slow PC</option>
+              <option value="frozen_screen">Frozen screen</option>
+              <option value="computer_beeps">Computer beeps</option>
+              <option value="blue_screen_of_death">Blue screen of death</option>
+              <option value="mouse_malfunction">Mouse malfunction</option>
+              <option value="usb_port_malfunction">USB port malfunction</option>
+              <option value="usb_wont_load">USB won't load</option>
+              <option value="keyboard_malfunction">Keyboard malfunction</option>
+            </select>
+            <button type="button" class="btn btn-secondary"  (click)="onDamage()">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- ###########################RESULTS################## -->
+   <div class="row" *ngIf="resultBox">
+    <h3 class="d-flex justify-content-center">
+      Results</h3>
+  <div class="box d-flex justify-content-center">
+    <div class="col-5 card" style="background-color: rgb(32, 74, 171);">
+      <div class="card-body row">
+        <div class="col" style="padding-left: 5%;">
+            <ul>
+                <li style="color: white; padding: 1%;"  *ngFor="let i of results">
+                    <span style="color: rgb(197, 194, 194); font-weight: bold;">Failure:</span> {{i.failure}}, 
+                    <span style="color: rgb(197, 194, 194); font-weight: bold;">Percentage:</span> {{i.percentage}}</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>

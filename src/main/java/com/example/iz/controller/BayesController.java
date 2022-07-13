@@ -17,7 +17,7 @@ public class BayesController {
     private BayesService service;
 
     @CrossOrigin
-    @GetMapping
+    @PostMapping
     public List<BayesOutputDTO> findDamage(@RequestBody BayesInputDTO dto) throws IOException, URISyntaxException {
         return service.findDamage(dto);
     }
