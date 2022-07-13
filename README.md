@@ -11,9 +11,9 @@ Project made for Faculty of Technical Sciences' in Novi Sad, course: Inzinjering
 - Protege
 <br><br>
 ###### Project launch - Maven
-Import project into workspace: Open -> Existing Maven Project
-** In Intellij: File -> Project Structure... -> Libraries -> + unbayes.jar from lib 
-Run project
+- Import project into workspace: Open -> Existing Maven Project
+- ** In Intellij: File -> Project Structure... -> Libraries -> + unbayes.jar from lib 
+- Run project
 <br> <br>
 ###### Project launch - Angular
 Navigate to the workspace folder - sysyemsupport-frontend and run the following commands: <br>
